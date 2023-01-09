@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <title>Abhyan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;600;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+</head>
+
+<body>
+  <header class="ab-header p-3" id="_hederBar">
+    <div class="container">
+      <div class="row ab-justify-content">
+        <div class="col-3">
+          <div class="ab-logo-wrapper">
+            <span class="ab-logo">
+              <img src="img/abhyan-logo.png" alt="abhyan">
+              <span class="ab-logo-content fs-6 ">Abhyan</span>
+            </span>
+            <div class="ab-lg">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle ab-dropdown" type="button" id="ab-lang"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  English
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Spanish</a></li>
+                  <li><a class="dropdown-item" href="#">French</a></li>
+                  <li><a class="dropdown-item" href="#">Hindi </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <ul class="ab-nav">
+            <li> <a class="active fs-6">Courses</a></li>
+            <li> <a class="">Resources</a></li>
+            <li> <a class="">Blog</a></li>
+            <li> <a class="">About</a></li>
+            <li> <a class="">Join as Instructor</a></li>
+          </ul>
+        </div>
+        <div class="col-3 ab-text-right">
+          <div class="ab-login-st">
+            <a type="button" class="btn btn-link" onclick="closeBt()">Login</a>
+            <button type="button" class="btn btn-primary ab-button">Start for free</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- banner -->
+  <section class="ab-banner" id="_bannerwith">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="ab-banner-wrapper">
+            <h2 class="ab-title-banner ab-title mb-3">The beautiful thing about learning is nobody can take it away from
+              you
+            </h2>
+            <span class="ab-sub-title mb-5">Abhyan brings you curated courses at affordable prices in local
+              languages.</span>
+            <button type="button" class="btn btn-primary ab-button">Explore Course</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container ab-banner-footer">
+      <div class="row">
+        <div class="col">
+          <ul class="ab-sns">
+            <li>
+              <a>
+                <span class="ab-linkedin"></span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="ab-facebook"></span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="ab-twitter"></span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="ab-youtube"></span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="ab-pinterest"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <a class="ab-scroll-icon ab-sprit-img" href="#explore"></a>
+        </div>
+        <div class="col ab-text-right">
+          <span class="ab-sound ab-sprit-img"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Exploer Our offerings-->
+  <section class="ab-exp-off ab-title-line" id="explore">
+    <div class="container">
+      <div class="row ab-text-center ">
+        <div class="col">
+          <div class="ab-title my-4">
+            <h2 class="ab-title ab-exp-title mb-2">Explore Our Offerings</h2>
+            <span class="ab-content">Our collection of courses focus on the much needed skills for today</span>
+          </div>
+        </div>
+      </div>
+      <div class="row ab-text-center my-4">
+        <div class="col">
+          <div class="ab-courses">
+            <ul class="ab-courses-list">
+              <li><a class="ab-courses-link ab-active">All Courses</a></li>
+              <li><a class="ab-courses-link">Bundles</a></li>
+              <li><a class="ab-courses-link">Digital Marketing</a></li>
+              <li><a class="ab-courses-link">Finance</a></li>
+              <li><a class="ab-courses-link">Design</a></li>
+              <li><a class="ab-courses-link">Microsoft Office Tools</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row ab-exp-out-tab ab-exp-90 my-4">
+        <div class="col">
+          <div class="slider-wrapper">
+            <a class="slide-arrow ab-sprit-img" id="slide-arrow-prev"></a>
+            <a class="slide-arrow ab-sprit-img" id="slide-arrow-next"></a>
+            <ul class="slides-container py-5" id="slides-container">
+              <li class="slide">
+                <div class="row ab-exp-out-tab gap1rp">
+                  <div class="col-3">
+                    <div class="ab-exp-box">
+                      <span class="ab-exp-box-tab-content">Bundle</span>
+                      <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                      <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                      <div class="ab-exp-box-prize">
+                        <span class="ab-main-prize">Rs.3000 </span>
+                        <del class="ab-delelt-prize">Rs.5500</del>
+                      </div>
+                      <div class="ab-exp-box-footer">
+                        <ul class="ab-exp-box-footer-list">
+                          <li>4 Hrs</li>
+                          <li><span class="ab-space-dot"></span></li>
+                          <li>Beginner Level</li>
+                          <li><span class="ab-space-dot"></span></li>
+                          <li>3 Languages</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="ab-exp-box">
+                      <span class="ab-exp-box-tab-content">Bundle</span>
+                      <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                      <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                      <div class="ab-exp-box-prize">
+                        <span class="ab-main-prize">Rs.3000 </span>
+                        <del class="ab-delelt-prize">Rs.5500</del>
+                      </div>
+                      <div class="ab-exp-box-footer">
+                        <ul class="ab-exp-box-footer-list">
+                          <li>4 Hrs</li>
+                          <li><span class="ab-space-dot"></span></li>
+                          <li>Beginner Level</li>
+                          <li><span class="ab-space-dot"></span></li>
+                          <li>3 Languages</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="ab-exp-box">
+                      <span class="ab-exp-box-tab-content">Bundle</span>
+                      <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                      <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                      <div class="ab-exp-box-prize">
+                        <span class="ab-main-prize">Rs.3000 </span>
+                        <del class="ab-delelt-prize">Rs.5500</del>
+                      </div>
+                      <div class="ab-exp-box-footer">
+                        <ul class="ab-exp-box-footer-list">
+                          <li>4 Hrs</li>
+                          <li><span class="ab-space-dot"></span></li>
+                          <li>Beginner Level</li>
+                          <li><span class="ab-space-dot"></span></li>
+                          <li>3 Languages</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="ab-exp-box">
+                      <span class="ab-exp-box-tab-content">Bundle</span>
+                      <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                      <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                      <div class="ab-exp-box-prize">
+                        <span class="ab-main-prize">Rs.3000 </span>
+                        <del class="ab-delelt-prize">Rs.5500</del>
+                      </div>
+                      <div class="ab-exp-box-footer">
+                        <ul class="ab-exp-box-footer-list">
+                          <li>4 Hrs</li>
+                          <li><span class="ab-space-dot"></span></li>
+                          <li>Beginner Level</li>
+                          <li><span class="ab-space-dot"></span></li>
+                          <li>3 Languages</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="slide">
+                <div class="row ab-exp-out-tab gap1rp">
+                  <div class="col-3">
+                    <div class="ab-exp-box">
+                      <span class="ab-exp-box-tab-content">Bundle</span>
+                      <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                      <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                      <div class="ab-exp-box-prize">
+                        <span class="ab-main-prize">Rs.3000 </span>
+                        <del class="ab-delelt-prize">Rs.5500</del>
+                      </div>
+                      <div class="ab-exp-box-footer">
+                        <ul class="ab-exp-box-footer-list">
+                          <li>4 Hrs</li>
+                          <li><span class="ab-space-dot"></span></li>
+                          <li>Beginner Level</li>
+                          <li><span class="ab-space-dot"></span></li>
+                          <li>3 Languages</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="ab-exp-box">
+                      <span class="ab-exp-box-tab-content">Bundle</span>
+                      <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                      <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                      <div class="ab-exp-box-prize">
+                        <span class="ab-main-prize">Rs.3000 </span>
+                        <del class="ab-delelt-prize">Rs.5500</del>
+                      </div>
+                      <div class="ab-exp-box-footer">
+                        <ul class="ab-exp-box-footer-list">
+                          <li>4 Hrs</li>
+                          <li><span class="ab-space-dot"></span></li>
+                          <li>Beginner Level</li>
+                          <li><span class="ab-space-dot"></span></li>
+                          <li>3 Languages</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="ab-exp-box">
+                      <span class="ab-exp-box-tab-content">Bundle</span>
+                      <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                      <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                      <div class="ab-exp-box-prize">
+                        <span class="ab-main-prize">Rs.3000 </span>
+                        <del class="ab-delelt-prize">Rs.5500</del>
+                      </div>
+                      <div class="ab-exp-box-footer">
+                        <ul class="ab-exp-box-footer-list">
+                          <li>4 Hrs</li>
+                          <li><span class="ab-space-dot"></span></li>
+                          <li>Beginner Level</li>
+                          <li><span class="ab-space-dot"></span></li>
+                          <li>3 Languages</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3">
+                    <div class="ab-exp-box">
+                      <span class="ab-exp-box-tab-content">Bundle</span>
+                      <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                      <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                      <div class="ab-exp-box-prize">
+                        <span class="ab-main-prize">Rs.3000 </span>
+                        <del class="ab-delelt-prize">Rs.5500</del>
+                      </div>
+                      <div class="ab-exp-box-footer">
+                        <ul class="ab-exp-box-footer-list">
+                          <li>4 Hrs</li>
+                          <li><span class="ab-space-dot"></span></li>
+                          <li>Beginner Level</li>
+                          <li><span class="ab-space-dot"></span></li>
+                          <li>3 Languages</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col ab-text-center my-3">
+          <button type="button" class="btn btn-outline-primary ab-outline-primary">View All Courses</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- two box Learn it in your mother tongue-->
+  <section class="ab-two-box">
+    <div class="container">
+      <div class="row ab-align-items-center my-5">
+        <div class="col-5">
+          <div class="ab-two-box-icon-wrapper">
+            <span class="ab-two-box-icon ab-sprit-img"></span>
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="ab-two-box-coantent">
+            <h3 class="ab-two-box-title ab-title my-4">Learn it in your <br>mother tongue</h3>
+            <div class="ab-two-box-menu ">
+              <ul class="ab-highlight-list my-3">
+                <li>
+                  <span class="ab-start-icon ab-sprit-img"></span>
+                  <span class="ab-content">Highlight 1</span>
+                </li>
+                <li>
+                  <span class="ab-start-icon ab-sprit-img"></span>
+                  <span class="ab-content">Highlight 2</span>
+                </li>
+                <li>
+                  <span class="ab-start-icon ab-sprit-img"></span>
+                  <span class="ab-content">Highlight 3</span>
+                </li>
+              </ul>
+            </div>
+            <div class="ab-content my-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+            </div>
+            <div class="ab-two-box-footer  my-5">
+              <button type="button" class="btn btn-outline-primary ab-outline-primary">Explore Courses</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ab-align-items-center my-5">
+        <div class="col-7">
+          <div class="ab-two-box-coantent">
+            <h3 class="ab-two-box-title ab-title my-4">Learn more <br>pay less</h3>
+            <div class="ab-two-box-menu">
+              <ul class="ab-highlight-list my-3">
+                <li>
+                  <span class="ab-start-icon ab-sprit-img"></span>
+                  <span class="ab-content">Highlight 1</span>
+                </li>
+                <li>
+                  <span class="ab-start-icon ab-sprit-img"></span>
+                  <span class="ab-content">Highlight 2</span>
+                </li>
+                <li>
+                  <span class="ab-start-icon ab-sprit-img"></span>
+                  <span class="ab-content">Highlight 3</span>
+                </li>
+              </ul>
+            </div>
+            <div class="ab-content my-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+            </div>
+            <div class="ab-two-box-footer my-5">
+              <button type="button" class="btn btn-outline-primary ab-outline-primary">Explore Courses</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="ab-two-box-icon-wrapper">
+            <span class="ab-two-box-icon ab-sprit-img"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row ab-align-items-center my-5">
+        <div class="col-5">
+          <div class="ab-two-box-icon-wrapper">
+            <span class="ab-two-box-icon ab-sprit-img"></span>
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="ab-two-box-coantent">
+            <h3 class="ab-two-box-title ab-title my-4">Easy to consume at the <br>comfort of your home </h3>
+            <div class="ab-two-box-menu">
+              <ul class="ab-highlight-list my-3">
+                <li>
+                  <span class="ab-start-icon ab-sprit-img"></span>
+                  <span class="ab-content">Highlight 1</span>
+                </li>
+                <li>
+                  <span class="ab-start-icon ab-sprit-img"></span>
+                  <span class="ab-content">Highlight 2</span>
+                </li>
+                <li>
+                  <span class="ab-start-icon ab-sprit-img"></span>
+                  <span class="ab-content">Highlight 3</span>
+                </li>
+              </ul>
+            </div>
+            <div class="ab-content my-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+              mollit anim id est laborum.
+            </div>
+            <div class="ab-two-box-footer my-5">
+              <button type="button" class="btn btn-outline-primary ab-outline-primary">Explore Courses</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ab-align-items-center my-5">
+        <div class="col-5">
+          <div class="ab-two-box-coantent">
+            <h3 class="ab-two-box-title ab-title ab-color-dark my-5">Intuitive Learning <br>Experience</h3>
+            <div class="ab-content my-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+              lacus vel facilisis. Quis ipsum suspendisse ultrices gravida.
+            </div>
+            <div class="ab-two-box-footer my-5">
+              <button type="button" class="btn btn-outline-primary ab-outline-primary">Get Started</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="ab-images-laptop">
+            <img src="img/laptop.png" class="ab-two-box-img" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="ab-testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <span class="ab-testimonials-sub my-3">Testimonials</span>
+          <h3 class="ab-testimonials-title ab-title ab-color-dark my-4 fs-1">Here’s what our students are saying about
+            us</h3>
+          <div class="ab-testimonials-two-tab my-4">
+            <ul class="ab-testimonials-two-tab-list ">
+              <li class="mr-3">
+                <span class="ab-testimonials-count">2000+</span>
+                <span class="ab-testimonials-count-content">Active Students</span>
+              </li>
+              <li>
+                <span class="ab-testimonials-count">75+</span>
+                <span class="ab-testimonials-count-content">In-Depth Courses</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="ab-testimonials-slid-box">
+            <span class="ab-coma-icon ab-sprit-img mt-5 mb-3"></span>
+            <div class="ab-content my-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+              lacus vel facilisis.
+            </div>
+            <div class="ab-testimonials-user my-4">
+              <div class="ab-testimonials-user-img">
+                <img src="img/user-photo.png">
+              </div>
+              <div class="ab-testimonials-user-text">
+                <span class="ab-testimonials-user-name">Gaurav Shamra</span>
+                <span class="ab-testimonials-user-ocu">Software Intern</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Unable to decide what is right for you? -->
+  <section class="ab-Unable">
+    <div class="container">
+      <div class="row ab-align-items-center">
+        <div class="col-4">
+          <img src="img/chat.png" alt="Let us help! " />
+        </div>
+        <div class="col-8">
+          <div class="ab-let-help">
+            <h3 class="my-3">Unable to decide what is right for you?</h3>
+            <h2 class="my-3 ab-title">Let us help! </h2>
+            <div class="ab-content my-3">
+              Our intelligent online assistive system asks you relevant questions and suggests what would be the ideal
+              course for you to start with.
+            </div>
+            <button type="button" class="btn btn-outline-primary ab-outline-primary my-3">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In The News -->
+  <section class="ab-in-the-news">
+    <div class="container">
+      <div class="row">
+        <div class="col ab-text-alighn-center p-5 ab-news-logo my-5">
+          <h3 class="my-5 fs-1">In The News</h3>
+          <div class="ab-news-logo my-5">
+            <a><img src="img/logo1.png" alt="Yourstory"></a>
+            <a><img src="img/logo2.png" alt="TC"></a>
+            <a><img src="img/logo3.png" alt="Outlook"></a>
+            <a><img src="img/logo4.png" alt="The Indian Express"></a>
+          </div>
+          <div class="ab-news-logo my-5">
+            <a><img src="img/logo5.png" alt="TNW"></a>
+            <a><img src="img/logo6.png" alt="KS"></a>
+            <a><img src="img/logo7.png" alt="NDTV"></a>
+            <a><img src="img/logo8.png" alt="The Hindu"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="ab-articales-box">
+            <span class="ab-articales mb-4">
+              <span class="ab-articales-icon ab-sprit-img"></span>
+              <span class="ab-articales-icon-text">Articles</span>
+            </span>
+            <div class="ab-articales-title ab-title ab-color-dark mb-3 fs-3">
+              Title Goes here, maximum in two or three lines
+            </div>
+            <div class="ab-content mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </div>
+            <div class="ab-articales-footer">
+              <button type="button" class="btn btn-outline-primary ab-outline-primary">Watch Video</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="ab-articales-box">
+            <span class="ab-articales mb-4">
+              <span class="ab-articales-icon ab-sprit-img"></span>
+              <span class="ab-articales-icon-text">Articles</span>
+            </span>
+            <div class="ab-articales-title ab-title ab-color-dark mb-3 fs-3">
+              Title Goes here, maximum in two or three lines
+            </div>
+            <div class="ab-content mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </div>
+            <div class="ab-articales-footer">
+              <button type="button" class="btn btn-outline-primary ab-outline-primary">Watch Video</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="ab-articales-box">
+            <span class="ab-articales mb-4">
+              <span class="ab-articales-icon ab-sprit-img"></span>
+              <span class="ab-articales-icon-text">Articles</span>
+            </span>
+            <div class="ab-articales-title ab-title ab-color-dark mb-3 fs-3">
+              Title Goes here, maximum in two or three lines
+            </div>
+            <div class="ab-content mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </div>
+            <div class="ab-articales-footer">
+              <button type="button" class="btn btn-outline-primary ab-outline-primary">Watch Video</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Our Insta Feed-->
+  <section class="ab-Our-Insta-Feed">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="ab-text-alighn-center my-5 fs-1">Our Insta Feed</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="ab-Insta-Feed">
+            <div class="ab-Insta-top mb-2">
+              <span class="ab-Insta-icon ab-sprit-img"></span>
+              <span class="ab-Insta-text ab-content">27 Sep 2021</span>
+            </div>
+            <div class="ab-Insta-Feed-border ab-min-height-1">
+
+            </div>
+            <div class="ab-Insta-Feed-footer ab-content">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="ab-Insta-Feed">
+            <div class="ab-Insta-top mb-2">
+              <span class="ab-Insta-icon ab-sprit-img"></span>
+              <span class="ab-Insta-text ab-content">27 Sep 2021</span>
+            </div>
+            <div class="ab-Insta-Feed-border ab-min-height-3">
+
+            </div>
+            <div class="ab-Insta-Feed-footer ab-content">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="ab-Insta-Feed">
+            <div class="ab-Insta-top mb-2">
+              <span class="ab-Insta-icon ab-sprit-img"></span>
+              <span class="ab-Insta-text ab-content">27 Sep 2021</span>
+            </div>
+            <div class="ab-Insta-Feed-border ab-min-height-2 mb-3">
+
+            </div>
+            <div class="ab-Insta-Feed-footer ab-content ">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore.
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!--Countact Us-->
+  <section class="ab-countact-us">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="ab-title-content fs-1 ab-text-center mb-3">Contact Us Today & Avail Extra 10% Discount</h2>
+          <div class="ab-content ab-contact-content ab-text-center mb-5">
+            Tell us a little bit about yourself. One of our course specialists will get back to you shortly and help you
+            to pick a course with 10% less cost. Limited Period Offer!
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-9" style="margin: auto;">
+          <form>
+            <div class="row">
+              <div class="col-7">
+                <div class="row">
+                  <div class="col-6">
+                    <input type="password" id="inputPassword6" class="form-control ab-form-control"
+                      aria-describedby="passwordHelpInline" placeholder="Name">
+                  </div>
+                  <div class="col-6">
+                    <input type="password" id="inputPassword6" class="form-control ab-form-control"
+                      aria-describedby="passwordHelpInline" placeholder="Email">
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="row">
+                  <div class="col-6">
+                    <select class="form-select ab-form-control" aria-label="Default select example">
+                      <option selected>Pick a Time</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="col-6">
+                    <button type="button" class="btn btn-primary ab-button ab-contact-btn">Contact Me</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col ab-text-center mt-4">
+                <i class="ab-fileds-mandatory">* All fileds are mandatory </i>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+  </section>
+
+  <!--footer -->
+  <footer class="ab-footer">
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-6">
+          <div class="ab-footer-about">
+            <div class="ab-logo mb-4">
+              <img src="img/abhyan-logo.png" alt="abhyan">
+              <span class="ab-logo-content">Abhyan</span>
+            </div>
+          </div>
+          <div class="ab-footer-about-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.labore.
+            <a class="ab-line-link  my-4">
+              Read
+              <span class="ab-arrow-icon ab-sprit-img"></span>
+            </a>
+          </div>
+          <span class="ab-footer-add">
+            1000 Circle 75 Parkway, Suite 705, Hyderabad - 560102
+          </span>
+          <div class="ab-footer-mail">
+            <a href="mailto:support@abhyan.com">support@abhyan.com</a>
+          </div>
+        </div>
+        <div class="col-2">
+          <h4 class="ab-footer-title">Courses</h4>
+          <ul class="ab-footer-link-ul">
+            <li><a class="ab-footer-link"> Digital Marketing</a></li>
+            <li><a class="ab-footer-link"> Finance</a></li>
+            <li><a class="ab-footer-link"> Microsoft Tools</a></li>
+            <li><a class="ab-footer-link"> Design</a></li>
+            <li><a class="ab-footer-link"> Google Tools</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h4 class="ab-footer-title">Resources</h4>
+          <ul class="ab-footer-link-ul">
+            <li><a class="ab-footer-link"> Tips & Tricks</a></li>
+            <li><a class="ab-footer-link"> Videos</a></li>
+            <li><a class="ab-footer-link"> Articles</a></li>
+          </ul>
+        </div>
+        <div class="col-2">
+          <h4 class="ab-footer-title">Abhyan</h4>
+          <ul class="ab-footer-link-ul">
+            <li><a class="ab-footer-link"> About </a></li>
+            <li><a class="ab-footer-link"> Philisophy</a></li>
+            <li><a class="ab-footer-link"> Press Releases</a></li>
+            <li><a class="ab-footer-link"> Team</a></li>
+            <li><a class="ab-footer-link"> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="ab-footer-social-media-icon my-2">
+            <ul class="ab-sns">
+              <li>
+                <a>
+                  <span class="ab-linkedin"></span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="ab-facebook"></span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="ab-twitter"></span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="ab-youtube"></span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="ab-pinterest"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col ab-align-items-center my-5">
+          <span class="ab-copyright">
+            <a class="ab-copyright-link">Privacy Policy</a> | <a class="ab-copyright-link mr-3">Terms Of Services </a>
+            <span class="ab-copyright-contet">Copyright © Abhyan, INC. 2021. All Rights Reserved</span>
+          </span>
+        </div>
+      </div>
+  </footer>
+
+  <!--Login page-->
+  <section class="ab-login-page" id="_loginPupPup">
+    <a onclick="closeBt()" class="ab-close"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-wr8ge5"
+        focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloseIcon">
+        <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+        </path>
+      </svg></a>
+    <div class="b-loginwrapper m-4">
+      <div class="container-fluid">
+        <div class="row ">
+          <div class="col-12">
+            <img src="img/b-logo.png">
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-12">
+            <h6 class="ab-title ab-free-content fs-5 my-2">It’s free content, but only students or registered users can
+              access
+              Resources.</h3>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-12">
+            <ul class="ab-singup-list  my-4">
+              <li> <a class="fs-4 signUPAct" onclick="signUPTab()" id="_btnSignup">Signup</a></li>
+              <li> <a class="fs-4 ab-active singinAct" onclick="signinTab()" id="_btnSignin">Signin</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row ab-align-items-center ab-line-right">
+          <div class="col-6">
+            <div class="ab-social-net-icon">
+              <h6 class="ab-title fs-5 ab-Social-Networks-login">With Social Networks</h4>
+                <ul class="ab-social-net-icon-list">
+                  <li><a class="ab-soc-net ab-face-icon"></a></li>
+                  <li><a class="ab-soc-net ab-google-icon"></a></li>
+                  <li><a class="ab-soc-net ab-twitter-icon"></a></li>
+                </ul>
+            </div>
+          </div>
+          <div class="col-6">
+            <!-- signu up form -->
+            <div class="ab-signup-form mx-4" style="display: none;" id="_signup">
+              <form>
+                <div class="ab-controle-form">
+                  <div class="ab-checkbox">
+                    <span class="ab-lable ab-title">Using </span>
+                    <div class="ab-form-check">
+                      <input type="radio" class="form-check-input" id="phoneCheck" name="using" onclick="phoneCheckT();"
+                        checked>
+                      <label class="form-check-label" for="exampleCheck1">Phone</label>
+                    </div>
+                    <div class="ab-form-check">
+                      <input type="radio" class="form-check-input" id="emailCheck" name="using"
+                        onclick="emailCheckT();">
+                      <label class="form-check-label" for="exampleCheck2">Email</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="ab-controle-form my-3">
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                </div>
+                <div class="ab-controle-form my-3" id="phoneCheckfield">
+                  <input type="number" class="form-control" placeholder="+91">
+                </div>
+                <div class="ab-controle-form my-3" id="emailCheckfield">
+                  <input type="text" class="form-control" placeholder="Email Address">
+                </div>
+                <div class="ab-controle-form my-3">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="ab-controle-form my-3">
+                  <button type="button" class="btn btn-primary ab-button ab-Sign-Up-btn">Sign Up</button>
+                </div>
+              </form>
+            </div>
+            <!-- signu in form -->
+            <div class="ab-signup-form mx-4" style="display: block;" id="_signin">
+              <form>
+                <div class="ab-controle-form">
+                  <div class="ab-checkbox">
+                    <span class="ab-lable ab-title">Using </span>
+                    <div class="ab-form-check">
+                      <input type="radio" class="form-check-input" id="exampleCheck1" name="using"
+                        onclick="phoneCheckT();" checked>
+                      <label class="form-check-label" for="Phone">Phone</label>
+                    </div>
+                    <div class="ab-form-check">
+                      <input type="radio" class="form-check-input" id="exampleCheck2" name="using"
+                        onclick="emailCheckT();">
+                      <label class="form-check-label" for="Email">Email</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="ab-controle-form my-3">
+                  <input type="number" class="form-control" id="phoneCheckfieldin" placeholder="+91">
+                </div>
+                <div class="ab-controle-form my-3">
+                  <input type="text" class="form-control" id="emailCheckfieldin" placeholder="Email Address">
+                </div>
+                <div class="ab-controle-form my-3">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="ab-controle-form my-3">
+                  <button type="button" class="btn btn-primary ab-button ab-Sign-Up-btn">Sign In</button>
+                  <a class="ab-Forgot-Password">Forgot Password?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="ab-bg-black" id="_loginPupPupBg"></div>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
