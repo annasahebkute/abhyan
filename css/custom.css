@@ -335,6 +335,17 @@ slider
     border-radius: 2rem 0 0 2rem;
     background-position: -49px -124px;
   }
+
+.ab-testimonials .slide-arrow-next{
+    background-position: -4px -627px;
+}
+.ab-testimonials .slide-arrow-prev{
+    background-position: -2px -624px;
+    transform: rotate(180deg);
+    left: unset;
+    right: -98px;
+    top: 0;
+}
   
   .slide {
     width: 100%;
@@ -347,9 +358,10 @@ slider
 /*** new slider **/
 .slider{
     position: relative;
-    height: 26.625rem; 
+    height: 30.625rem;
     margin: 0 auto;
     overflow: hidden;
+    padding-bottom: 70px;
 }
 .slideFull{ 
     position: absolute;

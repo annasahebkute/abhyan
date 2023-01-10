@@ -14,43 +14,15 @@ const onScroll = () => {
 }
 window.addEventListener('scroll', onScroll)
 
-// slider
-// const slidesContainer = document.getElementById("slides-container");
-const slide = document.querySelector(".slide");
-const prevButton = document.querySelectorAll(".slide-arrow-prev");
-const nextButton = document.querySelectorAll(".slide-arrow-next");
-
-
-function nextBtn(){
-    const slideWidth = slide.clientWidth;
-    nextButton[0].nextElementSibling.scrollLeft += slideWidth;
-    var nextButtonnar = nextButton.nextElementSibling
-    console.log(nextButton[0].nextElementSibling)
-};
-
-function prevBtn(){   
-    const slideWidth = slide.clientWidth;
-    prevButton[0].previousElementSibling.scrollLeft -= slideWidth;
-    console.log(prevButton[0].previousElementSibling)
-};
-
-
 
 // slider TESTIMONIALS
-const slidesContainerts = document.getElementById("slides-containerts");
-const slidets = document.querySelector(".slide");
-const prevButtonts = document.getElementById("slide-arrow-prevts");
-const nextButtonts = document.getElementById("slide-arrow-nextts");
+function nextBtn(e){
+    e.target.nextElementSibling.scrollLeft += e.target.parentElement.clientWidth;
+};
 
-nextButtonts.addEventListener("click", () => {
-  const slideWidthts = slide.clientWidth;
-  slidesContainerts.scrollLeft += slideWidthts;
-});
-
-prevButtonts.addEventListener("click", () => {    
-  const slideWidthts = slidets.clientWidth;
-  slidesContainerts.scrollLeft -= slideWidthts;
-});
+function prevBtn(e){   
+    e.target.previousElementSibling.scrollLeft -= e.target.parentElement.clientWidth;
+};
 
 // Slider auto
 Slider();
@@ -202,8 +174,8 @@ function emailCheckTin() {
 
 // tab
 
-var tab; // заголовок вкладки
-var tabContent; // блок содержащий контент вкладки
+var tab; 
+var tabContent; 
 
 window.onload=function() {
     tabContent=document.getElementsByClassName('tabContent');
