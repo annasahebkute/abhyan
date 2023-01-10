@@ -430,6 +430,7 @@ slider end
 /**********************
 Exploer Our offerings
 ***********************/
+
 .ab-courses-list li{
     display: inline-block;
 }
@@ -523,6 +524,16 @@ Exploer Our offerings
 }
 .ab-exp-off{
     margin-bottom: 100px;
+}
+.ab-Learn-more-icon{
+    width: 66px !important;
+    height: 70px !important;
+    background-position: -6px -425px !important;
+}
+.ab-Easy-to-consume-icon{
+    width: 66px !important;
+    height: 70px !important;
+    background-position: -3px -511px !important;
 }
 /***********************************
 ab two box
