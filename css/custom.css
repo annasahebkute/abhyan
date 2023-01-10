@@ -99,7 +99,7 @@ a{
     left: 0;
     position: absolute;
     display: block;
-    top: 30px;
+    top: 50px;
     z-index: -1;
 }
 .ab-align-items-center{
@@ -188,6 +188,16 @@ a{
     background-color: transparent;
     border: none;
 }
+.ab-account-menu-mobile{
+    width: 40px;
+    height: 40px;
+    display: none;
+    z-index: 99;
+    position: relative;
+}
+.ab-account-menu-mobile svg{
+    fill: #fff;
+}
 /**********************************
 banner
 **********************************/
@@ -273,10 +283,7 @@ banner
     width: 35px;
     height: 25px;
 }
-.ab-title-banner{
-    font-size: 44px;
 
-}
 /*****************
 slider
 *******************/
@@ -454,10 +461,10 @@ Exploer Our offerings
 }
 .ab-exp-title{
     color: #99cddf;
-    font-size: 48px;
     margin: auto;
     width: 600px;
     background-color: #04141e;
+    font-size: 48px;
 }
 .ab-exp-box{
     border-radius: 40px;
@@ -481,7 +488,6 @@ Exploer Our offerings
 }
 .ab-exp-title{
     color: #99cddf;
-    font-size: 48px;
     width: 720px;
 }
 .ab-exp-box-title{
@@ -951,3 +957,187 @@ login
     margin: auto;
     background-color: #04141e;
 }
+
+@media (max-width: 576px) { 
+    .m-hd{
+        display: none;
+    }
+    .ab-nav{
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 80%;
+        padding-top: 60px;
+        z-index: 9;
+        background-color: #04141e;
+        height: 100%;
+        display: none;
+        box-shadow: 1px 1px 161px #000;
+    }
+    .ab-nav li a{
+        padding: 20px 34px;
+    }
+    .ab-nav li {
+        display: block;
+        text-align: left;
+    }
+    .ab-banner-wrapper {
+        width: 100%;
+    }
+    .ab-account-menu-mobile{
+        display: block;
+    }
+    .ab-exp-title {
+        width: 100%;
+    }
+    .ab-footer-about-content {
+        width: 100%;
+    }
+    .slide-arrow-next,
+    .slide-arrow-prev {
+        display: none;
+    }
+    .ab-in-the-news a{
+        display: inline-block;
+        padding: 20px;
+    }
+    .ab-in-the-news a img{
+        width: 100%;
+    }
+    .ab-exp-90{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .ab-logo-wrapper {
+        gap: 10px;
+    }
+    .ab-header{
+        padding: 20px 10px !important;
+    }
+    .ab-login-st{
+        white-space: nowrap;
+    }
+    .ab-lg{
+        display: none;
+    }
+    .ab-banner-wrapper {
+        height: auto;
+        padding: 30px;
+    }
+    .ab-m-width{
+        width: 44%;
+    }
+    .ab-sns{
+        white-space: nowrap;
+    }
+    .ab-banner-footer .ab-youtube, .ab-banner-footer .ab-pinterest{
+        display: none;
+    }
+    .ab-sns li {
+        margin-right: 0px;
+    }
+    .ab-banner-footer {
+        bottom: 20px;
+        padding: 0 30px;
+    }
+    .slide {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .ab-two-box {
+        margin-top: 50px;
+        margin-bottom: 0;
+        padding: 20px;
+        padding-bottom: 0;
+    }
+    .order-ab-last{
+        order: 6!important;
+    }
+    .order-ab-first{
+        order: -1!important;
+    }
+    .ab-two-box .slider{
+        height: 50.625rem;
+    }
+    .ab-two-box  .slideFull{
+        height: 46.625rem;
+    }
+    .ab-testimonials {
+        margin: 20px 0;
+        padding: 20px;
+    }
+    .ab-Unable {
+        margin: 0;
+        padding: 30px 20px;
+    }
+    .slides-container{
+        padding: 0 !important;
+    }
+    .ab-in-the-news {
+        margin: 0;
+        padding: 20px;
+    }
+    .ab-news-logo{
+        padding: 20px !important;
+        margin: 0 !important;
+    }
+    .ab-articales-box {
+        width: 100%;
+        padding: 40px 0px;
+    }
+    .ab-Our-Insta-Feed {
+        margin: 0;
+        padding: 20px;
+    }
+    .ab-Insta-Feed{
+        margin:  20px 0;
+    }
+    .ab-countact-us {
+        padding: 60px 20px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .ab-form-control {
+        margin-bottom: 30px;
+    }
+    .ab-contact-content {
+        width: 100%;
+    }
+    .ab-letusHelp{
+        width: 50%;
+        margin: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .ab-footer{
+        padding: 30px;
+    }
+    .slider-wrapper{
+        margin: 0;
+    }
+    .ab-exp-off{
+        
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {  
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) { 
+
+ }

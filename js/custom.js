@@ -14,6 +14,14 @@ const onScroll = () => {
 }
 window.addEventListener('scroll', onScroll)
 
+function accountMenuMobile(){
+  const navMenu = document.getElementById('_navMenu')
+  if (navMenu.style.display === "none") {
+    navMenu.style.display = "block";
+  } else {
+    navMenu.style.display = "none";
+  }
+}
 
 // slider TESTIMONIALS
 function nextBtn(e){
