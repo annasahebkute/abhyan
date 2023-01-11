@@ -323,6 +323,10 @@ slider
     left: -50px;
     padding-left: 0.25rem;
     border-radius: 0 2rem 2rem 0;
+    opacity: 0.2;
+  }
+  .slide-arrow-prev:hover{
+    opacity: 1;
   }
   .slide-arrow-prevts {
     left: -50px;
@@ -335,6 +339,16 @@ slider
     padding-left: 0.75rem;
     border-radius: 2rem 0 0 2rem;
     background-position: -49px -124px;
+    opacity: 0.2;
+  }
+  .slide-arrow-next.next{
+    right: 24px;
+  }
+  .slide-arrow-prev.prev{
+    left: 24px;
+  }
+  .slide-arrow-next:hover {
+    opacity: 1;
   }
   #slide-arrow-nextts {
     right: -50px;
@@ -344,7 +358,7 @@ slider
   }
 
 .ab-testimonials .slide-arrow-next{
-    background-position: -4px -627px;
+    background-position: -4px -625px;
 }
 .ab-testimonials .slide-arrow-prev{
     background-position: -2px -624px;
@@ -369,6 +383,7 @@ slider
     margin: 0 auto;
     overflow: hidden;
     padding-bottom: 70px;
+    padding-left: 60px;
 }
 .slideFull{ 
     position: absolute;
@@ -428,6 +443,10 @@ button .fas{
 }
 .dot.active{
 background:#99cddf;
+}
+.slide-arrow-next-mon, 
+.slide-arrow-prev-mon{
+    display: none;
 }
 /*******************
 slider end
@@ -524,10 +543,10 @@ Exploer Our offerings
 .ab-gap1rp{
     --bs-gutter-x: 1rem;
 }
-.ab-exp-90{
+/* .ab-exp-90{
     margin-left: -90px;
     margin-right: -90px;
-}
+} */
 .ab-exp-off{
     margin-bottom: 100px;
 }
@@ -975,7 +994,7 @@ login
         box-shadow: 1px 1px 161px #000;
     }
     .ab-nav li a{
-        padding: 20px 34px;
+        padding: 15px 34px;
     }
     .ab-nav li {
         display: block;
@@ -993,10 +1012,6 @@ login
     .ab-footer-about-content {
         width: 100%;
     }
-    .slide-arrow-next,
-    .slide-arrow-prev {
-        display: none;
-    }
     .ab-in-the-news a{
         display: inline-block;
         padding: 20px;
@@ -1004,10 +1019,10 @@ login
     .ab-in-the-news a img{
         width: 100%;
     }
-    .ab-exp-90{
+    /* .ab-exp-90{
         margin-left: 0;
         margin-right: 0;
-    }
+    } */
     .ab-logo-wrapper {
         gap: 10px;
     }
@@ -1029,9 +1044,6 @@ login
     }
     .ab-sns{
         white-space: nowrap;
-    }
-    .ab-banner-footer .ab-youtube, .ab-banner-footer .ab-pinterest{
-        display: none;
     }
     .ab-sns li {
         margin-right: 0px;
@@ -1057,7 +1069,15 @@ login
         order: -1!important;
     }
     .ab-two-box .slider{
-        height: 50.625rem;
+        height: 53.625rem;
+        padding: 0;
+    }
+    .slide-arrow-prev.prev {
+        left: 64px;
+        top: 608px;
+    }
+    .slide-arrow-next.next {
+        top: 600px;
     }
     .ab-two-box  .slideFull{
         height: 46.625rem;
@@ -1133,365 +1153,81 @@ login
         margin-bottom: 20px;
         border-bottom: 1px solid #000;
         padding-bottom: 20px;
+    }
+    .ab-courses-list{
+        white-space: nowrap;
+        width: 90%;
+        overflow: hidden;
+        margin: auto;
+    }
+    .ab-courses{
+        position: relative;
+    }
+    .slide-arrow-prev-mon
+    {
+        top: 1px;
+        bottom: 0px;
+        height: 24px;
+        width: 24px;
+        background-position: -12px -134px;
+        left: -7px;
+        display: block;
+    }
+    .slide-arrow-next-mon{
+        top: 0;
+        bottom: 0;
+        height: 21px;
+        width: 16px;
+        background-position: -67px -137px;
+        right: -5px;
+        display: block;
+    }
+    .slide-arrow-next{
+        bottom: -160px;
+        left: 40px;
+        right: 0;
+        top: unset;
+    }
+    .slide-arrow-prev{
+        bottom: -160px;
+        left: 0;
+        right: 90px;
+        top: unset;
+    }
+    .ab-testimonials .slide-arrow-next{
+        bottom: 3px;
+        left: -90px;
+    }
+    .ab-testimonials .slide-arrow-prev{
+        bottom: 6px;
+        left: unset;
+        right: 110px;
+        top: unset;
+    }
+    .ab-scroll-icon{
+        display: none;
+    }
+    .ab-exp-off {
+        margin-top: 100px;
+    }
+    .ab-exp-off span.ab-content{
+        width: 60%;
+    display: block;
+    margin: auto;
+    }
+    .ab-exp-title{
+        font-size: 48px;
     }
  }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) { 
-    .m-hd{
-        display: none;
-    }
-    .ab-nav{
-        left: 0;
-        position: fixed;
-        top: 0;
-        width: 80%;
-        padding-top: 60px;
-        z-index: 9;
-        background-color: #04141e;
-        height: 100%;
-        display: none;
-        box-shadow: 1px 1px 161px #000;
-    }
-    .ab-nav li a{
-        padding: 20px 34px;
-    }
-    .ab-nav li {
-        display: block;
-        text-align: left;
-    }
-    .ab-banner-wrapper {
-        width: 100%;
-    }
-    .ab-account-menu-mobile{
-        display: block;
-    }
-    .ab-exp-title {
-        width: 100%;
-    }
-    .ab-footer-about-content {
-        width: 100%;
-    }
-    .slide-arrow-next,
-    .slide-arrow-prev {
-        display: none;
-    }
-    .ab-in-the-news a{
-        display: inline-block;
-        padding: 20px;
-    }
-    .ab-in-the-news a img{
-        width: 100%;
-    }
-    .ab-exp-90{
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .ab-logo-wrapper {
-        gap: 10px;
-    }
-    .ab-header{
-        padding: 20px 10px !important;
-    }
-    .ab-login-st{
-        white-space: nowrap;
-    }
-    .ab-lg{
-        display: none;
-    }
-    .ab-banner-wrapper {
-        height: auto;
-        padding: 30px;
-    }
-    .ab-m-width{
-        width: 44%;
-    }
-    .ab-sns{
-        white-space: nowrap;
-    }
-    .ab-banner-footer .ab-youtube, .ab-banner-footer .ab-pinterest{
-        display: none;
-    }
-    .ab-sns li {
-        margin-right: 0px;
-    }
-    .ab-banner-footer {
-        bottom: 20px;
-        padding: 0 30px;
-    }
-    .slide {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .ab-two-box {
-        margin-top: 50px;
-        margin-bottom: 0;
-        padding: 20px;
-        padding-bottom: 0;
-    }
-    .order-ab-last{
-        order: 6!important;
-    }
-    .order-ab-first{
-        order: -1!important;
-    }
-    .ab-two-box .slider{
-        height: 50.625rem;
-    }
-    .ab-two-box  .slideFull{
-        height: 46.625rem;
-    }
-    .ab-testimonials {
-        margin: 20px 0;
-        padding: 20px;
-    }
-    .ab-Unable {
-        margin: 0;
-        padding: 30px 20px;
-    }
-    .slides-container{
-        padding: 0 !important;
-    }
-    .ab-in-the-news {
-        margin: 0;
-        padding: 20px;
-    }
-    .ab-news-logo{
-        padding: 20px !important;
-        margin: 0 !important;
-    }
-    .ab-articales-box {
-        width: 100%;
-        padding: 40px 0px;
-    }
-    .ab-Our-Insta-Feed {
-        margin: 0;
-        padding: 20px;
-    }
-    .ab-Insta-Feed{
-        margin:  20px 0;
-    }
-    .ab-countact-us {
-        padding: 60px 20px;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        margin-bottom: 0;
-        text-align: center;
-    }
-    .ab-form-control {
-        margin-bottom: 30px;
-    }
-    .ab-contact-content {
-        width: 100%;
-    }
-    .ab-letusHelp{
-        width: 50%;
-        margin: auto;
-        display: block;
-        margin-bottom: 20px;
-    }
-    .ab-footer{
-        padding: 30px;
-    }
-    .slider-wrapper{
-        margin: 0;
-    }
-    .ab-login-page {
-        width: 90%;
-    }
-    .ab-free-content {
-        width: 100%;
-    }
-    .ab-line-right::after{
-        display: none;
-    }
-    .b-loginwrapper{
-        margin: 30px 0px !important;
-    }
-    .ab-social-net-icon {
-        margin-bottom: 20px;
-        border-bottom: 1px solid #000;
-        padding-bottom: 20px;
-    }
+   
  }
 
 /* // Large devices (desktops, 992px and up) */
 @media (max-width: 992px) { 
-    .m-hd{
-        display: none;
-    }
-    .ab-nav{
-        left: 0;
-        position: fixed;
-        top: 0;
-        width: 80%;
-        padding-top: 60px;
-        z-index: 9;
-        background-color: #04141e;
-        height: 100%;
-        display: none;
-        box-shadow: 1px 1px 161px #000;
-    }
-    .ab-nav li a{
-        padding: 20px 34px;
-    }
-    .ab-nav li {
-        display: block;
-        text-align: left;
-    }
-    .ab-banner-wrapper {
-        width: 100%;
-    }
-    .ab-account-menu-mobile{
-        display: block;
-    }
-    .ab-exp-title {
-        width: 100%;
-    }
-    .ab-footer-about-content {
-        width: 100%;
-    }
-    .slide-arrow-next,
-    .slide-arrow-prev {
-        display: none;
-    }
-    .ab-in-the-news a{
-        display: inline-block;
-        padding: 20px;
-    }
-    .ab-in-the-news a img{
-        width: 100%;
-    }
-    .ab-exp-90{
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .ab-logo-wrapper {
-        gap: 10px;
-    }
-    .ab-header{
-        padding: 20px 10px !important;
-    }
-    .ab-login-st{
-        white-space: nowrap;
-    }
-    .ab-lg{
-        display: none;
-    }
-    .ab-banner-wrapper {
-        height: auto;
-        padding: 30px;
-    }
-    .ab-m-width{
-        width: 44%;
-    }
-    .ab-sns{
-        white-space: nowrap;
-    }
-    .ab-banner-footer .ab-youtube, .ab-banner-footer .ab-pinterest{
-        display: none;
-    }
-    .ab-sns li {
-        margin-right: 0px;
-    }
-    .ab-banner-footer {
-        bottom: 20px;
-        padding: 0 30px;
-    }
-    .slide {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .ab-two-box {
-        margin-top: 50px;
-        margin-bottom: 0;
-        padding: 20px;
-        padding-bottom: 0;
-    }
-    .order-ab-last{
-        order: 6!important;
-    }
-    .order-ab-first{
-        order: -1!important;
-    }
-    .ab-two-box .slider{
-        height: 50.625rem;
-    }
-    .ab-two-box  .slideFull{
-        height: 46.625rem;
-    }
-    .ab-testimonials {
-        margin: 20px 0;
-        padding: 20px;
-    }
-    .ab-Unable {
-        margin: 0;
-        padding: 30px 20px;
-    }
-    .slides-container{
-        padding: 0 !important;
-    }
-    .ab-in-the-news {
-        margin: 0;
-        padding: 20px;
-    }
-    .ab-news-logo{
-        padding: 20px !important;
-        margin: 0 !important;
-    }
-    .ab-articales-box {
-        width: 100%;
-        padding: 40px 0px;
-    }
-    .ab-Our-Insta-Feed {
-        margin: 0;
-        padding: 20px;
-    }
-    .ab-Insta-Feed{
-        margin:  20px 0;
-    }
-    .ab-countact-us {
-        padding: 60px 20px;
-        background-size: 100%;
-        background-repeat: no-repeat;
-        margin-bottom: 0;
-        text-align: center;
-    }
-    .ab-form-control {
-        margin-bottom: 30px;
-    }
-    .ab-contact-content {
-        width: 100%;
-    }
-    .ab-letusHelp{
-        width: 50%;
-        margin: auto;
-        display: block;
-        margin-bottom: 20px;
-    }
-    .ab-footer{
-        padding: 30px;
-    }
-    .slider-wrapper{
-        margin: 0;
-    }
-    .ab-login-page {
-        width: 90%;
-    }
-    .ab-free-content {
-        width: 100%;
-    }
-    .ab-line-right::after{
-        display: none;
-    }
-    .b-loginwrapper{
-        margin: 30px 0px !important;
-    }
-    .ab-social-net-icon {
-        margin-bottom: 20px;
-        border-bottom: 1px solid #000;
-        padding-bottom: 20px;
-    }
+    
  }
 
 /* // X-Large devices (large desktops, 1200px and up) */

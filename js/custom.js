@@ -51,22 +51,22 @@ function Slider() {
   };
   changeSlide(currentSlide);
 
-//   btnNext.addEventListener('click', function () {
-//       currentSlide++; 
-//       if (carouselSlides.length - 1 < currentSlide) {
-//           currentSlide = 0;
-//       };
-//       changeSlide(currentSlide);
-//       activeDot(currentSlide);
-// });
-  // btnPrev.addEventListener('click', function () {
-  //     currentSlide--;
-  //     if (0 >= currentSlide) {
-  //         currentSlide = 0;
-  //     }; 
-  //     changeSlide(currentSlide);
-  //     activeDot(currentSlide);
-  // });
+  btnNext.addEventListener('click', function () {
+      currentSlide++; 
+      if (carouselSlides.length - 1 < currentSlide) {
+          currentSlide = 0;
+      };
+      changeSlide(currentSlide);
+      activeDot(currentSlide);
+});
+  btnPrev.addEventListener('click', function () {
+      currentSlide--;
+      if (0 >= currentSlide) {
+          currentSlide = 0;
+      }; 
+      changeSlide(currentSlide);
+      activeDot(currentSlide);
+  });
   dotsSlide.addEventListener('click', function (e) {
       if (e.target.classList.contains('dot')) {
           const slideAut = e.target.dataset.slideAut;
@@ -81,7 +81,7 @@ function Slider() {
       };
       changeSlide(currentSlide);
       activeDot(currentSlide);
-  }, 4000);
+  }, 5000);
 };
 
 
@@ -154,6 +154,8 @@ function signUPTab() {
 // SIGNUP redio btn
 phoneCheckT();
 emailCheckT();
+phoneCheckTin();
+emailCheckTin();
 function phoneCheckT() {
   if (document.getElementById('phoneCheck').checked) {
       document.getElementById('phoneCheckfield').style.display = 'block';
