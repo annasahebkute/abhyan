@@ -484,6 +484,9 @@ button .fas{
     left: 0;
     right: 0;
 }
+#_bannerwithinner .dots-container{
+    bottom: 70px;
+}
 .dot{
     width: 10px;
     height: 10px;
@@ -1155,6 +1158,7 @@ login
         background-color: #04141e;
         height: 100%;
         box-shadow: 1px 1px 161px #000;
+        display: none;
     }
     .ab-balck-bg-mainmenu{
         left: 0;
@@ -1167,8 +1171,14 @@ login
         opacity: 0.8;
         height: 100%;
     }
+    .ab-balck-bg-mainmenu{
+        display: none;
+    }
     .ab-nav[style*="display: none;"]~.ab-balck-bg-mainmenu{
         display: none !important;
+    }
+    .ab-nav[style*="display: block;"]~.ab-balck-bg-mainmenu{
+        display: block !important;
     }
 
     .ab-nav li a{
