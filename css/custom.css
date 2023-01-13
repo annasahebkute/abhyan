@@ -108,6 +108,50 @@ a{
 .ab-text-alighn-center{
     text-align: center;
 }
+/* logo*/
+.ab-mail-box{
+    display: inline-block;
+    width: 34px;
+    height: 24px;
+    background-position: -44px -1733px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.ab-facebook-dot{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-position: -8px -1733px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.ab-insta-dot{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-position: -8px -1775px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.ab-tetter-dot{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-position: -43px -1773px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+.ab-exp-box-icon-ft{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
 /**************************
  Header
  **nav
@@ -150,9 +194,10 @@ a{
     background-image: url(../img/sprit-img.png);
     height: 8px;
     width: 13px;
-    background-position: -5px 810px;
+    background-position: -5px -700px;
     border: none !important;
     vertical-align: middle;
+    background-repeat: no-repeat;
 }
 .ab-logo-wrapper{
     display: flex;
@@ -386,6 +431,10 @@ slider
     overflow: hidden;
     padding-bottom: 70px;
     padding-left: 60px;
+}
+#_bannerwithinner .slider{
+    padding-bottom: 0px;
+    padding-left: 0px;
 }
 .slideFull{ 
     position: absolute;
@@ -1085,6 +1134,12 @@ login
 }
 .ab-mobile-bg{
     display: none;
+}
+.ab-opacity1 li{
+    opacity: 1;
+}
+.ab-color-white{
+    color: #fff !important;
 }
 @media (max-width: 576px) { 
     .m-hd{
