@@ -25,11 +25,11 @@
       <div class="row ab-justify-content">
         <div class="col-3 ">
           <div class="ab-logo-wrapper">
-            <span class="ab-logo">
+            <div class="ab-logo" >
               <button class="ab-account-menu-mobile" type="button"  onclick="accountMenuMobile()" ><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-wr8ge5" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button>
-              <img src="img/abhyan-logo.png" alt="abhyan">
-              <span class="ab-logo-content fs-6 ">Abhyan</span>
-            </span>
+              <a class="ab-logo-img" href="index.html"><img src="img/abhyan-logo.png" alt="abhyan"></a>
+              <span class="ab-logo-content fs-5 ">Abhyan</span>
+            </div>
             <div class="ab-lg">
               <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle ab-dropdown" type="button" id="ab-lang"
@@ -46,13 +46,14 @@
           </div>
         </div>
         <div class="col">
-          <ul class="ab-nav" id="_navMenu">
+          <ul class="ab-nav" id="_navMenu"  style="display: none;">
             <li> <a class="active fs-6">Courses</a></li>
             <li> <a class="">Resources</a></li>
             <li> <a class="">Blog</a></li>
             <li> <a class="">About</a></li>
             <li> <a class="">Join as Instructor</a></li>
           </ul>
+          <div class="ab-balck-bg-mainmenu" onclick="accountMenuMobile()"></div>
         </div>
         <div class="col-3 ab-text-right ab-m-width">
           <div class="ab-login-st">
@@ -1715,7 +1716,7 @@
       </div>
       <div class="row">
         <div class="col ab-text-center my-3">
-          <button type="button" class="btn btn-outline-primary ab-outline-primary">View All Courses</button>
+          <a type="button" class="btn btn-outline-primary ab-outline-primary" href="courseListing.html" >View All Courses</a>
         </div>
       </div>
     </div>

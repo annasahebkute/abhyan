@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Abhyan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;600;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+</head>
+
+<body>
+    <header class="ab-header p-3" id="_hederBar">
+        <div class="container">
+            <div class="row ab-justify-content">
+                <div class="col-3 ">
+                    <div class="ab-logo-wrapper">
+                        <div class="ab-logo" >
+                            <button class="ab-account-menu-mobile" type="button"  onclick="accountMenuMobile()" ><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-wr8ge5" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+                            <a class="ab-logo-img" href="index.html"><img src="img/abhyan-logo.png" alt="abhyan"></a>
+                            <span class="ab-logo-content fs-5 ">Abhyan</span>
+                          </div>
+                        <div class="ab-lg"> 
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle ab-dropdown" type="button" id="ab-lang"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    English
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Spanish</a></li>
+                                    <li><a class="dropdown-item" href="#">French</a></li>
+                                    <li><a class="dropdown-item" href="#">Hindi </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <ul class="ab-nav" id="_navMenu"  style="display: none;">
+                      <li> <a class="active fs-6">Courses</a></li>
+                      <li> <a class="">Resources</a></li>
+                      <li> <a class="">Blog</a></li>
+                      <li> <a class="">About</a></li>
+                      <li> <a class="">Join as Instructor</a></li>
+                    </ul>
+                    <div class="ab-balck-bg-mainmenu" onclick="accountMenuMobile()"></div>
+                  </div>
+                <div class="col-3 ab-text-right ab-m-width">
+                    <div class="ab-login-st">
+                        <button class="ab-card-icon" tabindex="0" type="button"><span
+                                class="MuiBadge-root MuiBadge-root css-1rzb3uu"><svg width="30" height="30"
+                                    viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m444.72 252.01 26.316-96.051a5.114 5.114 0 0 0-.758-4.3 5.11 5.11 0 0 0-3.797-2.153l-318-22.988a5.19 5.19 0 0 0-.922 0l-7.218-42.344a35.84 35.84 0 0 0-35.328-29.797H46.079a5.12 5.12 0 0 0 0 10.238h59.395a25.615 25.615 0 0 1 16.516 6.035 25.611 25.611 0 0 1 8.726 15.266l37.477 219.9c-.043.39-.043.79 0 1.18.035.992.356 1.949.922 2.765l10.238 59.086.004-.004a45.105 45.105 0 0 0 2.601 87.617 45.093 45.093 0 0 0 37.688-9.023 45.106 45.106 0 0 0 .257-69.993h174.08a45.113 45.113 0 0 0-16.438 37.09 45.125 45.125 0 0 0 20.008 35.293 45.104 45.104 0 0 0 68.22-24.453 45.099 45.099 0 0 0-43.22-58.168h-233.73l-9.625-54.887h186.52a81.91 81.91 0 0 0 49.691-16.809 81.912 81.912 0 0 0 29.31-43.504zm12.082 160.41v-.004a34.863 34.863 0 0 1-59.519 24.656 34.867 34.867 0 0 1-10.215-24.656 34.864 34.864 0 0 1 10.215-24.652 34.865 34.865 0 0 1 24.652-10.215 34.916 34.916 0 0 1 24.641 10.23 34.909 34.909 0 0 1 10.227 24.637zm-231.27 0v-.004a34.863 34.863 0 0 1-59.519 24.656 34.867 34.867 0 0 1-10.215-24.656 34.864 34.864 0 0 1 10.215-24.652 34.865 34.865 0 0 1 24.652-10.215 34.923 34.923 0 0 1 34.868 34.867zm-76.031-275.56 310.07 22.371-24.73 90.062a71.667 71.667 0 0 1-69.117 52.785h-188.06z"
+                                        fill="#fff"></path>
+                                </svg><span
+                                    class="MuiBadge-badge jss122 MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightCircular MuiBadge-overlapCircular MuiBadge-colorPrimary MuiBadge-badge css-1kj5hpl"></span></span><span
+                                class="MuiTouchRipple-root css-w0pj6f"></span></button>
+                        <a type="button" class="btn btn-link" onclick="closeBt()">Login</a>
+                        <button type="button" class="btn btn-primary ab-button m-hd">Start for free</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- banner -->
+    <section class="ab-banner" id="_bannerwithinner">
+        <div class="container">
+            <div class="row">
+                <div class="slider">
+                    <div class="slideFull">
+                        <div class="col-md-12">
+                            <div class="ab-banner-wrapper ab-courseListing-banner">
+                                <h2 class="ab-title-banner ab-title mb-3 fs-1">
+                                    Learn without limits
+                                </h2>
+                                <span class="ab-sub-title mb-5">Abhyan brings you curated courses at affordable <br>
+                                    prices in local languages.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideFull">
+                        <div class="col-md-12">
+                            <div class="ab-banner-wrapper ab-courseListing-banner">
+                                <h2 class="ab-title-banner ab-title mb-3 fs-1">
+                                    Learn without limits
+                                </h2>
+                                <span class="ab-sub-title mb-5">Abhyan brings you curated courses at affordable <br>
+                                    prices in local languages.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slideFull">
+                        <div class="col-md-12">
+                            <div class="ab-banner-wrapper ab-courseListing-banner">
+                                <h2 class="ab-title-banner ab-title mb-3 fs-1">
+                                    Learn without limits
+                                </h2>
+                                <span class="ab-sub-title mb-5">Abhyan brings you curated courses at affordable <br>
+                                    prices in local languages.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="slide-arrow ab-sprit-img slide-arrow-next next"></a>
+                    <a class="slide-arrow ab-sprit-img slide-arrow-prev prev"></a>
+                    <div class="dots-container">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                        <span class="dot" data-slide="2"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses-->
+    <section>
+        <div class="container">
+            <div class="row ab-justify-content-top">
+                <div class="col-md-2 col-sm-12 mobileControle">
+                    <div class="MuiBox-root">
+                        <button class="ab-filter-mobilemenu" tabindex="0" type="button" aria-label="open menu" fdprocessedid="4f3yg"  onclick="filterMenuMobile()">
+                            <svg width="40" height="40" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M12.02 88.711h74.43c5.71 32.66 34.223 57.613 68.5 57.613s62.789-24.898 68.5-57.613h276.59c6.629 0 12.02-5.39 12.02-12.02s-5.39-12.02-12.02-12.02H223.4c-5.715-32.605-34.223-57.504-68.5-57.504S92.166 32.065 86.451 64.726H12.025c-6.629 0-12.02 5.39-12.02 12.02s5.39 11.965 12.02 11.965zM154.9 31.152c25.113 0 45.594 20.426 45.594 45.594 0 25.113-20.426 45.594-45.594 45.594s-45.594-20.426-45.594-45.594c-.004-25.168 20.477-45.594 45.594-45.594zm345.09 212.83h-52.871c-5.71-32.66-34.223-57.613-68.5-57.613s-62.789 24.953-68.5 57.613H12.029c-6.629 0-12.02 5.39-12.02 12.02s5.39 12.02 12.02 12.02h298.14c5.71 32.66 34.223 57.613 68.5 57.613s62.789-24.898 68.5-57.613h52.871c6.629 0 12.02-5.39 12.02-12.02s-5.445-12.02-12.074-12.02zm-121.32 57.613c-25.113 0-45.594-20.426-45.594-45.594s20.426-45.594 45.594-45.594c25.168 0 45.594 20.426 45.594 45.594 0 25.113-20.477 45.594-45.594 45.594zm121.32 121.64H223.4c-5.71-32.66-34.223-57.613-68.5-57.613s-62.734 24.953-68.449 57.613H12.025c-6.629 0-12.02 5.39-12.02 12.02s5.39 12.02 12.02 12.02h74.43c5.71 32.66 34.223 57.613 68.5 57.613s62.789-24.953 68.5-57.613h276.59c6.629 0 12.02-5.39 12.02-12.02s-5.445-12.02-12.074-12.02zM154.9 480.848c-25.113 0-45.594-20.426-45.594-45.594 0-25.113 20.426-45.594 45.594-45.594s45.594 20.426 45.594 45.594c0 25.168-20.426 45.594-45.594 45.594z" fill="#fff"></path></svg>
+                        </button>
+                        <span class="ab-content ab-color-dark abFilterCourses">Filter Courses (25)</span>
+                    </div>
+                    <div class="ab-filter" id="_abfilterfixed">
+                        <!-- All Courses dropdown -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle ab-dropdown" type="button" id="ab-lang"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                All Courses
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">Bundles</a></li>
+                                <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                                <li><a class="dropdown-item" href="#">Accounting & Finance </a></li>
+                            </ul>
+                        </div>
+                        <!-- check-twoline -->
+                        <div class="ab-check-twoline py-3 my-3 ">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Free
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Paid
+                                </label>
+                            </div>
+                        </div>
+                        <!-- LANGUAGES -->
+                        <div class="ab-languages ab-check-bottomline py-3 my-3">
+                            <div class="ab-filter-title ab-color-dark mb-2"> COURSES</div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    All Courses
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Bundles (2)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    FB Campaign (3)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Twitter Campaign (4)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Campaign (4)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Email Campaign (4)
+                                </label>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                        <!-- LANGUAGES -->
+                        <div class="ab-languages ab-check-bottomline py-3 my-3">
+                            <div class="ab-filter-title ab-color-dark mb-2"> LANGUAGES</div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Bengali
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Telugu
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Hindi
+                                </label>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                        <!-- LEVEL -->
+                        <div class="ab-languages ab-check-bottomline py-3 my-3">
+                            <div class="ab-filter-title ab-color-dark mb-2"> LEVEL</div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    All Levels
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Beginner
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Intermediate
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Expert
+                                </label>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                        <!-- DURATION -->
+                        <!-- <div class="ab-languages ab-check-bottomline py-3 my-3">
+                            <div class="ab-filter-title ab-color-dark mb-2"> DURATION</div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    All Duration
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    0 to 10 hours
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    10 to 20 hours
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    More than 20 hours
+                                </label>
+                            </div>
+                            <div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="ab-mobile-bg" onclick="filterMenuMobile()"></div>
+                </div>
+
+                <div class="col-md-9 col-sm-12">
+                    <div class="ab-Courses-section" id="_allCoursesSection">
+                        <!-- Most Popular -->
+                        <div class="row ab-line-title mb-5">
+                            <div class=" col-md-3 col-sm-12 ab-Courses-title fs-4"><span class="ab-Courses-title-content">16
+                                    COURSES</span></div>
+                            <div class="col-md-3 col-sm-12 ab-Courses-title ab-Courses-title-select">
+                                <select class="form-select ab-select-drow" aria-label="Default select example">
+                                    <option selected>All Reviews</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class=" col-9 ab-Courses-title ab-title ab-color-dark fs-4  mb-3">Most Popular</div>
+                        </div>
+                        <div class="row ab-exp-out-tab gap1rp mb-5">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box">
+                                    <span class="ab-exp-box-tab-content">Bundle</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box">
+                                    <span class="ab-exp-box-tab-content">Digital Marketing</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box">
+                                    <span class="ab-exp-box-tab-content">Bundle</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Free Courses -->
+                        <div class="row pt-5 mb-3">
+                            <div class=" col-12 ab-Courses-title ab-title ab-color-dark fs-4">Free Courses</div>
+                        </div>
+                        <div class="row ab-exp-out-tab gap1rp mb-3">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box">
+                                    <span class="ab-exp-box-tab-content">Bundle</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box">
+                                    <span class="ab-exp-box-tab-content">Digital Marketing</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box">
+                                    <span class="ab-exp-box-tab-content">Bundle</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Value Budle -->
+                        <div class="row pt-5 mb-3">
+                            <div class=" col-12 ab-Courses-title ab-title ab-color-dark fs-4">Value Budle</div>
+                        </div>
+                        <div class="row ab-exp-out-tab gap1rp">
+                            <div class="col-12">
+                                <div class="ab-exp-box ab-exp-box-re">
+                                    <div class="row ab-exp-out-tab gap1rp">
+                                        <div class="col-md-4 col-sm-12">
+                                            <span class="ab-exp-box-tab-content">Bundle</span>
+                                            <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                            <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                            <div class="ab-exp-box-prize">
+                                                <span class="ab-main-prize">Rs.3000 </span>
+                                                <del class="ab-delelt-prize">Rs.5500</del>
+                                            </div>
+                                            <div class="ab-exp-box-footer">
+                                                <ul class="ab-exp-box-footer-list">
+                                                    <li>4 Hrs</li>
+                                                    <li><span class="ab-space-dot"></span></li>
+                                                    <li>Beginner Level</li>
+                                                    <li><span class="ab-space-dot"></span></li>
+                                                    <li>3 Languages</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8 col-sm-12">
+                                            <div class="ab-content">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                                since the 1500s, when an unknown printer took a galley of type and
+                                                scrambled it to make a type specimen book. It has survived not only five
+                                                centuries, but also the leap into electronic typesetting, remaining
+                                                essentially unchanged. It was popularised in the 1960s with the release
+                                                of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                                with desktop publishing
+                                            </div>
+                                            <div class="ab-exp-box-footer">
+                                                <ul class="ab-exp-box-footer-list">
+                                                    <li class="ab-color-dark">INCLUDES:</li>
+                                                    <li><span class="ab-facebook-dot"></span> FB Campaign </li>
+                                                    <li><span class="ab-insta-dot"></span>Insta Marketing</li>
+                                                    <li><span class="ab-tetter-dot"></span>Twitter Mar..+1</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ab-exp-out-tab gap1rp mt-4 mb-3">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box ab-exp-box-re">
+                                    <span class="ab-exp-box-tab-content">Bundle</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box ab-exp-box-re">
+                                    <span class="ab-exp-box-tab-content">Digital Marketing</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box ab-exp-box-re">
+                                    <span class="ab-exp-box-tab-content">Bundle</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- All Courses -->
+                        <div class="row pt-5 mb-3">
+                            <div class=" col-12 ab-Courses-title ab-title ab-color-dark fs-4">All Courses</div>
+                        </div>
+                        <div class="row ab-exp-out-tab gap1rp mb-3">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box">
+                                    <span class="ab-exp-box-tab-content">Bundle</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box">
+                                    <span class="ab-exp-box-tab-content">Digital Marketing</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box">
+                                    <span class="ab-exp-box-tab-content">Bundle</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ab-exp-out-tab gap1rp mb-3">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box">
+                                    <span class="ab-exp-box-tab-content">Bundle</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box">
+                                    <span class="ab-exp-box-tab-content">Digital Marketing</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box">
+                                    <span class="ab-exp-box-tab-content">Bundle</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- All Courses -->
+                        <div class="row pt-5 mb-3">
+                            <div class=" col-12 ab-Courses-title ab-title ab-color-dark fs-4">Courses Coming Soon</div>
+                            <div>We are launching the following course in a course in a couple of weeks time.Tap on
+                                notification icon to get updates.</div>
+                        </div>
+                        <div class="row ab-exp-out-tab gap1rp mb-3">
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box">
+                                    <span class="ab-exp-box-tab-content">Bundle</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box">
+                                    <span class="ab-exp-box-tab-content">Digital Marketing</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12">
+                                <div class="ab-exp-box">
+                                    <span class="ab-exp-box-tab-content">Bundle</span>
+                                    <spna class="ab-exp-box-icon ab-sprit-img"></spna>
+                                    <h3 class="ab-exp-box-title">Social Media Marketing</h3>
+                                    <div class="ab-exp-box-prize">
+                                        <span class="ab-main-prize">Rs.3000 </span>
+                                        <del class="ab-delelt-prize">Rs.5500</del>
+                                    </div>
+                                    <div class="ab-exp-box-footer">
+                                        <ul class="ab-exp-box-footer-list">
+                                            <li>4 Hrs</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>Beginner Level</li>
+                                            <li><span class="ab-space-dot"></span></li>
+                                            <li>3 Languages</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Unable to decide what is right for you? -->
+    <section class="ab-Unable">
+        <div class="container">
+            <div class="row ab-align-items-center">
+                <div class="col-md-4 col-sm-12">
+                    <img src="img/chat.png" alt="Let us help! " class="ab-letusHelp" />
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <div class="ab-let-help">
+                        <h3 class="my-3">Unable to decide what is right for you?</h3>
+                        <h2 class="my-3 ab-title">Let us help! </h2>
+                        <div class="ab-content my-3">
+                            Our intelligent online assistive system asks you relevant questions and suggests what would
+                            be the ideal
+                            course for you to start with.
+                        </div>
+                        <button type="button" class="btn btn-outline-primary ab-outline-primary my-3">Get
+                            Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Countact Us-->
+    <section class="ab-countact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="ab-title-content fs-1 ab-text-center mb-3">Contact Us Today & Avail Extra 10% Discount
+                    </h2>
+                    <div class="ab-content ab-contact-content ab-text-center mb-5">
+                        Tell us a little bit about yourself. One of our course specialists will get back to you shortly
+                        and help you
+                        to pick a course with 10% less cost. Limited Period Offer!
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 col-sm-12" style="margin: auto;">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-7 col-sm-12">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <input type="password" id="inputPassword6" class="form-control ab-form-control"
+                                            aria-describedby="passwordHelpInline" placeholder="Name">
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <input type="password" id="inputPassword6" class="form-control ab-form-control"
+                                            aria-describedby="passwordHelpInline" placeholder="Email">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-12">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <select class="form-select ab-form-control" aria-label="Default select example">
+                                            <option selected>Pick a Time</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <button type="button" class="btn btn-primary ab-button ab-contact-btn">Contact
+                                            Me</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col ab-text-center mt-4">
+                                <i class="ab-fileds-mandatory">* All fileds are mandatory </i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+    <!--footer -->
+    <footer class="ab-footer">
+        <div class="container">
+            <div class="row my-5">
+                <div class=" col-lg-6 col-md-6 col-sm-12">
+                    <div class="ab-footer-about">
+                        <div class="ab-logo mb-4">
+                            <img src="img/abhyan-logo.png" alt="abhyan">
+                            <span class="ab-logo-content">Abhyan</span>
+                        </div>
+                    </div>
+                    <div class="ab-footer-about-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex
+                        ea commodo consequat.labore.
+                        <a class="ab-line-link  my-4">
+                            Read
+                            <span class="ab-arrow-icon ab-sprit-img"></span>
+                        </a>
+                    </div>
+                    <span class="ab-footer-add">
+                        1000 Circle 75 Parkway, Suite 705, Hyderabad - 560102
+                    </span>
+                    <div class="ab-footer-mail">
+                        <a href="mailto:support@abhyan.com">support@abhyan.com</a>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-2 col-sm-6">
+                    <h4 class="ab-footer-title">Courses</h4>
+                    <ul class="ab-footer-link-ul">
+                        <li><a class="ab-footer-link"> Digital Marketing</a></li>
+                        <li><a class="ab-footer-link"> Finance</a></li>
+                        <li><a class="ab-footer-link"> Microsoft Tools</a></li>
+                        <li><a class="ab-footer-link"> Design</a></li>
+                        <li><a class="ab-footer-link"> Google Tools</a></li>
+                    </ul>
+                </div>
+                <div class="col col-lg-2 col-md-2 col-sm-6">
+                    <h4 class="ab-footer-title">Resources</h4>
+                    <ul class="ab-footer-link-ul">
+                        <li><a class="ab-footer-link"> Tips & Tricks</a></li>
+                        <li><a class="ab-footer-link"> Videos</a></li>
+                        <li><a class="ab-footer-link"> Articles</a></li>
+                    </ul>
+                </div>
+                <div class="col col-lg-2 col-md-2 col-sm-12">
+                    <h4 class="ab-footer-title">Abhyan</h4>
+                    <ul class="ab-footer-link-ul">
+                        <li><a class="ab-footer-link"> About </a></li>
+                        <li><a class="ab-footer-link"> Philisophy</a></li>
+                        <li><a class="ab-footer-link"> Press Releases</a></li>
+                        <li><a class="ab-footer-link"> Team</a></li>
+                        <li><a class="ab-footer-link"> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="ab-footer-social-media-icon my-2">
+                        <ul class="ab-sns">
+                            <li>
+                                <a>
+                                    <span class="ab-linkedin"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="ab-facebook"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="ab-twitter"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="ab-youtube"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="ab-pinterest"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ab-align-items-center my-5">
+                    <span class="ab-copyright">
+                        <a class="ab-copyright-link">Privacy Policy</a> | <a class="ab-copyright-link mr-3">Terms Of
+                            Services </a>
+                        <span class="ab-copyright-contet">Copyright © Abhyan, INC. 2021. All Rights Reserved</span>
+                    </span>
+                </div>
+            </div>
+    </footer>
+
+    <!--Login page-->
+    <section class="ab-login-page" id="_loginPupPup">
+        <a onclick="closeBt()" class="ab-close"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-wr8ge5"
+                focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloseIcon">
+                <path
+                    d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                </path>
+            </svg></a>
+        <div class="b-loginwrapper m-4">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-12">
+                        <img src="img/b-logo.png">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12">
+                        <h6 class="ab-title ab-free-content fs-5 my-2">It’s free content, but only students or
+                            registered users can
+                            access
+                            Resources.</h3>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12">
+                        <ul class="ab-singup-list  my-4">
+                            <li> <a class="fs-4 signUPAct" onclick="signUPTab()" id="_btnSignup">Signup</a></li>
+                            <li> <a class="fs-4 ab-active singinAct" onclick="signinTab()" id="_btnSignin">Signin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row ab-align-items-center ab-line-right">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="ab-social-net-icon">
+                            <h6 class="ab-title fs-5 ab-Social-Networks-login">With Social Networks</h4>
+                                <ul class="ab-social-net-icon-list">
+                                    <li><a class="ab-soc-net ab-face-icon"></a></li>
+                                    <li><a class="ab-soc-net ab-google-icon"></a></li>
+                                    <li><a class="ab-soc-net ab-twitter-icon"></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <!-- signu up form -->
+                        <div class="ab-signup-form mx-4" style="display: none;" id="_signup">
+                            <form>
+                                <div class="ab-controle-form">
+                                    <div class="ab-checkbox">
+                                        <span class="ab-lable ab-title">Using </span>
+                                        <div class="ab-form-check">
+                                            <input type="radio" class="form-check-input" id="phoneCheck" name="using"
+                                                onclick="phoneCheckT();" checked>
+                                            <label class="form-check-label" for="exampleCheck1">Phone</label>
+                                        </div>
+                                        <div class="ab-form-check">
+                                            <input type="radio" class="form-check-input" id="emailCheck" name="using"
+                                                onclick="emailCheckT();">
+                                            <label class="form-check-label" for="exampleCheck2">Email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <input type="text" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Name">
+                                </div>
+                                <div class="ab-controle-form my-3" id="phoneCheckfield">
+                                    <input type="number" class="form-control" placeholder="+91">
+                                </div>
+                                <div class="ab-controle-form my-3" id="emailCheckfield">
+                                    <input type="text" class="form-control" placeholder="Email Address">
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Password">
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <button type="button" class="btn btn-primary ab-button ab-Sign-Up-btn">Sign
+                                        Up</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- signu in form -->
+                        <div class="ab-signup-form mx-4" style="display: block;" id="_signin">
+                            <form>
+                                <div class="ab-controle-form">
+                                    <div class="ab-checkbox">
+                                        <span class="ab-lable ab-title">Using </span>
+                                        <div class="ab-form-check">
+                                            <input type="radio" class="form-check-input" id="phoneCheckin" name="using"
+                                                onclick="phoneCheckTin();" checked>
+                                            <label class="form-check-label" for="Phone">Phone</label>
+                                        </div>
+                                        <div class="ab-form-check">
+                                            <input type="radio" class="form-check-input" id="emailCheckin" name="using"
+                                                onclick="emailCheckTin();">
+                                            <label class="form-check-label" for="Email">Email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <input type="number" class="form-control" id="phoneCheckfieldin" placeholder="+91">
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <input type="text" class="form-control" id="emailCheckfieldin"
+                                        placeholder="Email Address">
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Password">
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <button type="button" class="btn btn-primary ab-button ab-Sign-Up-btn">Sign
+                                        In</button>
+                                    <a class="ab-Forgot-Password">Forgot Password?</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="ab-bg-black" id="_loginPupPupBg"></div>
+    <script src="js/courseListing.js"></script>
+</body>
+
+</html>

@@ -1,6 +1,8 @@
 // banner width
 var bannerWidth = window.screen.height + 'px'
+var bannerwithinner = window.screen.height  + 'px'
 document.getElementById('_bannerwith').style.setProperty('height', bannerWidth);
+
 
 // header scrooling 
 const hederBar = document.getElementById('_hederBar')

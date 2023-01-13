@@ -121,6 +121,9 @@ a{
     /* background-color: #04141e; */
     z-index: 9;
  }
+ .ab-logo-content{
+    color: #fff;
+ }
  .ab-header.scrolled{
     background-color: #04141e;
 }
@@ -210,6 +213,7 @@ banner
 .ab-banner{
     background-image: url('../img/banner-bg.png');
     position: relative;
+    background-position: bottom;
 }
 .ab-banner-wrapper
 {
@@ -372,8 +376,6 @@ slider
     width: 100%;
     height: 100%;
     flex: 1 0 100%;
-    padding-left: 50px;
-    padding-right: 50px;
   }
   
 /*** new slider **/
@@ -492,6 +494,7 @@ Exploer Our offerings
     box-shadow: 0px 0px 60px #000;
     height: 300px;
     position: relative;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 45%);
 }
 .ab-exp-box-tab-content{
     color: #99cddf;
@@ -511,7 +514,7 @@ Exploer Our offerings
 }
 .ab-exp-box-title{
     color: #99cddf;
-    font-size: 28px;
+    font-size: 24px;
 }
 .ab-main-prize{
     color: #fff;
@@ -976,7 +979,113 @@ login
     margin: auto;
     background-color: #04141e;
 }
-
+.ab-courseListing-banner{
+    height: 60px;
+}
+#_bannerwithinner{
+    background-position: bottom;
+}
+#_bannerwithinner .ab-sub-title
+{    
+    opacity: 0.4;
+}
+.ab-check-twoline{
+    display: flex;
+    gap: 60px;
+}
+.ab-select-drow{
+    background-color: transparent;
+    color: #99cddf;
+    border: 1px solid #99cddf;
+    border-radius: 30px;
+}
+.ab-line-title{
+    position: relative;
+    justify-content: space-between;
+}
+.ab-line-title::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    top: 20px;
+    background-color: #99cddf;
+    opacity: 0.1;
+    border: 1px solid #99cddf;
+    z-index: 1;
+}
+.ab-Courses-title{
+    z-index: 2;
+}
+.ab-Courses-title-content{
+    background-color: #04141e;
+    display: inline-block;
+    padding: 0px 15px;
+    margin-left: -15px;
+}
+.ab-Courses-title-select{
+    background-color: #04141e;
+    z-index: 2;
+}
+.ab-exp-box-re{
+    background-color: #030e15;
+    box-shadow: none;
+}
+.ab-filter{
+    display: block;
+}
+.ab-filter .ab-dropdown{
+    color: #99cddf;
+    padding-left: 0;
+    outline: none;
+    box-shadow: none;
+}
+.ab-filter .ab-dropdown:hover{
+    background-color: transparent;
+    border: none;
+}
+.ab-check-twoline{
+    border-top: 1px solid #1e2c35;
+    border-bottom: 1px solid #1e2c35;
+}
+.ab-check-bottomline{
+    border-bottom: 1px solid #1e2c35;
+}
+.form-check-input{
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    opacity: 0.2;
+}
+.form-check-input:checked{
+    background-color: transparent;
+    border: 1px solid #fff;
+    opacity: 1;
+}
+.form-check-label{
+    opacity: 0.2;
+}
+.form-check-input:checked~.form-check-label{
+    opacity: 1;
+}
+.ab-justify-content-top{
+    align-items: top;
+    justify-content: space-between;
+}
+.form-check{
+    padding-top: 2px;
+    padding-bottom: 2px
+}
+.abfilterfixedCount{
+    position: fixed;
+    top: 90px;
+}.MuiBox-root{
+    display: none;
+}
+.ab-mobile-bg{
+    display: none;
+}
 @media (max-width: 576px) { 
     .m-hd{
         display: none;
@@ -990,9 +1099,23 @@ login
         z-index: 9;
         background-color: #04141e;
         height: 100%;
-        display: none;
         box-shadow: 1px 1px 161px #000;
     }
+    .ab-balck-bg-mainmenu{
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding-top: 60px;
+        z-index: 8;
+        background-color: #000;
+        opacity: 0.8;
+        height: 100%;
+    }
+    .ab-nav[style*="display: none;"]~.ab-balck-bg-mainmenu{
+        display: none !important;
+    }
+
     .ab-nav li a{
         padding: 15px 34px;
     }
@@ -1012,6 +1135,7 @@ login
     .ab-footer-about-content {
         width: 100%;
     }
+
     .ab-in-the-news a{
         display: inline-block;
         padding: 20px;
@@ -1217,6 +1341,69 @@ login
     }
     .ab-exp-title{
         font-size: 48px;
+    }
+    .mobileControle #_abfilterfixed{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        background-color: #04141e;
+        z-index: 99;
+        box-shadow: 1px 1px 131px #000;
+        padding: 20px;
+        z-index: 999;
+    }
+    .ab-Courses-section{
+        padding: 20px;
+    }
+    .ab-Courses-title{
+        margin-bottom: 20px;
+    }
+    .ab-filter{
+        display: none;
+    }
+    .ab-filter-mobilemenu, .ab-filter-mobilemenu svg {
+        height: 28px;
+        width: 28px;
+    }
+    .ab-filter-mobilemenu{
+        margin-right:20px ;
+    }
+    #_bannerwithinner {
+        overflow: hidden;
+    }
+    #_bannerwithinner .slider{
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+    .ab-mobile-bg{
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.8;
+        z-index: 99;
+        display: none;
+    }
+    .ab-filter[style*="display: none;"]~.ab-mobile-bg{
+        display: none !important;
+    }
+    .ab-filter[style*="display: block;"]~.ab-mobile-bg{
+        display: block !important;
+    }
+    .MuiBox-root {
+        display: block;
+        padding-left: 15px;
+    }
+    #_bannerwithinner .slide-arrow-next.next {
+        top: 140px;
+    }
+    #_bannerwithinner .slide-arrow-prev.prev {
+        left: 64px;
+        top: 145px;
     }
  }
 
