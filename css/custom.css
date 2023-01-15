@@ -1624,6 +1624,145 @@ Course Details and profile  page
 .loginm{
     display: none;
 }
+/*************************************
+shopping card
+************************************/
+.ab-shopping-card{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 99;
+    padding: 15px;
+}
+.ab-shoppingcard-icon{
+    text-align: center;
+}
+.ab-shoppingcard-content{
+    color: #030e15;
+    display: inline-block;
+    margin-left: 15px;
+}
+.ab-shoppingcard-item-add{
+    color: rgb(153, 205, 223);
+    display: inline-block;
+}
+.ab-shopping-item-courses
+{
+    border-top: 1px solid rgba(71,68,68,0.2);
+
+}
+.ab-shopping-card-close-icon{
+    width: 20px;
+    height: 20px;
+    position: absolute ;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.ab-shopping-item-courses-header-wrapper .ab-exp-box-icon{
+    filter: invert();
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.ab-exp-box-content{
+    color: rgb(0, 0, 0);
+}
+.ab-shopping-item-courses-header{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.ab-delete-icon{
+    float: right;
+}
+.ab-shopping-item-courses-header{
+    display: flex;
+    justify-content: space-between;
+}
+.ab-shopping-item-courses-title{
+    color: rgb(153, 205, 223);
+    font-size: 20px;
+}
+.ab-shopping-item-courses-content{
+    display: flex;
+    justify-content: space-between;
+}
+.ab-shopping-item-courses-prise{
+    color: rgb(0, 0, 0);
+}
+.ab-shopping-item-courses-prise span{
+    display: block;
+}
+.ab-shopping-item-courses-prise del{
+    display: block;
+    opacity: 0.6;
+}
+.ab-exp-box-footer-list li{
+    color: rgb(0, 0, 0);
+    opacity: 0.8;
+}
+.ab-shopping-item-courses .ab-exp-box-footer{
+    position: static;
+}
+.ab-footer-shopping-card{
+    position: absolute;
+    bottom: 0;
+    padding: 20px 10px;
+}
+.ab-apply-coupon-title{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+    font-size: 24px;
+}
+
+.ab-apply-coupon-title {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-weight: 600;
+}
+.ab-apply-coupon-title::after {
+    top: 50%;
+    right: 0;
+    width: 30%;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #eee;
+}
+
+.ab-apply-coupon-title::before {
+    top: 50%;
+    left: 0;
+    width: 30%;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #eee;
+}
+.ab-totalamout-Continue-Browsing {
+    text-align: center;
+}
+.ab-totalamout-Continue-Browsing .ab-outline-primary{
+    border:1px solid  #99cddf;
+}
+.ab-totalamout{
+    color: #000;
+    font-weight: 600;
+}
+.ab-totalamout-count{
+    color: #000;
+    text-align: right;
+    font-weight: 600;
+}
 /*********************************
 Mobile section
 *********************************/
@@ -2040,6 +2179,15 @@ Mobile section
     }
     .loginm{
         display: none;
+    }
+    .ab-shopping-card {
+        width: 100%;
+    }
+    .ab-apply-coupon-title::before {
+        width: 20%;
+    }
+    .ab-apply-coupon-title::after {
+        width: 20%;
     }
  }
 

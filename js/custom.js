@@ -222,3 +222,15 @@ function showTabsContent(b){
 }
 
 
+// card
+function cardBt() {
+  var closebtn = document.getElementById("_shopping-card");
+  var loginPupPupBg = document.getElementById("_cardPupPupBg");
+  if (closebtn.style.display === "block") {
+    closebtn.style.display = "none";
+    loginPupPupBg.style.display = "none";
+  } else {
+    closebtn.style.display = "block";
+    loginPupPupBg.style.display = "block";
+  }
+}
