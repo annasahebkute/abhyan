@@ -49,7 +49,7 @@ a{
     outline: none !important;
     box-shadow: none;
     border-radius: 30px;
-    padding: 13px 30px;
+    padding: 13px 25px;
     height: 50px;
     font-weight: 600;
 }
@@ -1267,6 +1267,7 @@ Course Details and profile  page
 .ab-wathc-coures img{
     display: block;
     margin: auto;
+    cursor: pointer;
 }
 .ab-wathc-coures span{
     display: block;
@@ -1763,6 +1764,24 @@ shopping card
     text-align: right;
     font-weight: 600;
 }
+.ab-video-page{
+    width: 65%;
+    min-height: 650px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 99;
+    border-radius: 10px;
+    background-color: #000000;
+}
+.ab-login-st{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 /*********************************
 Mobile section
 *********************************/
@@ -2188,6 +2207,10 @@ Mobile section
     }
     .ab-apply-coupon-title::after {
         width: 20%;
+    }
+    .ab-video-page {
+        width: 90%;
+        min-height: 120px;
     }
  }
 
