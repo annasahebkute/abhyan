@@ -82,6 +82,10 @@ a{
     background-image: url(../img/sprit-img.png);
     background-repeat: no-repeat;
 }
+.ab-feedback-sprit-img{
+    background-image: url(../img/student-feedbackicon.png);
+    background-repeat: no-repeat;
+}
 .ab-text-right{
     text-align: right;
 }
@@ -547,6 +551,7 @@ Exploer Our offerings
     height: 300px;
     position: relative;
     box-shadow: 0px 0px 40px rgb(0 0 0 / 45%);
+    display: block;
 }
 .ab-exp-box-tab-content{
     color: #99cddf;
@@ -719,6 +724,12 @@ Let us help!
     border-bottom: 2px  solid #1e2c35;
     padding: 60px 0;
  }
+ .ab-Unable-details {
+    margin: 60px 0;
+    border-top: none;
+    border-bottom: none;
+    padding: 60px 0;
+}
  .ab-let-help h2{
     color: #99cddf;
  }
@@ -1034,6 +1045,9 @@ login
 .ab-courseListing-banner{
     height: 60px;
 }
+/**************************
+Course listing page
+ ****************************/
 #_bannerwithinner{
     background-position: bottom;
 }
@@ -1144,6 +1158,475 @@ login
 .ab-color-white{
     color: #fff !important;
 }
+/*********************************
+Course Details and profile  page
+*********************************/
+.ab-courseDetailsProfile{
+    padding-top: 150px;
+}
+.ab-exp-box-tab-content{
+    display: block;
+}
+.ab-lag-icon{
+    display: inline-block;
+    height: 27px;
+    width: 61px;
+    background-position: 1px -1159px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.ab-tab-item{
+    display: flex;
+    align-items: center;
+}
+.ab-tab-item-icon{
+    display: inline-block;
+    height: 36px;
+    width: 35px;
+    background-position: -2px -1072px;
+    margin-right: 15px;
+}
+.ab-tab-content-hrs{
+    display: block;
+}
+.ab-tab-content-Duration{
+    display: block;
+}
+.ab-courseDetails-tab-three{
+    display: flex;
+    gap: 60px;
+}
+.ab-Intermediate{
+    background-position: -65px -1125px;
+}
+.ab-Students{
+    background-position: -2px -1112px;
+}
+.ab-courseDetails-footer{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.ab-border-tb{
+    border-bottom: 1px solid #1e2c35;
+    border-top: 1px solid #1e2c35;
+}
+.ab-courseDetails-prise{
+    font-weight: 100;
+    color: #99cddf;
+}
+.ab-courseDetails-offer-wrapper del{
+    display: block;
+    color: #99cddf;
+    opacity: 0.5;
+}
+.ab-courseDetails-offer{
+    display: block;
+    color: #99cddf;
+    opacity: 0.5;
+}
+.ab-courseDetails-footer-sou li{
+    display: inline-block;
+}
+.ab-courseDetails-footer-sou a{
+    display: block;
+}
+.ab-wishlist-icon, .ab-Gift-icon, .ab-Share-icon {
+    display: inline-block;
+    height: 53px;
+    width: 52px;
+    vertical-align: middle;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+.ab-wishlist-icon{
+    background-position: -3px -1201px;
+}
+.ab-Gift-icon{
+    background-position: -2px -1266px;
+}
+.ab-Share-icon{
+    background-position: -2px -1328px;
+}
+.ab-courseDetails-prise sup{
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: revert;
+}
+.ab-Other-Courses-Digital::before{
+    top: 27px;
+    content: "";
+}
+.ab-Other-Courses-Digital .ab-exp-title {
+    color: #99cddf;
+    width: 760px;
+    margin: auto;
+    text-align: center;
+}
+.ab-wathc-coures img{
+    display: block;
+    margin: auto;
+}
+.ab-wathc-coures span{
+    display: block;
+    text-align: center;
+}
+.ab-user-box{
+    display: flex;
+    align-items: center;
+}
+.ab-user-icon-wrapper{
+    width: 80px;
+    height: 80px;
+    background-color: #132732;
+    border-radius: 100px;
+    margin-right: 15px;
+}
+.ab-user-icon{
+    width: 36px;
+    height: 40px;
+    background-position: -58px -1387px;
+    display: block;
+    margin: auto;
+    margin-top: 18px;
+}
+.ab-user-content-name, 
+.ab-user-content-des{
+    display: block;
+    text-align: left;
+}
+.ab-about-course{
+    text-align: left;
+}
+.ab-thisbunle{
+    text-transform: uppercase;
+}
+.ab-bundle-Includes-following li{
+    width: 45%;
+    display: inline-block;
+}
+.ab-about-course-item .ab-sprit-img{
+    margin-left: 0;
+}
+.ab-about-course-item{
+    margin-bottom: 15px;
+}
+.ab-about-item-content{
+    width: 170px;
+    display: inline-block;
+}
+.ab-about-course-item span{
+    vertical-align: middle;
+    display: inline-block;
+}
+.ab-border-bottom{
+    border-bottom: 1px solid #192731;
+}
+.ab-bundle-exlusives-icon{
+    height: 47px;
+    width: 54px;
+    display: inline-block;
+    background-position: 0 -1812px;
+    vertical-align: middle;
+}
+.ab-skills-you-icon{
+    height: 47px;
+    width: 54px;
+    display: inline-block;
+    background-position: 0 -1872px;
+    vertical-align: middle;
+}
+.ab-Benefits-you-icon{
+    height: 51px;
+    width: 58px;
+    display: inline-block;
+    background-position: 0 -1986px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.ab-Requirements-you-icon{
+    height: 51px;
+    width: 57px;
+    display: inline-block;
+    background-position: 0 -1986px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.ab-Frequently-Asked-you-icon{
+    height: 51px;
+    width: 57px;
+    display: inline-block;
+    background-position: 0 -2116px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.ab-Student-Feedback-you-icon{
+    height: 51px;
+    width: 57px;
+    display: inline-block;
+    background-position: -2px -2052px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.ab-bulatstyle li{
+    list-style: disc !important;
+    display: inline-block;
+    width: 48%;
+    padding: 15px 0px;
+}
+.ab-cousre-trainer-and-creators-slider .slide-arrow-prev{
+    right: 4px;
+    left: unset;
+    width: 22px;
+    height: 30px;
+    background-position: -14px -135px;
+}
+.ab-cousre-trainer-and-creators-slider .slide-arrow-next{
+    width: 22px;
+    background-position: -58px -134px;
+    height: 30px;
+}
+.ab-slill-item{
+    color: #99cddf;
+    background-color: #000;
+    opacity: 0.3;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 30px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.ab-skill-will-gain{
+    display: flex;
+    align-items: center;
+}
+.ab-skill-will-gain-item-number{
+    font-size: 50px;
+    color: #99cddf;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+.ab-skill-will-gain-item-content{
+    width: 260px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px;
+}
+.ab-highlights-item-icon{
+    display: inline-block;
+    height: 39px;
+    width: 42px;
+    background-position: -4px -1392px;
+}
+.ab-highlights-item-content{
+    width: 120px;
+    display: inline-block;
+    text-align: left;
+    margin-left: 10px;
+}
+.ab-Certificate-Completion{
+    background-position: -4px -1451px;
+}
+.ab-Supportive-Articles{
+    background-position: -4px -1504px;
+}
+.ab-Strict-Assessments{
+    background-position: -4px -1557px;
+}
+.ab-Transcripts-videos{
+    background-position: -10px -1614px;
+}
+.ab-Lifetime-access{
+    background-position: -7px -1668px;
+    height: 43px;
+}
+.ab-justify-content-beetwin{
+    justify-content: space-between;
+}
+.ab-content-course-content .nav-tabs{
+    border: none;
+    margin-left: -15px;
+}
+.nav-tabs .nav-link{
+    color: #fff;
+    opacity: 0.2;
+}
+.nav-tabs .nav-link:focus, 
+.nav-tabs .nav-link {
+    border: none !important;
+    outline: none !important;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border: none;
+    opacity: 1;
+}
+.ab-content-course-content .nav-link.active{
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    opacity: 1;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    color: #99cddf;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: 'Libre Baskerville', serif;
+    border-bottom: 1px solid #1b252b;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: transparent;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: transparent;
+    display: none;
+    overflow: hidden;
+  }
+.ab-accordion-arrrow{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    background-position: -13px -2212px;
+    vertical-align: middle;
+   
+}
+.accordion.active .ab-accordion-arrrow{
+    background-position: -13px -2184px;
+}
+.accordion{
+    padding-left: 0;
+}
+.ab-right-accordion-mint{
+    float: right;
+    text-align: right;
+    display: inline-block;
+    font-size: 0.8rem!important;
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+}
+.ab-content-course-content{
+    background-color: #030e15;
+    padding: 40px;
+    width: 780px;
+}
+.ab-Course-Overview-icon{
+    display: inline-block;
+    height: 22px;
+    width: 20px;
+    background-position: -13px -2246px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.ab-Course-Overview-right-side{
+    float: right;
+    text-align: right;
+}
+.ab-Course-Overview-Preview{
+    margin-right: 40px;
+}
+.ab-right-accordion-mint{
+    opacity: 0.2;
+}
+.ab-Course-Overview-right-side span{
+    opacity: 0.2;
+}
+.ab-accordion-footer{
+    text-align: center;
+}
+.ab-accordion-content{
+    opacity: 0.3;
+}
+.accordion.active .ab-accordion-content{
+    opacity: 1;
+}
+.ab-Student-Feedback-icon{
+    width: 37px;
+    height: 42px;
+    display: block;
+    background-position: -13px -8px;
+}
+.ab-Student-Rating-icon{
+    width: 37px;
+    height: 42px;
+    display: block;
+    background-position: -171px -8px;
+}
+.ab-Student-Reviews-icon{
+    width: 37px;
+    height: 42px;
+    display: block;
+    background-position: -313px -8px;
+}
+.ab-Student-Positive-icon{
+    width: 37px;
+    height: 42px;
+    display: block;
+    background-position: -453px -3px;
+}
+.ab-Student-Feedback-content
+{
+    opacity: 0.3;
+    display: block;
+}
+.ab-Student-Feedback-count{
+    display: block;
+}
+.ab-select-drow-right{
+    text-align: right;
+}
+.ab-align-items-bottom{
+    align-items: baseline;
+}
+.ab-Student-Feedback-item-img{
+    width: 80px;
+}
+.ab-user-Student-Feedback-item-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.ab-user-Student-Feedback-item-right{
+    opacity: 0.2;
+}
+.ab-star-Student-Feedback-item{
+    display: block;
+}
+.ab-star-Student-Feedback-item-icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-position: -69px -674px;
+}
+.ab-border-tp{
+    border-top: 1px solid #1e2c35;
+}
+.ab-Student-Feedback-item-st{
+    display: flex;
+}
+.ab-Course-Content-slider{
+    position: relative;
+}
+.loginm{
+    display: none;
+}
+/*********************************
+Mobile section
+*********************************/
 @media (max-width: 576px) { 
     .m-hd{
         display: none;
@@ -1469,6 +1952,94 @@ login
     #_bannerwithinner .slide-arrow-prev.prev {
         left: 64px;
         top: 145px;
+    }
+    .ab-Other-Courses-Digital .ab-exp-title {
+        width: 100%;
+    }
+    .ab-wathc-coures span {
+        display: block;
+        text-align: center;
+        background-color: #99cddf;
+        border: 1px solid #99cddf;
+        border-radius: 50px;
+        padding: 10px;
+        color: #000;
+    }
+    .ab-wathc-coures img, .ab-Intermediate-m {
+        display: none;
+    }
+    .ab-courseDetails-footer {
+        display: block;
+        text-align: center;
+        margin-bottom: 0px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #1e2c35;
+    }
+    .ab-courseDetails-prise{
+        display: inline-block;
+        margin-bottom: 27px;
+    }
+    .ab-courseDetails-offer-wrapper{
+        display: inline-block;
+        margin-left: 23px;
+    }
+    .ab-courseDetails-footer-sou .ab-Gift-st{
+        display: none;
+    }
+    .ab-courseDetails-footer-sou{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .ab-courseDetailsProfile {
+        padding-top: 150px !important;
+        padding: 15px;
+    }
+    .ab-skill-will-gain {
+        display: block;
+        align-items: center;
+    }
+    .ab-bundle-Includes-following li {
+        width: 100%;
+        display: block;
+    }
+    .ab-outline-primary {
+        padding: 13px 20px;
+        height: 50px;
+    }
+    .ab-all-tab-section{
+        padding: 15px;
+    }
+    .ab-Other-Courses-Digital .slide-arrow-next{
+        bottom: -70px;
+    }
+    .ab-Other-Courses-Digital .slide-arrow-prev{
+        bottom: -70px;
+    }
+    .ab-content-course-content{
+        width: 100%;
+        padding: 10px;
+    }
+    .ab-Course-Content-slider{
+        position: relative;
+    }
+    .ab-Course-Content-slider ul{
+        white-space: nowrap;
+        width: 90%;
+        overflow: hidden;
+        margin: auto !important;
+        display: block;
+    }
+    .ab-Course-Content-slider ul li{
+        display: inline-block;
+    }
+    .ab-Course-Overview-Preview {
+        margin-right: 0px;
+    }
+    .panel {
+        padding: 0 0;
+    }
+    .loginm{
+        display: none;
     }
  }
 
