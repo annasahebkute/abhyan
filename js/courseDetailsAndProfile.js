@@ -223,12 +223,15 @@ function emailCheckTin() {
 //vedio page
 function vediobt() {
   var closebtn = document.getElementById("_videoPupPup");
+  var videoItem = document.getElementById("_videoItem")
   var loginPupPupBg = document.getElementById("_videoPupPupBg");
   if (closebtn.style.display === "block") {
     closebtn.style.display = "none";
     loginPupPupBg.style.display = "none";
+    videoItem.pause();
   } else {
     closebtn.style.display = "block";
     loginPupPupBg.style.display = "block";
+    videoItem.play();
   }
 }
