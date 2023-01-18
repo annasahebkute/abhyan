@@ -235,3 +235,17 @@ function vediobt() {
     videoItem.play();
   }
 }
+
+
+//Course trainer & createors popup
+function coursetrainer() {
+  var courseTrainer = document.getElementById("_courseTrainer");
+  var loginPupPupBg = document.getElementById("_loginPupPupBg");
+  if (courseTrainer.style.display === "block") {
+    courseTrainer.style.display = "none";
+    loginPupPupBg.style.display = "none";
+  } else {
+    courseTrainer.style.display = "block";
+    loginPupPupBg.style.display = "block";
+  }
+}

@@ -1202,6 +1202,12 @@ Course Details and profile  page
 .ab-Students{
     background-position: -2px -1112px;
 }
+.ab-Courses{
+    background-position: -2px -2307px;
+}
+.ab-Student-Feedbacks{
+    background-position: -2px -2356px;
+}
 .ab-courseDetails-footer{
     display: flex;
     gap: 15px;
@@ -1276,6 +1282,11 @@ Course Details and profile  page
 .ab-user-box{
     display: flex;
     align-items: center;
+    color: #ffffff !important; 
+   
+}
+.ab-cousre-trainer-and-creators .ab-user-box{
+    cursor: pointer;
 }
 .ab-user-icon-wrapper{
     width: 80px;
@@ -1625,6 +1636,12 @@ Course Details and profile  page
 .loginm{
     display: none;
 }
+.ab-justify-content-between{
+    justify-content: space-between;
+}
+.ab-footercourseTraind{
+    text-align: center;
+}
 /*************************************
 shopping card
 ************************************/
@@ -1703,7 +1720,7 @@ shopping card
     display: block;
     opacity: 0.6;
 }
-.ab-exp-box-footer-list li{
+.ab-shopping-card .ab-exp-box-footer-list li{
     color: rgb(0, 0, 0);
     opacity: 0.8;
 }
@@ -1781,6 +1798,68 @@ shopping card
     justify-content: flex-end;
     flex-wrap: nowrap;
     align-items: center;
+}
+.form-check-input:checked[type=radio]{
+    filter: invert();
+}
+/*************************************
+Course trainer & createors
+************************************/
+.ab-courseTrainer-son{
+    text-align: center;
+}
+
+.ab-courseTrainerCreators-user-icon img{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    width: 230px;
+}
+.ab-courseTrainerCreators-user-icon span{
+    display: block;
+    text-align: center;
+}
+.ab-back-to-courser-arrow {
+    background-position: -12px -637px;
+    opacity: 1;
+    display: inline-block;
+    height: 23px;
+    width: 30px;
+    vertical-align: middle;
+}
+.ab-exp-box-tab-content-trainer{
+    color: #fff !important;
+    opacity: 1;
+}
+.ab-courseTrainerCreators-content{
+    color: #fff;    
+    opacity: 0.2;
+}
+
+.ab-Course-trainer-createors-poppup{
+    width: 35%;
+}
+.ab-content-trainer-createors-popup{
+    text-align: left;
+    color: #04141e;
+    opacity: 1;
+}
+.ab-Course-trainer-createors-poppup .ab-user-content-name{
+    color: #04141e;
+    font-weight: 600;
+}
+.ab-Course-trainer-createors-poppup .ab-user-content-des{
+    color: #04141e;
+}
+.ab-Course-trainer-createors-points{
+    border-top: 1px solid #04141e;
+    border-bottom: 1px solid #04141e;
+    color: #04141e;
+}
+.ab-read-more{
+    display: block;
+    font-weight: 600;
+    color: #04141e;
 }
 /*********************************
 Mobile section
@@ -2211,6 +2290,19 @@ Mobile section
     .ab-video-page {
         width: 90%;
         min-height: 120px;
+    }
+
+    .ab-courseTrainerCreators-user-icon span {
+        display: block;
+        text-align: center;
+        background-color: #99cddf;
+        border: 1px solid #99cddf;
+        border-radius: 50px;
+        padding: 10px;
+        color: #000;
+    }
+    .ab-courseTrainerCreators-user-icon img, .ab-Intermediate-m {
+        display: none;
     }
  }
 
