@@ -2301,8 +2301,11 @@ Mobile section
         padding: 10px;
         color: #000;
     }
-    .ab-courseTrainerCreators-user-icon img, .ab-Intermediate-m {
-        display: none;
+    .ab-About-Anand-m{
+        padding: 20px;
+    }
+    .ab-Course-Traine-Creators, .ab-course-by-Anand{
+        padding: 20px;
     }
  }
 
