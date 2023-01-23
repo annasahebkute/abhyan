@@ -1861,6 +1861,240 @@ Course trainer & createors
     font-weight: 600;
     color: #04141e;
 }
+/*************************************
+dashbord
+************************************/
+.ab-alert-icon{
+    display: inline-block;
+    width: 25px;
+    height: 27px;
+    background-position: -6px -2403px;
+    vertical-align: middle;
+    position: relative;
+}
+.ab-alert-dot{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 4px;
+    right: 1px;
+    background-color: #99cddf;
+    border-radius: 6px;
+    border: 1px solid #04141e;
+}
+.ab-dashboaed-banner{
+    min-height: 630px;
+    padding: 200px 0;
+}
+.ab-dashboard-banner-tab-center{
+    text-align: center;
+}
+.ab-dashboardbanner-col-count{
+    color: #99cddf;
+    font-size: 70px !important;
+}
+.ab-completion-Certificate-img img{
+    display: block;
+    margin: auto;
+}
+
+.ab-completion-Certificate-img{
+    text-align: center;
+    border-right: 1px solid #1d2933;
+    margin-right: 40px;
+}
+.ab-completion-Certificate-Earned{
+    display: block;
+    width: 200px;
+    margin: auto;
+}
+.ab-profile-dropdown{
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin: 10px 0;
+}
+.ab-profile-dropdown-item-icon{
+    width: 24px;
+    height: 24px;
+
+}
+.ab-justify-center{
+    justify-content: center;
+}
+.ab-Enrolled-Courses-icon{
+    width: 52px;
+    height: 52px;
+    background-position: -2px -758px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: -70px;
+}
+.ab-Completed-Courses-icon{
+    width: 52px;
+    height: 52px;
+    background-position: -2px -817px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: -70px;
+}
+.ab-Skills-Courses-icon{
+    width: 52px;
+    height: 52px;
+    background-position: -2px -891px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: -70px;
+}
+.ab-Hours-You-Courses-icon{
+    width: 52px;
+    height: 52px;
+    background-position: -53px -811px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: -70px;
+}
+.ab-opacity-full{
+    position: static;
+}
+.ab-opacity-full li{
+    opacity: 1;
+}
+progress {
+    border: none;
+    width: 100%;
+    height: 10px;
+    background: #fff;
+    border-radius: 10px;
+  }
+progress::-moz-progress-bar {
+    background: #fff;
+    border-radius: 10px;
+}
+  
+progress::-webkit-progress-value {
+    background: #99cddf;
+    border-radius: 10px;
+}
+  
+progress::-webkit-progress-bar {
+    background: #fff;
+    border-radius: 10px;
+}
+.ab-Enrolled-Courses .ab-exp-box{
+    height: auto;
+}
+.ab-Completed-Courses{
+    margin-top: 150px;
+}
+.ab-Completed-Courses .ab-exp-box{
+    height: 331px;
+}
+.ab-Enrolled-Courses  .ab-exp-box-footer-list li{
+    color: #fff;
+}
+.ab-skills-wrapper{
+    text-align: center;
+}
+.ab-skills-item{
+    display: inline-block;
+    padding: 5px 30px;
+    background-color: #030e15;
+    color: #3e5963;
+    border-radius: 40px;
+    text-align: center;
+    margin-top: 15px;
+}
+.ab-hours-graph-item{
+    position: relative;
+    width: 60px;
+    height: 120px;
+    padding-top: 94px;
+}
+.ab-hours-prossesbar{
+    display: block;
+    transform: rotate(-90deg);
+    width: 120px;
+    position: absolute;
+    top: 10px;
+    left: -36px;
+    margin: auto;
+}
+
+
+.ab-hours-prossesbar progress {
+    border: none;
+    width: 100%;
+    height: 10px;
+    background: #04141e;
+    border-radius: 10px;
+  }
+  .ab-hours-prossesbar progress::-moz-progress-bar {
+    background: #04141e;
+    border-radius: 10px;
+}
+  
+.ab-hours-prossesbar progress::-webkit-progress-value {
+    background: #99cddf;
+    border-radius: 10px;
+}
+  
+.ab-hours-prossesbar progress::-webkit-progress-bar {
+    background: #04141e;
+    border-radius: 10px;
+}
+.ab-hours-graph-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.ab-hours-you-spent{
+    height: 260px;
+    width: 260px;
+    border: 12px solid #99cddf;
+    border-radius: 150px;
+    padding: 43px;
+}
+.ab-hours-contnet{
+    display: block;
+    text-align: center;
+    color: #99cddf;
+}
+.ab-hours-count{
+    text-align: center;
+    display: block;
+    font-size: 60px;
+}
+.ab-graph-control li{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+.ab-v-line{
+    border-right: 1px solid #36434b ;
+    height: 30px;
+}
+.ab-graph-control-item .ab-form-control{
+    background-color: transparent;
+    border: 1px solid #99cddf;
+    color: #99cddf;
+}
+.ab-graph-control-item .form-select{
+    background-image: url(../img/dropdown-arrow-down.png);
+}
+.ab-hours-graph-control{
+    border-top: 1px solid #1e2c35;
+}
+.ab-Launching-Soon{
+    margin-bottom: 150px;
+}
+.ab-profile-dropdown-item-content{
+    color: #030e15;
+}
+
 /*********************************
 Mobile section
 *********************************/
@@ -2240,8 +2474,8 @@ Mobile section
         display: block;
     }
     .ab-outline-primary {
-        padding: 13px 20px;
-        height: 50px;
+        padding: 12px 11px;
+        height: 46px;
     }
     .ab-all-tab-section{
         padding: 15px;
@@ -2306,6 +2540,38 @@ Mobile section
     }
     .ab-Course-Traine-Creators, .ab-course-by-Anand{
         padding: 20px;
+    }
+    .ab-completion-Certificate-img {
+        border-right: none;
+    }
+    .ab-dashboardbanner-col-count{
+        font-size: 40px !important;
+    }
+    .ab-completion-Certificate-img {
+        margin-right: 0;
+    }
+    .ab-dashboaed-banner {
+        min-height: 580px;
+        padding-top: 160px;
+    }
+    .ab-Completed-Courses .ab-exp-box {
+        height: 841px;
+    }
+    .ab-Completed-Courses .ab-exp-box-footer {
+        bottom: 210px;
+    }
+    .ab-hours-you-spent {
+        margin: auto;
+    }
+    .ab-hours-graph-item {
+        width: 60px;
+        height: 170px;
+        padding-top: 134px;
+    }
+    .ab-hours-prossesbar {
+        top: 50px;
+        left: -36px;
+        margin: auto;
     }
  }
 
