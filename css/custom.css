@@ -2226,7 +2226,7 @@ progress::-webkit-progress-bar {
       font-size: 45px;
       color: #99cddf;
       position: relative;
-      top: 5px;
+      top: 8px;
       left: 2px;
       font-weight: 200;
     }
@@ -2245,7 +2245,7 @@ progress::-webkit-progress-bar {
       font-size: 45px;
       color: #99cddf;
       position: relative;
-      top: 5px;
+      top: 8px;
       left: 0px;
       font-weight: 200;
     }
