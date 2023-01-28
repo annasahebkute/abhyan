@@ -299,7 +299,7 @@
 
                                     </a>
                                 </div>
-                                <div class="col-ms-6 col-sm-12">
+                                <div class="col-md-6 col-sm-12">
                                     <a href="courseListing.html" class="slider-box">
                                         <img class="banner-img" src="img/banner.png" alt="">
 
@@ -343,7 +343,7 @@
 
                                     </a>
                                 </div>
-                                <div class="col-ms-6 col-sm-12">
+                                <div class="col-md-6 col-sm-12">
                                     <a href="courseListing.html" class="slider-box">
                                         <img class="banner-img" src="img/banner.png" alt="">
 
@@ -813,7 +813,9 @@
             }
             document.getElementById(cityName).style.display = "block";
             evt.currentTarget.className += " ab-active-menu";
+            if  (screen.width <= 768) {
             profileMenuMobile()
+            }
         }
 
         function profileMenuMobile() {
