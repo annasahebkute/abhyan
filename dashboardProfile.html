@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Abhyan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;600;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+</head>
+
+<body>
+    <header class="ab-header p-3" id="_hederBar">
+        <div class="container">
+            <div class="row ab-justify-content">
+                <div class="col-3 ">
+                    <div class="ab-logo-wrapper">
+                        <div class="ab-logo">
+                            <button class="ab-account-menu-mobile" type="button" onclick="accountMenuMobile()"><svg
+                                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-wr8ge5" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon">
+                                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                                </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+                                <a class="ab-logo-img" href="index.html">
+                                    <img src="img/abhyan-logo.png" alt="abhyan">
+                                    <span class="ab-logo-content fs-5 ">Abhyan</span>
+                                </a>
+                        </div>
+                        <div class="ab-lg">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle ab-dropdown" type="button" id="ab-lang"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    English
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Spanish</a></li>
+                                    <li><a class="dropdown-item" href="#">French</a></li>
+                                    <li><a class="dropdown-item" href="#">Hindi </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <ul class="ab-nav" id="_navMenu">
+                        <li> <a class="active fs-6">Courses</a></li>
+                        <li> <a class="">About</a></li>
+                    </ul>
+                    <div class="ab-balck-bg-mainmenu" onclick="accountMenuMobile()"></div>
+                </div>
+                <div class="col-3 ab-text-right ab-m-width">
+                    <div class="ab-login-st">
+                        <button class="ab-card-icon" tabindex="0" type="button"><span
+                                class="MuiBadge-root MuiBadge-root css-1rzb3uu"><svg width="30" height="30"
+                                    viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m444.72 252.01 26.316-96.051a5.114 5.114 0 0 0-.758-4.3 5.11 5.11 0 0 0-3.797-2.153l-318-22.988a5.19 5.19 0 0 0-.922 0l-7.218-42.344a35.84 35.84 0 0 0-35.328-29.797H46.079a5.12 5.12 0 0 0 0 10.238h59.395a25.615 25.615 0 0 1 16.516 6.035 25.611 25.611 0 0 1 8.726 15.266l37.477 219.9c-.043.39-.043.79 0 1.18.035.992.356 1.949.922 2.765l10.238 59.086.004-.004a45.105 45.105 0 0 0 2.601 87.617 45.093 45.093 0 0 0 37.688-9.023 45.106 45.106 0 0 0 .257-69.993h174.08a45.113 45.113 0 0 0-16.438 37.09 45.125 45.125 0 0 0 20.008 35.293 45.104 45.104 0 0 0 68.22-24.453 45.099 45.099 0 0 0-43.22-58.168h-233.73l-9.625-54.887h186.52a81.91 81.91 0 0 0 49.691-16.809 81.912 81.912 0 0 0 29.31-43.504zm12.082 160.41v-.004a34.863 34.863 0 0 1-59.519 24.656 34.867 34.867 0 0 1-10.215-24.656 34.864 34.864 0 0 1 10.215-24.652 34.865 34.865 0 0 1 24.652-10.215 34.916 34.916 0 0 1 24.641 10.23 34.909 34.909 0 0 1 10.227 24.637zm-231.27 0v-.004a34.863 34.863 0 0 1-59.519 24.656 34.867 34.867 0 0 1-10.215-24.656 34.864 34.864 0 0 1 10.215-24.652 34.865 34.865 0 0 1 24.652-10.215 34.923 34.923 0 0 1 34.868 34.867zm-76.031-275.56 310.07 22.371-24.73 90.062a71.667 71.667 0 0 1-69.117 52.785h-188.06z"
+                                        fill="#fff"></path>
+                                </svg><span
+                                    class="MuiBadge-badge jss122 MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightCircular MuiBadge-overlapCircular MuiBadge-colorPrimary MuiBadge-badge css-1kj5hpl"></span></span><span
+                                class="MuiTouchRipple-root css-w0pj6f"></span></button>
+                        <a type="button" class="btn btn-link" onclick="closeBt()">Login</a>
+                        <!-- <button type="button" class="btn btn-primary ab-button m-hd">Start for free</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- banner -->
+    <section class="ab-banner ab-courseDetailsProfile mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="ab-courseDetails-header mb-5">
+                        <a class="ab-exp-box-tab-content-trainer mb-4 mb-5" href="CourseDetailsAndProfile.html">
+                            <span class="ab-back-to-courser-arrow ab-sprit-img"></span> Back to Course Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-6  col-sm-12">
+                    <h2 class="ab-title ab-color-dark my-3">Anand Mishra</h2>
+                    <div class="ab-lag my-4">
+                        Designation / Speciality
+                    </div>
+                    <div class="ab-content my-4 mb-5 ab-courseTrainerCreators-content">
+                        Message to the students goes here, maximum in two or three lines. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                    </div>
+                    <div class="ab-courseDetails-tab-three my-3 ab-border-tb py-3">
+                        <div class="ab-tab-item">
+                            <div class="ab-tab-item-icon ab-Courses ab-sprit-img"></div>
+                            <div class="ab-tab-item-content">
+                                <span class="ab-tab-content-hrs ab-color-dark">40 Hrs</span>
+                                <span class="ab-tab-content-Duration">Courses</span>
+                            </div>
+                        </div>
+                        <div class="ab-tab-item">
+                            <div class="ab-tab-item-icon ab-Students ab-sprit-img"></div>
+                            <div class="ab-tab-item-content">
+                                <span class="ab-tab-content-hrs ab-color-dark">372</span>
+                                <span class="ab-tab-content-Duration">Students</span>
+                            </div>
+                        </div>
+                        <div class="ab-tab-item  ab-Intermediate-m">
+                            <div class="ab-tab-item-icon ab-Student-Feedbacks ab-sprit-img"></div>
+                            <div class="ab-tab-item-content">
+                                <span class="ab-tab-content-hrs ab-color-dark">63</span>
+                                <span class="ab-tab-content-Duration">Student Feedbacks</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-md-6  col-sm-12 ">
+                    <div class="ab-courseTrainerCreators-user-icon">
+                        <img src="img/teacherProfile.png" class="ab-align-items-center" />
+                        <div class="ab-courseTrainer-son m-5">
+                            <ul class="ab-sns">
+                                <li>
+                                    <a>
+                                        <span class="ab-linkedin"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span class="ab-facebook"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span class="ab-twitter"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span class="ab-youtube"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span class="ab-pinterest"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Course by Anand (8)-->
+    <section class="ab-course-by-Anand">
+        <div class="container">
+            <div class="row">
+               
+            </div>
+            <div class="row ab-justify-content-between">
+                <div class="col-md-7 col-sm-12">
+                    <!-- Student Feedback: -->
+                    <div  class="tabContent">
+                        <div class="ab-bundle-exlusives">
+                            <h2 class="ab-title ab-color-dark my-5 pt-5">
+                                Course by Anand (8)
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-md-6 col-sm-12">
+                            <a href="CourseDetailsAndProfile.html" class="slider-box" >
+                                <img class="banner-img" src="img/banner.png" alt="">
+                                <div class="box-label">
+                                  <div class="head-label">
+                                    <h3>Social Media Mareting</h3>
+                                    <div class="rating-label">
+                                      <img src="img/star.png" alt="star">
+                                      <span>4.5</span>
+                                    </div>
+                                  </div>
+                                  <div class="price-label">
+                                    <span>Rs. 3000 </span>
+                                    <del>Rs. 5000</del>
+                                  </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a href="CourseDetailsAndProfile.html" class="slider-box" >
+                                <img class="banner-img" src="img/banner.png" alt="">
+                                <div class="box-label">
+                                  <div class="head-label">
+                                    <h3>Social Media Mareting</h3>
+                                    <div class="rating-label">
+                                      <img src="img/star.png" alt="star">
+                                      <span>4.5</span>
+                                    </div>
+                                  </div>
+                                  <div class="price-label">
+                                    <span>Rs. 3000 </span>
+                                    <del>Rs. 5000</del>
+                                  </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>  
+                    <div class="row my-3">
+                        <div class="col-md-6 col-sm-12">
+                            <a href="CourseDetailsAndProfile.html" class="slider-box" >
+                                <img class="banner-img" src="img/banner.png" alt="">
+                                <div class="box-label">
+                                  <div class="head-label">
+                                    <h3>Social Media Mareting</h3>
+                                    <div class="rating-label">
+                                      <img src="img/star.png" alt="star">
+                                      <span>4.5</span>
+                                    </div>
+                                  </div>
+                                  <div class="price-label">
+                                    <span>Rs. 3000 </span>
+                                    <del>Rs. 5000</del>
+                                  </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <a href="CourseDetailsAndProfile.html" class="slider-box" >
+                                <img class="banner-img" src="img/banner.png" alt="">
+                                <div class="box-label">
+                                  <div class="head-label">
+                                    <h3>Social Media Mareting</h3>
+                                    <div class="rating-label">
+                                      <img src="img/star.png" alt="star">
+                                      <span>4.5</span>
+                                    </div>
+                                  </div>
+                                  <div class="price-label">
+                                    <span>Rs. 3000 </span>
+                                    <del>Rs. 5000</del>
+                                  </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ab-footercourseTraind my-5 py-3">
+                        <a type="button" class="btn btn-outline-primary ab-outline-primary" href="courseListing.html">View All
+                            Courses</a>
+                    </div>   
+                </div>
+                <div class="col-md-4  col-sm-12">
+                    <!-- Student Feedback: -->
+                    <div id="design" class="tabContent">
+                        <div class="ab-bundle-exlusives ab-About-Anand-m">
+                            <h2 class="ab-title ab-color-dark my-5 pt-5">
+                                About Anand
+                            </h2>
+                            <div class="ab-content">
+                                This Specialization explores several aspects of the new digital marketing environment, including topics such as digital marketing analytics, search engine optimization, social media marketing etc. When you complete the Digital Marketing Specialization you will have a richer understanding of the foundations of the new digital marketing landscape and acquire a new set of stories, concepts, and tools to help you digitally create, distribute, promote and price products and services. We'll cover SEO, YouTube Marketing, Facebook Marketing, Google Adwords, Google Analytics and more!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Course Traine Creators-->
+    <section class="ab-Course-Traine-Creators">
+        <div class="container">
+            <div class="row">
+                <!-- Student Feedback: -->
+                <div id="design" class="tabContent">
+                    <div class="ab-bundle-exlusives">
+                        <h2 class="ab-title ab-color-dark my-3 pt-3">
+                            <span class="ab-sprit-img ab-Student-Feedback-you-icon "></span>
+                            Student Feedback:
+                        </h2>
+                        <div class="ab-Student-Feedback-will-gain my-2 py-2 mx-5">
+                            <div class="row my-3 py-1">
+                                <div class="col-md-9 col-sm-12">
+                                    <div class="row ab-align-items-bottom">
+                                        <div class="col-md-8 col-sm-12">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-6 cl-xs-6 my-2">
+                                                    <div class="ab-Student-Feedback-wrapper">
+                                                        <span
+                                                            class="ab-Student-Feedback-icon ab-feedback-sprit-img"></span>
+                                                        <span class="ab-Student-Feedback-count fs-4">2600</span>
+                                                        <span class="ab-Student-Feedback-content">Students</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6 cl-xs-6 my-2">
+                                                    <div class="ab-Student-Feedback-wrapper">
+                                                        <span
+                                                            class="ab-Student-Rating-icon ab-feedback-sprit-img"></span>
+                                                        <span class="ab-Student-Feedback-count fs-4">4.0</span>
+                                                        <span class="ab-Student-Feedback-content">Rating</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6 cl-xs-6 my-2">
+                                                    <div class="ab-Student-Feedback-wrapper">
+                                                        <span
+                                                            class="ab-Student-Reviews-icon ab-feedback-sprit-img"></span>
+                                                        <span class="ab-Student-Feedback-count fs-4">148</span>
+                                                        <span class="ab-Student-Feedback-content">Reviews</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6 cl-xs-6 my-2">
+                                                    <div class="ab-Student-Feedback-wrapper">
+                                                        <span
+                                                            class="ab-Student-Positive-icon ab-feedback-sprit-img"></span>
+                                                        <span class="ab-Student-Feedback-count fs-4">93%</span>
+                                                        <span class="ab-Student-Feedback-content">Positive
+                                                            Reviews</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 ab-select-drow-right">
+                                            <select class="form-select ab-select-drow"
+                                                aria-label="Default select example" fdprocessedid="bg0zde">
+                                                <option selected="">All Reviews</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ab-Student-Feedback-item">
+                            <div class="row">
+                                <div class="col-md-9  col-sm-12">
+                                    <div class="ab-border-tp mt-4 py-4 ab-Student-Feedback-item-st">
+                                        <div class="ab-Student-Feedback-item-img">
+                                            <img src="img/user-photo.png" width="50px">
+                                        </div>
+                                        <div class="ab-Student-Feedback-item-content">
+                                            <div class="ab-user-Student-Feedback-item-wrapper">
+                                                <div class="ab-user-Student-Feedback-item-left">
+                                                    <span class="ab-user-Student-Feedback-item">Tanya Mittal</span>
+                                                    <span class="ab-star-Student-Feedback-item">
+                                                        <span
+                                                            class="ab-star-Student-Feedback-item-icon ab-sprit-img"></span>
+                                                        <span
+                                                            class="ab-star-Student-Feedback-item-icon ab-sprit-img"></span>
+                                                        <span
+                                                            class="ab-star-Student-Feedback-item-icon ab-sprit-img"></span>
+                                                        <span
+                                                            class="ab-star-Student-Feedback-item-icon ab-sprit-img"></span>
+                                                    </span>
+                                                </div>
+                                                <div class="ab-user-Student-Feedback-item-right">
+                                                    1 week ago
+                                                </div>
+                                            </div>
+                                            <span class="ab-content-Student-Feedback-item mt-3">
+                                                Very good quality of the course. It completes almost all important
+                                                topics we
+                                                need for marketing and gives lot of knowledge to get better insight
+                                                of the
+                                                industry.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-9 col-sm-12">
+                                    <div class="ab-border-tp mt-4 py-4 ab-Student-Feedback-item-st">
+                                        <div class="ab-Student-Feedback-item-img">
+                                            <img src="img/user-photo.png" width="50px">
+                                        </div>
+                                        <div class="ab-Student-Feedback-item-content">
+                                            <div class="ab-user-Student-Feedback-item-wrapper">
+                                                <div class="ab-user-Student-Feedback-item-left">
+                                                    <span class="ab-user-Student-Feedback-item">Tanya Mittal</span>
+                                                    <span class="ab-star-Student-Feedback-item">
+                                                        <span
+                                                            class="ab-star-Student-Feedback-item-icon ab-sprit-img"></span>
+                                                        <span
+                                                            class="ab-star-Student-Feedback-item-icon ab-sprit-img"></span>
+                                                        <span
+                                                            class="ab-star-Student-Feedback-item-icon ab-sprit-img"></span>
+                                                        <span
+                                                            class="ab-star-Student-Feedback-item-icon ab-sprit-img"></span>
+                                                    </span>
+                                                </div>
+                                                <div class="ab-user-Student-Feedback-item-right">
+                                                    1 week ago
+                                                </div>
+                                            </div>
+                                            <span class="ab-content-Student-Feedback-item  mt-3">
+                                                Very good quality of the course. It completes almost all important
+                                                topics we
+                                                need for marketing and gives lot of knowledge to get better insight
+                                                of the
+                                                industry.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-9 col-sm-12">
+                                    <div class="ab-border-tp mt-4 py-4 ab-Student-Feedback-item-st">
+                                        <div class="ab-Student-Feedback-item-img">
+                                            <img src="img/user-photo.png" width="50px">
+                                        </div>
+                                        <div class="ab-Student-Feedback-item-content">
+                                            <div class="ab-user-Student-Feedback-item-wrapper">
+                                                <div class="ab-user-Student-Feedback-item-left">
+                                                    <span class="ab-user-Student-Feedback-item">Tanya Mittal</span>
+                                                    <span class="ab-star-Student-Feedback-item">
+                                                        <span
+                                                            class="ab-star-Student-Feedback-item-icon ab-sprit-img"></span>
+                                                        <span
+                                                            class="ab-star-Student-Feedback-item-icon ab-sprit-img"></span>
+                                                        <span
+                                                            class="ab-star-Student-Feedback-item-icon ab-sprit-img"></span>
+                                                        <span
+                                                            class="ab-star-Student-Feedback-item-icon ab-sprit-img"></span>
+                                                    </span>
+                                                </div>
+                                                <div class="ab-user-Student-Feedback-item-right">
+                                                    1 week ago
+                                                </div>
+                                            </div>
+                                            <span class="ab-content-Student-Feedback-item  mt-3">
+                                                Very good quality of the course. It completes almost all important
+                                                topics we
+                                                need for marketing and gives lot of knowledge to get better insight
+                                                of the
+                                                industry.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-9 col-sm-12">
+                                    <div class="ab-border-tp mt-4 py-4 ab-Student-Feedback-item-st">
+                                        <div class="ab-Student-Feedback-item-img">
+                                            <img src="img/user-photo.png" width="50px">
+                                        </div>
+                                        <div class="ab-Student-Feedback-item-content">
+                                            <div class="ab-user-Student-Feedback-item-wrapper">
+                                                <div class="ab-user-Student-Feedback-item-left">
+                                                    <span class="ab-user-Student-Feedback-item">Tanya Mittal</span>
+                                                    <span class="ab-star-Student-Feedback-item">
+                                                        <span
+                                                            class="ab-star-Student-Feedback-item-icon ab-sprit-img"></span>
+                                                        <span
+                                                            class="ab-star-Student-Feedback-item-icon ab-sprit-img"></span>
+                                                        <span
+                                                            class="ab-star-Student-Feedback-item-icon ab-sprit-img"></span>
+                                                        <span
+                                                            class="ab-star-Student-Feedback-item-icon ab-sprit-img"></span>
+                                                    </span>
+                                                </div>
+                                                <div class="ab-user-Student-Feedback-item-right">
+                                                    1 week ago
+                                                </div>
+                                            </div>
+                                            <span class="ab-content-Student-Feedback-item  mt-3">
+                                                Very good quality of the course. It completes almost all important
+                                                topics we
+                                                need for marketing and gives lot of knowledge to get better insight
+                                                of the
+                                                industry.
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-9 col-sm-12">
+                                    <div class="ab-accordion-footer my-5">
+                                        <button type="button" class="btn btn-primary ab-button"
+                                            fdprocessedid="849kbd">Load More</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQs -->
+                <div id="microsoftOffice" class="tabContent">
+                    <div class="row my-3 py-1">
+                        <div class="col-md-9 col-sm-12">
+                            <h2 class="ab-title ab-color-dark my-3 pt-3">
+                                <span class="ab-sprit-img ab-Frequently-Asked-you-icon"></span>
+                                Questions Answered
+                            </h2>
+                            <div class="ab-accordion">
+                                <button class="accordion">
+                                    <span class="ab-accordion-arrrow ab-sprit-img"></span>
+                                    <span class="ab-accordion-content fs-5">When will I have access to the lectures
+                                        and assignments?</span>
+                                    <!-- <span class="ab-right-accordion-mint">60 mins</span> -->
+                                </button>
+                                <div class="panel m-4">
+                                    Access to lectures and assignments depends on your type of enrollment. If you
+                                    take a course in audit mode, you will be able to see most course materials for
+                                    free. To access graded assignments and to earn a Certificate, you will need to
+                                    purchase the Certificate experience, during or after your audit. If you don't
+                                    see the audit option: <br>
+
+                                    The course may not offer an audit option. You can try a Free Trial instead, or
+                                    apply for Financial Aid.<br>
+                                    The course may offer 'Full Course, No Certificate' instead. This option lets you
+                                    see all course materials, submit required assessments, and get a final grade.
+                                    This also means that you will not be able to purchase a Certificate experience.
+                                </div>
+
+                                <button class="accordion">
+                                    <span class="ab-accordion-arrrow ab-sprit-img"></span>
+                                    <span class="ab-accordion-content fs-5"> What will I get if I subscribe to this
+                                        Specialization?</span>
+                                </button>
+                                <!-- <span class="ab-right-accordion-mint">60 mins</span></button> -->
+                                <div class="panel m-4">
+                                    Access to lectures and assignments depends on your type of enrollment. If you
+                                    take a course in audit mode, you will be able to see most course materials for
+                                    free. To access graded assignments and to earn a Certificate, you will need to
+                                    purchase the Certificate experience, during or after your audit. If you don't
+                                    see the audit option: <br>
+
+                                    The course may not offer an audit option. You can try a Free Trial instead, or
+                                    apply for Financial Aid.<br>
+                                    The course may offer 'Full Course, No Certificate' instead. This option lets you
+                                    see all course materials, submit required assessments, and get a final grade.
+                                    This also means that you will not be able to purchase a Certificate experience.
+                                </div>
+
+                                <button class="accordion">
+                                    <span class="ab-accordion-arrrow ab-sprit-img"></span>
+                                    <span class="ab-accordion-content fs-5">Is financial aid available?</span>
+                                </button>
+                                <!-- <span class="ab-right-accordion-mint">60 mins</span></button> -->
+                                <div class="panel m-4">
+                                    Access to lectures and assignments depends on your type of enrollment. If you
+                                    take a course in audit mode, you will be able to see most course materials for
+                                    free. To access graded assignments and to earn a Certificate, you will need to
+                                    purchase the Certificate experience, during or after your audit. If you don't
+                                    see the audit option: <br>
+
+                                    The course may not offer an audit option. You can try a Free Trial instead, or
+                                    apply for Financial Aid.<br>
+                                    The course may offer 'Full Course, No Certificate' instead. This option lets you
+                                    see all course materials, submit required assessments, and get a final grade.
+                                    This also means that you will not be able to purchase a Certificate experience.
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Countact Us-->
+    <section class="ab-countact-us">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="ab-title-content fs-1 ab-text-center mb-3">Contact Us Today & Avail Extra 10% Discount
+                    </h2>
+                    <div class="ab-content ab-contact-content ab-text-center mb-5">
+                        Tell us a little bit about yourself. One of our course specialists will get back to you shortly
+                        and help you
+                        to pick a course with 10% less cost. Limited Period Offer!
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-9 col-sm-12" style="margin: auto;">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-7 col-sm-12">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <input type="password" id="inputPassword6" class="form-control ab-form-control"
+                                            aria-describedby="passwordHelpInline" placeholder="Name">
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <input type="password" id="inputPassword6" class="form-control ab-form-control"
+                                            aria-describedby="passwordHelpInline" placeholder="Email">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-sm-12">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <select class="form-select ab-form-control" aria-label="Default select example">
+                                            <option selected>Pick a Time</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <button type="button" class="btn btn-primary ab-button ab-contact-btn">Contact
+                                            Me</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col ab-text-center mt-4">
+                                <i class="ab-fileds-mandatory">* All fileds are mandatory </i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
+
+    <!--footer -->
+    <footer class="ab-footer">
+        <div class="container">
+            <div class="row my-5">
+                <div class=" col-lg-6 col-md-6 col-sm-12">
+                    <div class="ab-footer-about">
+                        <div class="ab-logo mb-4">
+                            <img src="img/abhyan-logo.png" alt="abhyan">
+                            <span class="ab-logo-content">Abhyan</span>
+                        </div>
+                    </div>
+                    <div class="ab-footer-about-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex
+                        ea commodo consequat.labore.
+                        <a class="ab-line-link  my-4">
+                            Read
+                            <span class="ab-arrow-icon ab-sprit-img"></span>
+                        </a>
+                    </div>
+                    <span class="ab-footer-add">
+                        1000 Circle 75 Parkway, Suite 705, Hyderabad - 560102
+                    </span>
+                    <div class="ab-footer-mail">
+                        <a href="mailto:support@abhyan.com">support@abhyan.com</a>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-2 col-sm-6">
+                    <h4 class="ab-footer-title">Courses</h4>
+                    <ul class="ab-footer-link-ul">
+                        <li><a class="ab-footer-link"> Digital Marketing</a></li>
+                        <li><a class="ab-footer-link"> Finance</a></li>
+                        <li><a class="ab-footer-link"> Microsoft Tools</a></li>
+                        <li><a class="ab-footer-link"> Design</a></li>
+                        <li><a class="ab-footer-link"> Google Tools</a></li>
+                    </ul>
+                </div>
+                <div class="col col-lg-2 col-md-2 col-sm-6">
+                    <h4 class="ab-footer-title">Resources</h4>
+                    <ul class="ab-footer-link-ul">
+                        <li><a class="ab-footer-link"> Tips & Tricks</a></li>
+                        <li><a class="ab-footer-link"> Videos</a></li>
+                        <li><a class="ab-footer-link"> Articles</a></li>
+                    </ul>
+                </div>
+                <div class="col col-lg-2 col-md-2 col-sm-12">
+                    <h4 class="ab-footer-title">Abhyan</h4>
+                    <ul class="ab-footer-link-ul">
+                        <li><a class="ab-footer-link"> About </a></li>
+                        <li><a class="ab-footer-link"> Philisophy</a></li>
+                        <li><a class="ab-footer-link"> Press Releases</a></li>
+                        <li><a class="ab-footer-link"> Team</a></li>
+                        <li><a class="ab-footer-link"> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="ab-footer-social-media-icon my-2">
+                        <ul class="ab-sns">
+                            <li>
+                                <a>
+                                    <span class="ab-linkedin"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="ab-facebook"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="ab-twitter"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="ab-youtube"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="ab-pinterest"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ab-align-items-center my-5">
+                    <span class="ab-copyright">
+                        <a class="ab-copyright-link">Privacy Policy</a> | <a class="ab-copyright-link mr-3">Terms Of
+                            Services </a>
+                        <span class="ab-copyright-contet">Copyright © Abhyan, INC. 2021. All Rights Reserved</span>
+                    </span>
+                </div>
+            </div>
+    </footer>
+
+    <!--Login page-->
+    <section class="ab-login-page" id="_loginPupPup">
+        <a onclick="closeBt()" class="ab-close"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-wr8ge5"
+                focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloseIcon">
+                <path
+                    d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                </path>
+            </svg></a>
+        <div class="b-loginwrapper m-4">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-12">
+                        <img src="img/b-logo.png">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12">
+                        <h6 class="ab-title ab-free-content fs-5 my-2">It’s free content, but only students or
+                            registered users can
+                            access
+                            Resources.</h3>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12">
+                        <ul class="ab-singup-list  my-4">
+                            <li> <a class="fs-4 signUPAct" onclick="signUPTab()" id="_btnSignup">Signup</a></li>
+                            <li> <a class="fs-4 ab-active singinAct" onclick="signinTab()" id="_btnSignin">Signin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row ab-align-items-center ab-line-right">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="ab-social-net-icon">
+                            <h6 class="ab-title fs-5 ab-Social-Networks-login">With Social Networks</h4>
+                                <ul class="ab-social-net-icon-list">
+                                    <li><a class="ab-soc-net ab-face-icon"></a></li>
+                                    <li><a class="ab-soc-net ab-google-icon"></a></li>
+                                    <li><a class="ab-soc-net ab-twitter-icon"></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <!-- signu up form -->
+                        <div class="ab-signup-form mx-4" style="display: none;" id="_signup">
+                            <form>
+                                <div class="ab-controle-form">
+                                    <div class="ab-checkbox">
+                                        <span class="ab-lable ab-title">Using </span>
+                                        <div class="ab-form-check">
+                                            <input type="radio" class="form-check-input" id="phoneCheck" name="using"
+                                                onclick="phoneCheckT();" checked>
+                                            <label class="form-check-label" for="exampleCheck1">Phone</label>
+                                        </div>
+                                        <div class="ab-form-check">
+                                            <input type="radio" class="form-check-input" id="emailCheck" name="using"
+                                                onclick="emailCheckT();">
+                                            <label class="form-check-label" for="exampleCheck2">Email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <input type="text" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Name">
+                                </div>
+                                <div class="ab-controle-form my-3" id="phoneCheckfield">
+                                    <input type="number" class="form-control" placeholder="+91">
+                                </div>
+                                <div class="ab-controle-form my-3" id="emailCheckfield">
+                                    <input type="text" class="form-control" placeholder="Email Address">
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Password">
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <button type="button" class="btn btn-primary ab-button ab-Sign-Up-btn">Sign
+                                        Up</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- signu in form -->
+                        <div class="ab-signup-form mx-4" style="display: block;" id="_signin">
+                            <form>
+                                <div class="ab-controle-form">
+                                    <div class="ab-checkbox">
+                                        <span class="ab-lable ab-title">Using </span>
+                                        <div class="ab-form-check">
+                                            <input type="radio" class="form-check-input" id="phoneCheckin" name="using"
+                                                onclick="phoneCheckTin();" checked>
+                                            <label class="form-check-label" for="Phone">Phone</label>
+                                        </div>
+                                        <div class="ab-form-check">
+                                            <input type="radio" class="form-check-input" id="emailCheckin" name="using"
+                                                onclick="emailCheckTin();">
+                                            <label class="form-check-label" for="Email">Email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <input type="number" class="form-control" id="phoneCheckfieldin" placeholder="+91">
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <input type="text" class="form-control" id="emailCheckfieldin"
+                                        placeholder="Email Address">
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Password">
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <button type="button" class="btn btn-primary ab-button ab-Sign-Up-btn">Sign
+                                        In</button>
+                                    <a class="ab-Forgot-Password">Forgot Password?</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--video page-->
+    <section class="ab-video-page" id="_videoPupPup" style="display: none;">
+        <a onclick="vediobt()" class="ab-close"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-wr8ge5"
+                focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloseIcon">
+                <path
+                    d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                </path>
+            </svg>
+        </a>
+        <div class="b-loginwrapper m-4">
+            <video width="100%" height="100%" controls id="_videoItem">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <div class="ab-bg-black" id="_videoPupPupBg" onclick="vediobt()"></div>
+
+    <div class="ab-bg-black" id="_loginPupPupBg"></div>
+    <script src="js/courseTrainerCreators.js"></script>
+</body>
+
+</html>

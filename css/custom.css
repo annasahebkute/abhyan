@@ -244,7 +244,7 @@ a{
     width: 40px;
     height: 40px;
     display: none;
-    z-index: 99;
+    z-index: 9;
     position: relative;
 }
 .ab-account-menu-mobile svg{
@@ -668,6 +668,11 @@ ab two box
 }
 .ab-color-dark{
     color: #99cddf;
+    display: block;
+}
+.ab-select-complaint{
+   display: inline-block; 
+   margin: 15px 0; 
 }
 /**************************************
 Testimonials
@@ -2249,7 +2254,134 @@ progress::-webkit-progress-bar {
       left: 0px;
       font-weight: 200;
     }
+.ab-list-ofmenu-wrapper li a{
+    text-transform: uppercase;
+}
+.ab-list-ofmenu-wrapper li{
+    padding: 10px;
+}
 
+.ab-edit-st{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-position: -4px -2442px;
+}
+.ab-personalInfo-title{
+    font-size: 24px;
+}
+.ab-lable{
+    display: inline-block;
+    width: 35%;
+}
+.ab-line-vertical{
+    width: 1px;
+    height: 100%;
+    background-color: #36434b;
+}
+.ab-dashboardUserProfile-box{
+    margin-bottom: 150px;
+}
+.ab-Courses-Purchased-content{
+    opacity: 0.2;
+}
+.ab-Courses-Purchased-date{
+    display: inline-block;
+}
+.ab-bordder-bottom{
+    border-bottom: 1px solid #1e2c35;
+}
+.ab-tabcontent{
+    display: none;
+}
+.tablinks{
+    color: #fff;
+}
+.tablinks:hover{
+    color: #99cddf;
+}
+.ab-active-menu{
+    color: #99cddf;
+}
+.ab-courses-download-img{
+    display: block;
+    width: 45px;
+    height: 60px;
+    margin: auto;
+    background-position: -4px -2488px;
+}
+.ab-find-btn{
+    background-color: #99cddf;
+    color: #04141e;
+    display: inline-block;
+    padding: 6px 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-left: 15px ;
+}
+.ab-credits-list-content{
+    opacity: 0.2;
+}
+.ab-credits-list-tick{
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: -6px -2560px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.ab-credits-list li{
+    margin-bottom: 10px;
+}
+.ab-big-one{
+    padding: 10px 20px;
+    font-size: 16px;
+    display: block;
+    width: 131px;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+}
+.ab-referafriend-icon{
+    width: 33px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    background-position: -4px -2594px;
+    margin-right: 7px;
+    margin-bottom: 5px;
+}
+.ab-slot-item{
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background-color: #04141e;
+    padding: 10px;
+    box-shadow: 1px 1px 9px #000;
+    border-radius: 4px;
+    color: #99cddf;
+    font-size: 24px;
+    margin-right: 15px;
+}
+.ab-slot-li{
+    display: inline-block;
+}
+.ab-textarea-field{
+    width: 80%;
+    background-color: transparent;
+    border:1px solid  #99cddf;
+}
+.form-select{
+    background-image: url(../img/dropdown-arrow-down.png);
+}
+.ab-lose-icon{
+    display: none;
+    text-align: right;
+    color: #fff;
+}
 /*********************************
 Mobile section
 *********************************/
@@ -2772,6 +2904,28 @@ Mobile section
       .slider-box .banner-img {
         height: 160px;
       }
+      .ab-list-ofmenu{
+        position: fixed;
+        left: 0;
+        width: 70%;
+        background-color: #04141e;
+        box-shadow: 1px 1px 41px #000;
+        top: 0;
+        height: 100%;
+        z-index: 99;
+        padding: 30px;
+        display: none;
+    }
+    .ab-logo-img{
+        display: block;
+        white-space: nowrap;    
+    }
+    .ab-lose-icon{
+        display: block;
+    }
+    .ab-dashboardUserProfile-box{
+        padding: 15px;
+    }
  }
 
 /* // Medium devices (tablets, 768px and up) */

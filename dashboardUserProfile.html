@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Abhyan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;600;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+</head>
+
+<body>
+
+    <header class="ab-header p-3" id="_hederBar">
+        <div class="container">
+            <div class="row ab-justify-content">
+                <div class="col-3 ">
+                    <div class="ab-logo-wrapper">
+                        <div class="ab-logo">
+                            <button class="ab-account-menu-mobile" type="button" onclick="accountMenuMobile()"><svg
+                                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-wr8ge5" focusable="false"
+                                    aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon">
+                                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                                </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+                            <a class="ab-logo-img" href="index.html">
+                                <img src="img/abhyan-logo.png" alt="abhyan">
+                                <span class="ab-logo-content fs-5 ">Abhyan</span>
+                            </a>
+                        </div>
+                        <div class="ab-lg">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle ab-dropdown" type="button" id="ab-lang"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    English
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Spanish</a></li>
+                                    <li><a class="dropdown-item" href="#">French</a></li>
+                                    <li><a class="dropdown-item" href="#">Hindi </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <ul class="ab-nav" id="_navMenu">
+                        <li> <a class="active fs-6">Courses</a></li>
+                        <li> <a class="">About</a></li>
+                    </ul>
+                    <div class="ab-balck-bg-mainmenu" onclick="accountMenuMobile()"></div>
+                </div>
+                <div class="col-3 ab-text-right ab-m-width">
+                    <div class="ab-login-st">
+                        <button class="ab-card-icon" tabindex="0" type="button"><span
+                                class="MuiBadge-root MuiBadge-root css-1rzb3uu"><svg width="30" height="30"
+                                    viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="m444.72 252.01 26.316-96.051a5.114 5.114 0 0 0-.758-4.3 5.11 5.11 0 0 0-3.797-2.153l-318-22.988a5.19 5.19 0 0 0-.922 0l-7.218-42.344a35.84 35.84 0 0 0-35.328-29.797H46.079a5.12 5.12 0 0 0 0 10.238h59.395a25.615 25.615 0 0 1 16.516 6.035 25.611 25.611 0 0 1 8.726 15.266l37.477 219.9c-.043.39-.043.79 0 1.18.035.992.356 1.949.922 2.765l10.238 59.086.004-.004a45.105 45.105 0 0 0 2.601 87.617 45.093 45.093 0 0 0 37.688-9.023 45.106 45.106 0 0 0 .257-69.993h174.08a45.113 45.113 0 0 0-16.438 37.09 45.125 45.125 0 0 0 20.008 35.293 45.104 45.104 0 0 0 68.22-24.453 45.099 45.099 0 0 0-43.22-58.168h-233.73l-9.625-54.887h186.52a81.91 81.91 0 0 0 49.691-16.809 81.912 81.912 0 0 0 29.31-43.504zm12.082 160.41v-.004a34.863 34.863 0 0 1-59.519 24.656 34.867 34.867 0 0 1-10.215-24.656 34.864 34.864 0 0 1 10.215-24.652 34.865 34.865 0 0 1 24.652-10.215 34.916 34.916 0 0 1 24.641 10.23 34.909 34.909 0 0 1 10.227 24.637zm-231.27 0v-.004a34.863 34.863 0 0 1-59.519 24.656 34.867 34.867 0 0 1-10.215-24.656 34.864 34.864 0 0 1 10.215-24.652 34.865 34.865 0 0 1 24.652-10.215 34.923 34.923 0 0 1 34.868 34.867zm-76.031-275.56 310.07 22.371-24.73 90.062a71.667 71.667 0 0 1-69.117 52.785h-188.06z"
+                                        fill="#fff"></path>
+                                </svg><span
+                                    class="MuiBadge-badge jss122 MuiBadge-standard MuiBadge-invisible MuiBadge-anchorOriginTopRight MuiBadge-anchorOriginTopRightCircular MuiBadge-overlapCircular MuiBadge-colorPrimary MuiBadge-badge css-1kj5hpl"></span></span><span
+                                class="MuiTouchRipple-root css-w0pj6f"></span></button>
+                        <a type="button" class="btn btn-link" onclick="closeBt()">Login</a>
+                        <!-- <button type="button" class="btn btn-primary ab-button m-hd">Start for free</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- banner -->
+    <section class="ab-banner ab-courseDetailsProfile mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="ab-goodday ab-title fs-2 ab-text-center my-5 py-3">Good day Gaurav Sharma!</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ab-dashboardUserProfile-box">
+        <div class="container">
+            <div class="row my-5 ab-justify-center">
+                <div class=" col-md-2 col-sm-12">
+                    <button class="ab-account-menu-mobile" type="button" onclick="profileMenuMobile()"
+                        fdprocessedid="ogrb3q">
+                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-wr8ge5" focusable="false"
+                            aria-hidden="true" viewBox="0 0 24 24" data-testid="MenuIcon">
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                        </svg>
+                    </button>
+                    <div class="ab-list-ofmenu" id="_profilemenu">
+                        <a class="ab-lose-icon" onclick="profileMenuMobile()">X</a>
+                        <ul class="ab-list-ofmenu-wrapper">
+                            <li><a class="tablinks ab-active-menu" onclick="openCity(event, 'prfile')">PROFILE</a></li>
+                            <li><a class="tablinks" onclick="openCity(event, 'PurchaseHistory')">Purchase History</a>
+                            </li>
+                            <li><a class="tablinks" onclick="openCity(event, 'Wishlist')">Wishlist</a></li>
+                            <li><a class="tablinks" onclick="openCity(event, 'Certificates')">Certificates</a></li>
+                            <li><a class="tablinks" onclick="openCity(event, 'Credits')">Credits</a></li>
+                            <li><a class="tablinks" onclick="openCity(event, 'Complaints')">Complaints</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-md-1 col-sm-12">
+                    <div class="ab-line-vertical"></div>
+                </div>
+                <div class=" col-md-6 col-sm-12">
+                    <!-- ProfileInfo-->
+                    <div id="prfile" class="ab-tabcontent  ab-ProfileInfo-tab" style="display: block;">
+                        <div class="ab-personlaInfo">
+                            <div class="row">
+                                <div class=" col-12">
+                                    <h3 class="ab-personalInfo-title ab-color-dark">Personal Info <span
+                                            class="ab-edit-st ab-sprit-img"></span></h3>
+                                </div>
+                            </div>
+                            <div class="row my-4">
+                                <div class=" col-md-8 col-sm-12">
+                                    <div class="ab-controle-field my-3">
+                                        <span class="ab-lable">Display name</span>
+                                        <span class="ab-value">Gaurav Sharma</span>
+                                    </div>
+                                    <div class="ab-controle-field my-3">
+                                        <span class="ab-lable">E mail</span>
+                                        <span class="ab-value">gaurav.sharma@gmail.com</span>
+                                    </div>
+                                    <div class="ab-controle-field my-3">
+                                        <span class="ab-lable">Phone Number</span>
+                                        <span class="ab-value">+91 8879023641</span>
+                                    </div>
+                                </div>
+                                <div class=" col-md-4 col-sm-12">
+                                    <div class="ab-user-photo">
+                                        <img src="img/user-puhoto2.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" ab-personlaInfo mt-3">
+                            <div class="row">
+                                <div class=" col-12">
+                                    <h3 class="ab-personalInfo-title ab-color-dark">Billing Address <span
+                                            class="ab-edit-st ab-sprit-img"></span></h3>
+                                </div>
+                            </div>
+                            <div class="row my-4">
+                                <div class=" col-8">
+                                    <div class="ab-controle-field my-3">
+                                        <span class="ab-lable">Display name</span>
+                                        <span class="ab-value">Gaurav Sharma</span>
+                                    </div>
+                                    <div class="ab-controle-field my-3">
+                                        <span class="ab-lable">E mail</span>
+                                        <span class="ab-value">gaurav.sharma@gmail.com</span>
+                                    </div>
+                                    <div class="ab-controle-field my-3">
+                                        <span class="ab-lable">Phone Number</span>
+                                        <span class="ab-value">+91 8879023641</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" ab-personlaInfo mt-5">
+                            <div class="row">
+                                <div class=" col-12">
+                                    <h3 class="ab-personalInfo-title ab-color-dark">Payment Info <span
+                                            class="ab-edit-st ab-sprit-img"></span></h3>
+                                </div>
+                            </div>
+                            <div class="row my-4">
+                                <div class=" col-8">
+                                    <div class="ab-controle-field my-3">
+                                        <span class="ab-lable">Display name</span>
+                                        <span class="ab-value">Gaurav Sharma</span>
+                                    </div>
+                                    <div class="ab-controle-field my-3">
+                                        <span class="ab-lable">E mail</span>
+                                        <span class="ab-value">gaurav.sharma@gmail.com</span>
+                                    </div>
+                                    <div class="ab-controle-field my-3">
+                                        <span class="ab-lable">Phone Number</span>
+                                        <span class="ab-value">+91 8879023641</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Purchase History-->
+                    <div id="PurchaseHistory" class="ab-tabcontent ab-Purchase-History-tab">
+                        <div class=" ab-personlaInfo">
+                            <div class="row">
+                                <div class=" col-12">
+                                    <h3 class="ab-personalInfo-title ab-color-dark ab-title">Courses Purchased</h3>
+                                </div>
+                            </div>
+                            <div class="row ab-bordder-bottom py-5 ab-justify-center">
+                                <div class="col-md-9 col-sm-6">
+                                    <div class="ab-Courses-Purchased">
+                                        <span class="ab-Courses-Purchased-date my-2">Ordered on 29 August 2021</span>
+                                        <div class="ab-Courses-Purchased-body">
+                                            <span class="ab-Courses-Purchased-content">Digital Marketing</span>
+                                            <h3 class="ab-Courses-Purchased-title ab-color-dark fs-4">Email Marketing -
+                                                Telugu</h3>
+                                            <span class="ab-Courses-Purchased-content">Order# 406-8017095-9237910</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="ab-Courses-Purchased-prize">
+                                        <div class="ab-Courses-Purchased-prize-title fs-2 ab-text-right">₹ 300</div>
+                                        <div class="ab-Courses-Purchased-content ab-text-right">Net Banking:<br>HDFC
+                                            Bank</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ab-bordder-bottom py-5 ab-justify-center">
+                                <div class="col-9">
+                                    <div class="ab-Courses-Purchased">
+                                        <span class="ab-Courses-Purchased-date my-2">Ordered on 29 August 2021</span>
+                                        <div class="ab-Courses-Purchased-body">
+                                            <span class="ab-Courses-Purchased-content">Digital Marketing</span>
+                                            <h3 class="ab-Courses-Purchased-title ab-color-dark fs-4">Twitter Marketing
+                                                - Telugu</h3>
+                                            <span class="ab-Courses-Purchased-content">Order# 406-8017095-9237910</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="ab-Courses-Purchased-prize">
+                                        <div class="ab-Courses-Purchased-prize-title fs-2 ab-text-right">₹ 400</div>
+                                        <div class="ab-Courses-Purchased-content ab-text-right">Net Banking:<br>HDFC
+                                            Bank</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-5 ab-justify-center">
+                                <div class="col-9">
+                                    <div class="ab-Courses-Purchased">
+                                        <span class="ab-Courses-Purchased-date my-2">Ordered on 29 August 2021</span>
+                                        <div class="ab-Courses-Purchased-body">
+                                            <span class="ab-Courses-Purchased-content">Digital Marketing</span>
+                                            <h3 class="ab-Courses-Purchased-title ab-color-dark fs-4">Facebook Marketing
+                                                - Telugu</h3>
+                                            <span class="ab-Courses-Purchased-content">Order# 406-8017095-9237910</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="ab-Courses-Purchased-prize">
+                                        <div class="ab-Courses-Purchased-prize-title fs-2 ab-text-right">₹ 500</div>
+                                        <div class="ab-Courses-Purchased-content ab-text-right">Net Banking:<br>HDFC
+                                            Bank</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Purchase History-->
+                    <div id="Wishlist" class="ab-tabcontent ab-Purchase-History-tab">
+                        <div class=" ab-personlaInfo">
+                            <div class="row">
+                                <div class=" col-12">
+                                    <h3 class="ab-personalInfo-title ab-color-dark ab-title mb-3">Courses Added to Your
+                                        Wishlist</h3>
+                                </div>
+                            </div>
+                            <div class="row py-2 ab-justify-center">
+                                <div class="col-md-6 col-sm-12">
+                                    <a href="courseListing.html" class="slider-box">
+                                        <img class="banner-img" src="img/banner.png" alt="">
+
+                                        <div class="box-label">
+                                            <div class="head-label">
+                                                <h3>Social Media Mareting</h3>
+                                                <div class="rating-label">
+                                                    <img src="img/star.png" alt="star">
+                                                    <span>4.5</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-label">
+                                                <span>Rs. 3000 </span>
+                                                <del>Rs. 5000</del>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="col-ms-6 col-sm-12">
+                                    <a href="courseListing.html" class="slider-box">
+                                        <img class="banner-img" src="img/banner.png" alt="">
+
+                                        <div class="box-label">
+                                            <div class="head-label">
+                                                <h3>Social Media Mareting</h3>
+                                                <div class="rating-label">
+                                                    <img src="img/star.png" alt="star">
+                                                    <span>4.5</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-label">
+                                                <span>Rs. 3000 </span>
+                                                <del>Rs. 5000</del>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row py-2 ab-justify-center">
+                                <div class="col-md-6 col-sm-12">
+                                    <a href="courseListing.html" class="slider-box">
+                                        <img class="banner-img" src="img/banner.png" alt="">
+
+                                        <div class="box-label">
+                                            <div class="head-label">
+                                                <h3>Social Media Mareting</h3>
+                                                <div class="rating-label">
+                                                    <img src="img/star.png" alt="star">
+                                                    <span>4.5</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-label">
+                                                <span>Rs. 3000 </span>
+                                                <del>Rs. 5000</del>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="col-ms-6 col-sm-12">
+                                    <a href="courseListing.html" class="slider-box">
+                                        <img class="banner-img" src="img/banner.png" alt="">
+
+                                        <div class="box-label">
+                                            <div class="head-label">
+                                                <h3>Social Media Mareting</h3>
+                                                <div class="rating-label">
+                                                    <img src="img/star.png" alt="star">
+                                                    <span>4.5</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-label">
+                                                <span>Rs. 3000 </span>
+                                                <del>Rs. 5000</del>
+                                            </div>
+                                        </div>
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Certificatesy-->
+                    <div id="Certificates" class="ab-tabcontent ab-Purchase-History-tab">
+                        <div class=" ab-personlaInfo">
+                            <div class="row">
+                                <div class=" col-12">
+                                    <h3 class="ab-personalInfo-title ab-color-dark ab-title">Download Certificates</h3>
+                                </div>
+                            </div>
+                            <div class="row ab-bordder-bottom py-5 ab-justify-center">
+                                <div class="col-md-9 col-6">
+                                    <div class="ab-Courses-Purchased">
+                                        <div class="ab-Courses-Purchased-body">
+                                            <span class="ab-Courses-Purchased-content">Digital Marketing</span>
+                                            <h3 class="ab-Courses-Purchased-title ab-color-dark fs-4  my-2">Email
+                                                Marketing </h3>
+                                            <span class="ab-Completed-on mt-2">Completed on on 29 August 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="ab-Courses-Purchased-prize">
+                                        <span class="ab-courses-download-img ab-sprit-img"></span>
+                                        <div class="ab-Courses-Purchased-content ab-text-center">DOWNLOAD</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ab-bordder-bottom py-5 ab-justify-center">
+                                <div class="col-md-9 col-6">
+                                    <div class="ab-Courses-Purchased">
+                                        <div class="ab-Courses-Purchased-body">
+                                            <span class="ab-Courses-Purchased-content">Digital Marketing</span>
+                                            <h3 class="ab-Courses-Purchased-title ab-color-dark fs-4  my-2">Email
+                                                Marketing </h3>
+                                            <span class="ab-Completed-on mt-2">Completed on on 29 August 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="ab-Courses-Purchased-prize">
+                                        <span class="ab-courses-download-img ab-sprit-img"></span>
+                                        <div class="ab-Courses-Purchased-content ab-text-center">DOWNLOAD</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row py-5 ab-justify-center">
+                                <div class="col-md-9 col-6">
+                                    <div class="ab-Courses-Purchased">
+                                        <div class="ab-Courses-Purchased-body">
+                                            <span class="ab-Courses-Purchased-content">Digital Marketing</span>
+                                            <h3 class="ab-Courses-Purchased-title ab-color-dark fs-4  my-2">Email
+                                                Marketing </h3>
+                                            <span class="ab-Completed-on mt-2">Completed on on 29 August 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-6">
+                                    <div class="ab-Courses-Purchased-prize">
+                                        <span class="ab-courses-download-img ab-sprit-img"></span>
+                                        <div class="ab-Courses-Purchased-content ab-text-center">DOWNLOAD</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Credits-->
+                    <div id="Credits" class="ab-tabcontent ab-Purchase-History-tab">
+                        <div class=" ab-personlaInfo">
+                            <div class="row">
+                                <div class=" col-12">
+                                    <h3 class="ab-personalInfo-title ab-color-dark ab-title pb-3">Credits</h3>
+                                </div>
+                            </div>
+                            <div class="row pb-5 ab-justify-center">
+                                <div class="col-12">
+                                    <div class="ab-Courses-Purchased">
+                                        <div class="ab-Courses-Purchased-body">
+                                            <span class="ab-People">3 People used the code you shared and you earned 300
+                                                Credits for that!</span>
+                                            <h3 class="ab-Courses-Purchased-title ab-color-dark fs-2  my-2 mb-4">
+                                                300 Credits = Rs. 150 <a class="ab-find-btn">Find Courses</a>
+                                            </h3>
+                                            <div class="ab-credits-list-wrapper my-4 py-4 ab-bordder-bottom">
+                                                <ul class="ab-credits-list">
+                                                    <li>
+                                                        <span class="ab-credits-list-tick ab-sprit-img"></span>
+                                                        <span class="ab-credits-list-content ml-3">Akash Menon |
+                                                            menonakash@gmail.com</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="ab-credits-list-tick ab-sprit-img"></span>
+                                                        <span class="ab-credits-list-content ml-3">Akash Menon |
+                                                            menonakash@gmail.com</span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="ab-credits-list-tick ab-sprit-img"></span>
+                                                        <span class="ab-credits-list-content ml-3">Akash Menon |
+                                                            menonakash@gmail.com</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ab-referafriend">
+                                        <h3 class="ab-personalInfo-title ab-color-dark pb-3">
+                                            <span class="ab-sprit-img ab-referafriend-icon"> </span>Refer A Friend
+                                        </h3>
+                                        <span class="ab-People">Do you know that refering a friend can earn you credits?
+                                            These credits can be used to purchase more courses</span>
+                                        <ul class="ab-slot my-4">
+                                            <li class="ab-slot-li">
+                                                <span class="ab-slot-item">K</span>
+                                            </li>
+                                            <li class="ab-slot-li">
+                                                <span class="ab-slot-item">A</span>
+                                            </li>
+                                            <li class="ab-slot-li">
+                                                <span class="ab-slot-item">3</span>
+                                            </li>
+                                            <li class="ab-slot-li">
+                                                <span class="ab-slot-item">M</span>
+                                            </li>
+                                            <li class="ab-slot-li">
+                                                <span class="ab-slot-item">R</span>
+                                            </li>
+                                            <li class="ab-slot-li">
+                                                <span class="ab-slot-item">8</span>
+                                            </li>
+                                        </ul>
+                                        <span class="ab-People">Do you know that refering a friend can earn you credits?
+                                            These credits can be used to purchase more courses</span>
+                                        <span class="ab-color-dark">100 Credits = Rs.50</span>
+                                        <a class="ab-find-btn ab-big-one">Copy Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Register Your Complaints-->
+                    <div id="Complaints" class="ab-tabcontent ab-Purchase-History-tab">
+                        <div class=" ab-personlaInfo">
+                            <div class="row">
+                                <div class=" col-12">
+                                    <h3 class="ab-personalInfo-title ab-color-dark ab-title pb-3">Register Your
+                                        Complaints</h3>
+                                </div>
+                            </div>
+                            <div class="row pb-5 ab-justify-center">
+                                <div class="col-12">
+                                    <div class="ab-Courses-Purchased">
+                                        <div class="ab-Courses-Purchased-body ab-bordder-bottom my-3 py-4">
+                                            <span class="ab-People">Please select a category and write your complaints.
+                                                Our customer executive will reply back to your email, with in 24
+                                                hours.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <span class="ab-select-complaint">Select Complaint Category</span>
+                                    <select class="form-select ab-select-drow" aria-label="Default select example"
+                                        fdprocessedid="14xtg">
+                                        <option selected="">All Reviews</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row my-5">
+                                <div class="col-12">
+                                    <span class="ab-select-complaint">Enter your Note</span>
+                                    <textarea class="form-control ab-textarea-field" id="exampleFormControlTextarea1"
+                                        rows="6"
+                                        placeholder="Please type in the description of your complaint here"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer -->
+    <footer class="ab-footer">
+        <div class="container">
+            <div class="row my-5">
+                <div class=" col-lg-6 col-md-6 col-sm-12">
+                    <div class="ab-footer-about">
+                        <div class="ab-logo mb-4">
+                            <img src="img/abhyan-logo.png" alt="abhyan">
+                            <span class="ab-logo-content">Abhyan</span>
+                        </div>
+                    </div>
+                    <div class="ab-footer-about-content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip ex
+                        ea commodo consequat.labore.
+                        <a class="ab-line-link  my-4">
+                            Read
+                            <span class="ab-arrow-icon ab-sprit-img"></span>
+                        </a>
+                    </div>
+                    <span class="ab-footer-add">
+                        1000 Circle 75 Parkway, Suite 705, Hyderabad - 560102
+                    </span>
+                    <div class="ab-footer-mail">
+                        <a href="mailto:support@abhyan.com">support@abhyan.com</a>
+                    </div>
+                </div>
+                <div class="col col-lg-2 col-md-2 col-sm-6">
+                    <h4 class="ab-footer-title">Courses</h4>
+                    <ul class="ab-footer-link-ul">
+                        <li><a class="ab-footer-link"> Digital Marketing</a></li>
+                        <li><a class="ab-footer-link"> Finance</a></li>
+                        <li><a class="ab-footer-link"> Microsoft Tools</a></li>
+                        <li><a class="ab-footer-link"> Design</a></li>
+                        <li><a class="ab-footer-link"> Google Tools</a></li>
+                    </ul>
+                </div>
+                <div class="col col-lg-2 col-md-2 col-sm-6">
+                    <h4 class="ab-footer-title">Resources</h4>
+                    <ul class="ab-footer-link-ul">
+                        <li><a class="ab-footer-link"> Tips & Tricks</a></li>
+                        <li><a class="ab-footer-link"> Videos</a></li>
+                        <li><a class="ab-footer-link"> Articles</a></li>
+                    </ul>
+                </div>
+                <div class="col col-lg-2 col-md-2 col-sm-12">
+                    <h4 class="ab-footer-title">Abhyan</h4>
+                    <ul class="ab-footer-link-ul">
+                        <li><a class="ab-footer-link"> About </a></li>
+                        <li><a class="ab-footer-link"> Philisophy</a></li>
+                        <li><a class="ab-footer-link"> Press Releases</a></li>
+                        <li><a class="ab-footer-link"> Team</a></li>
+                        <li><a class="ab-footer-link"> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="ab-footer-social-media-icon my-2">
+                        <ul class="ab-sns">
+                            <li>
+                                <a>
+                                    <span class="ab-linkedin"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="ab-facebook"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="ab-twitter"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="ab-youtube"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    <span class="ab-pinterest"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col ab-align-items-center my-5">
+                    <span class="ab-copyright">
+                        <a class="ab-copyright-link">Privacy Policy</a> | <a class="ab-copyright-link mr-3">Terms Of
+                            Services </a>
+                        <span class="ab-copyright-contet">Copyright © Abhyan, INC. 2021. All Rights Reserved</span>
+                    </span>
+                </div>
+            </div>
+    </footer>
+
+    <!--Login page-->
+    <section class="ab-login-page" id="_loginPupPup">
+        <a onclick="closeBt()" class="ab-close"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-wr8ge5"
+                focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloseIcon">
+                <path
+                    d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                </path>
+            </svg></a>
+        <div class="b-loginwrapper m-4">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-12">
+                        <img src="img/b-logo.png">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12">
+                        <h6 class="ab-title ab-free-content fs-5 my-2">It’s free content, but only students or
+                            registered users can
+                            access
+                            Resources.</h3>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-12">
+                        <ul class="ab-singup-list  my-4">
+                            <li> <a class="fs-4 signUPAct" onclick="signUPTab()" id="_btnSignup">Signup</a></li>
+                            <li> <a class="fs-4 ab-active singinAct" onclick="signinTab()" id="_btnSignin">Signin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row ab-align-items-center ab-line-right">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="ab-social-net-icon">
+                            <h6 class="ab-title fs-5 ab-Social-Networks-login">With Social Networks</h4>
+                                <ul class="ab-social-net-icon-list">
+                                    <li><a class="ab-soc-net ab-face-icon"></a></li>
+                                    <li><a class="ab-soc-net ab-google-icon"></a></li>
+                                    <li><a class="ab-soc-net ab-twitter-icon"></a></li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <!-- signu up form -->
+                        <div class="ab-signup-form mx-4" style="display: none;" id="_signup">
+                            <form>
+                                <div class="ab-controle-form">
+                                    <div class="ab-checkbox">
+                                        <span class="ab-lable ab-title">Using </span>
+                                        <div class="ab-form-check">
+                                            <input type="radio" class="form-check-input" id="phoneCheck" name="using"
+                                                onclick="phoneCheckT();" checked>
+                                            <label class="form-check-label" for="exampleCheck1">Phone</label>
+                                        </div>
+                                        <div class="ab-form-check">
+                                            <input type="radio" class="form-check-input" id="emailCheck" name="using"
+                                                onclick="emailCheckT();">
+                                            <label class="form-check-label" for="exampleCheck2">Email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <input type="text" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Name">
+                                </div>
+                                <div class="ab-controle-form my-3" id="phoneCheckfield">
+                                    <input type="number" class="form-control" placeholder="+91">
+                                </div>
+                                <div class="ab-controle-form my-3" id="emailCheckfield">
+                                    <input type="text" class="form-control" placeholder="Email Address">
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Password">
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <button type="button" class="btn btn-primary ab-button ab-Sign-Up-btn">Sign
+                                        Up</button>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- signu in form -->
+                        <div class="ab-signup-form mx-4" style="display: block;" id="_signin">
+                            <form>
+                                <div class="ab-controle-form">
+                                    <div class="ab-checkbox">
+                                        <span class="ab-lable ab-title">Using </span>
+                                        <div class="ab-form-check">
+                                            <input type="radio" class="form-check-input" id="phoneCheckin" name="using"
+                                                onclick="phoneCheckTin();" checked>
+                                            <label class="form-check-label" for="Phone">Phone</label>
+                                        </div>
+                                        <div class="ab-form-check">
+                                            <input type="radio" class="form-check-input" id="emailCheckin" name="using"
+                                                onclick="emailCheckTin();">
+                                            <label class="form-check-label" for="Email">Email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <input type="number" class="form-control" id="phoneCheckfieldin" placeholder="+91">
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <input type="text" class="form-control" id="emailCheckfieldin"
+                                        placeholder="Email Address">
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Password">
+                                </div>
+                                <div class="ab-controle-form my-3">
+                                    <button type="button" class="btn btn-primary ab-button ab-Sign-Up-btn">Sign
+                                        In</button>
+                                    <a class="ab-Forgot-Password">Forgot Password?</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--video page-->
+    <section class="ab-video-page" id="_videoPupPup" style="display: none;">
+        <a onclick="vediobt()" class="ab-close"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-wr8ge5"
+                focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="CloseIcon">
+                <path
+                    d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                </path>
+            </svg>
+        </a>
+        <div class="b-loginwrapper m-4">
+            <video width="100%" height="100%" controls id="_videoItem">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <div class="ab-bg-black" id="_videoPupPupBg" onclick="vediobt()"></div>
+
+    <div class="ab-bg-black" id="_loginPupPupBg"></div>
+    <script src="js/courseTrainerCreators.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("ab-tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" ab-active-menu", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " ab-active-menu";
+            profileMenuMobile()
+        }
+
+        function profileMenuMobile() {
+            const navMenu = document.getElementById('_profilemenu')
+            if (navMenu.style.display === "none") {
+                navMenu.style.display = "block";
+            } else {
+                navMenu.style.display = "none";
+            }
+        }
+    </script>
+    </script>
+</body>
+
+</html>
