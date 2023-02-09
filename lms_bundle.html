@@ -80,7 +80,7 @@
         <div class="ab-mbun">
             <div class="container" id="TabsSystem" data-tab="Tab1">
                 <div class="row my-5">
-                    <div class="col-md-4  col-sm-12">
+                    <div class="col-md-4  col-sm-12 ab-digitla-marketing-title">
                         <span class="ab-ims-bundl-top-sub-content ab-color-dark">Digital Marketing</span>
                         <h2 class="ab-title fs-4">Digital Marketing Bundle</h2>
                     </div>
@@ -117,344 +117,431 @@
                     <div class="col-md-12  col-sm-12">
                         <!--of 40 Hrs Completed-->
                         <div class="ab-ims-bundl-video tab-section" data-tab="Tab1">
-                            <div class="row">
-                                <div class="col-md-8  col-sm-12" style="padding-right: 0px;">
-                                    <video width="100%" height="100%" controls id="_videoItem">
-                                        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                                        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                                <div class="col-md-4  col-sm-12">
-                                    <nav class="ab-lms-bundle-tab">
-                                        <div class="ab-nav nav nav-tabs" id="nav-tab" role="tablist">
-                                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
-                                                data-bs-target="#nav-home" type="button" role="tab"
-                                                aria-controls="nav-home" aria-selected="true">
-                                                <span class="ab-lms-chapter-icon ab-sprit-img"></span>Chapters
-                                            </button>
-                                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
-                                                data-bs-target="#nav-profile" type="button" role="tab"
-                                                aria-controls="nav-profile" aria-selected="false">
-                                                <span class="ab-lms-Profile-icon ab-sprit-img"></span>Summary
-                                            </button>
-                                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
-                                                data-bs-target="#nav-contact" type="button" role="tab"
-                                                aria-controls="nav-contact" aria-selected="false">
-                                                <span class="ab-lms-Contact-icon ab-sprit-img"></span>My Notes
-                                            </button>
+                            <div  id="TabsSystemQz" >
+                                <div class="row" id="TabsSyspdftips">
+                                    <div class="col-md-8  col-sm-12" style="padding-right: 0px;">
+                                        <!--video section-->
+                                        <div class="ab-video-section tab-sectionpdftips" data-tab="Tab1">
+                                            <video width="100%" height="100%" controls id="_videoItem">
+                                                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                                                <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+                                                Your browser does not support the video tag.
+                                            </video>
                                         </div>
-                                    </nav>
-                                    <div class="tab-content" id="nav-tabContent">
-                                        <!--Chapters-->
-                                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                            <div class="accordion ab-accordion" id="accordionExample">
-                                                <!--01 Introduction-->
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header" id="headingOne">
-                                                        <button class="accordion-button ab-border-bottom" type="button"
-                                                            data-bs-toggle="collapse" data-bs-target="#Introduction"
-                                                            aria-expanded="true" aria-controls="Introduction">
-                                                            <span class="ab-sighn-Section-content"> 01 Introduction
-                                                            </span> <span class="ab-sighn-icon"></span> <span
-                                                                class="ab-accordion-time"> 60 mins</span>
-                                                        </button>
-                                                    </div>
-                                                    <div id="Introduction" class="accordion-collapse collapse show"
-                                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                                        <div class="accordion-body">
-                                                            <ul class="ab-accordion-course-list">
-                                                                <li>
-                                                                    <a
-                                                                        class="ab-accordion-course-video ab-border-bottom">
-                                                                        <span
-                                                                            class="ab-accordion-course-video-icon  ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-content">Tips
-                                                                            & Tricks</span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-tick ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-time">10:00</span>
+                                        <!--pdf section-->
+                                        <div class="ab-pdf-section tab-sectionpdftips" data-tab="Tab2">
+                                            <div class="ab-pdf-wrapper">
+                                                <img src="img/pdf.png" alt="pdf" />
+                                                <h3 class="ab-digital-making-title ab-title my-4">Digital Marketing Tips &
+                                                    Tricks </h3>
+                                                <button type="button" class="btn btn-primary ab-button ab-Download-btn"
+                                                    fdprocessedid="n5evop">Download Now</button>
+                                            </div>
+                                        </div>
+                                        <!--Quiz Title Goes Here-->
+                                        <div class="ab-Quiz-Title-section tab-sectionpdftips" data-tab="Tab3">
+                                            <a class="slide-arrow ab-sprit-img-st slide-arrow-next"
+                                                onclick="nextBtnQu(event)">Next</a>
+                                            <ul class="slides-container py-3">
+                                                <li class="ab-Quiz-title slide">
+                                                    <div class="ab-Quiz-section">
+                                                        <h2 class="ab-title ab-title ab-color-dark mb-5">Quiz Title Goes
+                                                            Here</h2>
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-sm-12">
+                                                                <div class="ab-quiz-img">
+                                                                    <img src="img/imgst.png" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-8 col-sm-12">
+                                                                <div class="ab-quiztw fs-5 mb-2">What does the 3rd R of the
+                                                                    AARRR</div>
+                                                                <div class="ab-quiz-content-ofQZ my-2">
+                                                                    <a class="ab-anser-q-item ab-wrongAnswre">
+                                                                        <span class="ab-anser-q-item-az">A</span>
+                                                                        <span class="ab-anser-q-item-content">Revenue</span>
+                                                                        <span class="ab-wrong-icon ab-sprit-img"></span>
+                                                                        <!-- <span class="ab-rightanser-icon ab-sprit-img"></span>
+                                                                        <span class="ab-rightanser-icon-select ab-sprit-img"></span> -->
                                                                     </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        class="ab-accordion-course-video ab-border-bottom">
+                                                                    <span class="ab-valid-massage">Wrong!</span>
+                                                                </div>
+                                                                <div class="ab-quiz-content-ofQZ my-2">
+                                                                    <a class="ab-anser-q-item">
+                                                                        <span class="ab-anser-q-item-az">B</span>
                                                                         <span
-                                                                            class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-content">PDF
-                                                                            Download</span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-tick ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-time">10:00</span>
+                                                                            class="ab-anser-q-item-content">Regression</span>
+                                                                        <!-- <span class="ab-wrong-icon ab-sprit-img"></span>
+                                                                        <span class="ab-rightanser-icon ab-sprit-img"></span>
+                                                                        <span class="ab-rightanser-icon-select ab-sprit-img"></span> -->
                                                                     </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        class="ab-accordion-course-video ab-border-bottom">
+                                                                    <!-- <span class="ab-valid-massage">Wrong!</span> -->
+                                                                </div>
+                                                                <div class="ab-quiz-content-ofQZ my-2">
+                                                                    <a class="ab-anser-q-item ab-rightAnswer">
+                                                                        <span class="ab-anser-q-item-az">C</span>
                                                                         <span
-                                                                            class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
+                                                                            class="ab-anser-q-item-content">Retention</span>
+                                                                        <!-- <span class="ab-wrong-icon ab-sprit-img"></span>
+                                                                        <span class="ab-rightanser-icon ab-sprit-img"></span> -->
                                                                         <span
-                                                                            class="ab-accordion-course-video-content">Tips
-                                                                            & Tricks</span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-tick ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-time">10:00</span>
+                                                                            class="ab-rightanser-icon-select ab-sprit-img"></span>
                                                                     </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        class="ab-accordion-course-video ab-border-bottom">
+                                                                    <span class="ab-valid-massage">Right Answer</span>
+                                                                </div>
+                                                                <div class="ab-quiz-content-ofQZ my-2">
+                                                                    <a class="ab-anser-q-item">
+                                                                        <span class="ab-anser-q-item-az">D</span>
                                                                         <span
-                                                                            class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-content">Digital
-                                                                            Marketing Demystified</span>
-                                                                        <!-- <span class="ab-accordion-course-video-tick ab-sprit-img"></span> -->
-                                                                        <span
-                                                                            class="ab-accordion-course-video-time">10:00</span>
+                                                                            class="ab-anser-q-item-content">Retention</span>
+                                                                        <!-- <span class="ab-wrong-icon ab-sprit-img"></span>
+                                                                        <span class="ab-rightanser-icon ab-sprit-img"></span>
+                                                                        <span class="ab-rightanser-icon-select ab-sprit-img"></span> -->
                                                                     </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        class="ab-accordion-course-video ab-border-bottom">
-                                                                        <span
-                                                                            class="ab-accordion-course-Quiz-icon  ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-content">Quiz</span>
-                                                                        <!-- <span class="ab-accordion-course-video-tick ab-sprit-img"></span> -->
-                                                                        <span
-                                                                            class="ab-accordion-course-video-time">10:00</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
+                                                                    <!-- <span class="ab-valid-massage">Wrong!</span> -->
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <!--02 Section Title -->
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header" id="headingTwo">
-                                                        <button class="accordion-button ab-border-bottom" type="button"
-                                                            data-bs-toggle="collapse" data-bs-target="#Section"
-                                                            aria-expanded="true" aria-controls="Section">
-                                                            <span class="ab-sighn-Section-content"> 02 Section
-                                                                Title</span> <span class="ab-sighn-icon"></span> <span
-                                                                class="ab-accordion-time"> 60 mins</span>
-                                                        </button>
+                                                </li>
+                                                <li class="ab-Quiz-title slide">
+                                                    <div class="ab-Quiz-section">
+                                                        <h2 class="ab-title ab-title ab-color-dark mb-5">Quiz Title Goes
+                                                            Here</h2>
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-sm-12">
+                                                                <div class="ab-quiz-img">
+                                                                    <img src="img/imgst.png" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-8 col-sm-12">
+                                                                <div class="ab-quiztw fs-5 mb-2">What does the 3rd R of the
+                                                                    AARRR
+                                                                    Funnel stand for?</div>
+                                                                <div class="ab-quiz-content-ofQZ my-2">
+                                                                    <a class="ab-anser-q-item ab-wrongAnswre">
+                                                                        <span class="ab-anser-q-item-az">A</span>
+                                                                        <span class="ab-anser-q-item-content">Revenue</span>
+                                                                        <span class="ab-wrong-icon ab-sprit-img"></span>
+                                                                        <!-- <span class="ab-rightanser-icon ab-sprit-img"></span>
+                                                                        <span class="ab-rightanser-icon-select ab-sprit-img"></span> -->
+                                                                    </a>
+                                                                    <span class="ab-valid-massage">Wrong!</span>
+                                                                </div>
+                                                                <div class="ab-quiz-content-ofQZ my-2">
+                                                                    <a class="ab-anser-q-item">
+                                                                        <span class="ab-anser-q-item-az">B</span>
+                                                                        <span
+                                                                            class="ab-anser-q-item-content">Regression</span>
+                                                                        <!-- <span class="ab-wrong-icon ab-sprit-img"></span>
+                                                                        <span class="ab-rightanser-icon ab-sprit-img"></span>
+                                                                        <span class="ab-rightanser-icon-select ab-sprit-img"></span> -->
+                                                                    </a>
+                                                                    <!-- <span class="ab-valid-massage">Wrong!</span> -->
+                                                                </div>
+                                                                <div class="ab-quiz-content-ofQZ my-2">
+                                                                    <a class="ab-anser-q-item ab-rightAnswer">
+                                                                        <span class="ab-anser-q-item-az">C</span>
+                                                                        <span
+                                                                            class="ab-anser-q-item-content">Retention</span>
+                                                                        <!-- <span class="ab-wrong-icon ab-sprit-img"></span>
+                                                                        <span class="ab-rightanser-icon ab-sprit-img"></span> -->
+                                                                        <span
+                                                                            class="ab-rightanser-icon-select ab-sprit-img"></span>
+                                                                    </a>
+                                                                    <span class="ab-valid-massage">Right Answer</span>
+                                                                </div>
+                                                                <div class="ab-quiz-content-ofQZ my-2">
+                                                                    <a class="ab-anser-q-item">
+                                                                        <span class="ab-anser-q-item-az">D</span>
+                                                                        <span
+                                                                            class="ab-anser-q-item-content">Retention</span>
+                                                                        <!-- <span class="ab-wrong-icon ab-sprit-img"></span>
+                                                                        <span class="ab-rightanser-icon ab-sprit-img"></span>
+                                                                        <span class="ab-rightanser-icon-select ab-sprit-img"></span> -->
+                                                                    </a>
+                                                                    <!-- <span class="ab-valid-massage">Wrong!</span> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
                                                     </div>
-                                                    <div id="Section" class="accordion-collapse collapse"
-                                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                                        <div class="accordion-body">
-                                                            <ul class="ab-accordion-course-list">
-                                                                <li>
-                                                                    <a
-                                                                        class="ab-accordion-course-video ab-border-bottom">
-                                                                        <span
-                                                                            class="ab-accordion-course-video-icon  ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-content">Tips
-                                                                            & Tricks</span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-tick ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-time">10:00</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        class="ab-accordion-course-video ab-border-bottom">
-                                                                        <span
-                                                                            class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-content">PDF
-                                                                            Download</span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-tick ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-time">10:00</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        class="ab-accordion-course-video ab-border-bottom">
-                                                                        <span
-                                                                            class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-content">Tips
-                                                                            & Tricks</span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-tick ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-time">10:00</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        class="ab-accordion-course-video ab-border-bottom">
-                                                                        <span
-                                                                            class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-content">Digital
-                                                                            Marketing Demystified</span>
-                                                                        <!-- <span class="ab-accordion-course-video-tick ab-sprit-img"></span> -->
-                                                                        <span
-                                                                            class="ab-accordion-course-video-time">10:00</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        class="ab-accordion-course-video ab-border-bottom">
-                                                                        <span
-                                                                            class="ab-accordion-course-Quiz-icon  ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-content">Quiz</span>
-                                                                        <!-- <span class="ab-accordion-course-video-tick ab-sprit-img"></span> -->
-                                                                        <span
-                                                                            class="ab-accordion-course-video-time">10:00</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
+                                                </li>
+                                                <li class="ab-Quiz-title slide">
+                                                    <div class="ab-Quiz-section ab-text-center">
+                                                        <h2 class="ab-title ab-title ab-color-dark mb-1 fs-4 ">Quiz Title Goes Here</h2>
+                                                        <div class="ab-you-havecopleted mb-2">You have completed the quiz!</div>
+                                                        <div class="ab-successtare my-3">
+                                                            <span class="ab-successtare-count">80%</span>
+                                                            <span class="ab-successtare-cotent">Success Rate</span>
+                                                        </div>
+                                                        <div class="ab-questions-answered-correc mb-2">8 of 10 questions answered correct</div>
+                                                        <a class="ab-color-dark">View Answers</a>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                            <a class="slide-arrow ab-sprit-img-st slide-arrow-prev"
+                                                onclick="prevBtnQu(event)">Prev</a>
+                                            <div class="ab-controle">
+                                                <span class="ab-slide-count-control">2/10</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4  col-sm-12">
+                                        <nav class="ab-lms-bundle-tab">
+                                            <div class="ab-nav nav nav-tabs" id="nav-tab" role="tablist">
+                                                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-home" type="button" role="tab"
+                                                    aria-controls="nav-home" aria-selected="true">
+                                                    <span class="ab-lms-chapter-icon ab-sprit-img"></span>Chapters
+                                                </button>
+                                                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-profile" type="button" role="tab"
+                                                    aria-controls="nav-profile" aria-selected="false">
+                                                    <span class="ab-lms-Profile-icon ab-sprit-img"></span>Summary
+                                                </button>
+                                                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#nav-contact" type="button" role="tab"
+                                                    aria-controls="nav-contact" aria-selected="false">
+                                                    <span class="ab-lms-Contact-icon ab-sprit-img"></span>My Notes
+                                                </button>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content" id="nav-tabContent">
+                                            <!--Chapters-->
+                                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                                aria-labelledby="nav-home-tab">
+                                                <div class="accordion ab-accordion" id="accordionExample">
+                                                    <!--01 Introduction-->
+                                                    <div class="accordion-item">
+                                                        <div class="accordion-header" id="headingOne">
+                                                            <button class="accordion-button ab-border-bottom" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#Introduction"
+                                                                aria-expanded="true" aria-controls="Introduction">
+                                                                <span class="ab-sighn-Section-content"> 01 Introduction
+                                                                </span> <span class="ab-sighn-icon"></span> <span
+                                                                    class="ab-accordion-time"> 60 mins</span>
+                                                            </button>
+                                                        </div>
+                                                        <div id="Introduction" class="accordion-collapse collapse show"
+                                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <ul class="ab-accordion-course-list">
+                                                                    <li>
+                                                                        <a class="ab-accordion-course-video ab-border-bottom TabButtonQzpdftips" data-tab="Tab1">
+                                                                            <span class="ab-accordion-course-video-icon  ab-sprit-img"></span>
+                                                                            <span  class="ab-accordion-course-video-content">Tips & Tricks</span>
+                                                                            <span class="ab-accordion-course-video-tick ab-sprit-img"></span>
+                                                                            <span  class="ab-accordion-course-video-time">10:00</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="ab-accordion-course-video ab-border-bottom TabButtonQzpdftips" data-tab="Tab2">
+                                                                            <span class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
+                                                                            <span class="ab-accordion-course-video-content">PDF Download</span>
+                                                                            <span class="ab-accordion-course-video-tick ab-sprit-img"></span>
+                                                                            <span  class="ab-accordion-course-video-time">10:00</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="ab-accordion-course-video ab-border-bottom ">
+                                                                            <span class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
+                                                                            <span class="ab-accordion-course-video-content">Tips & Tricks</span>
+                                                                            <span class="ab-accordion-course-video-tick ab-sprit-img"></span>
+                                                                            <span  class="ab-accordion-course-video-time">10:00</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="ab-accordion-course-video ab-border-bottom ">
+                                                                            <span class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
+                                                                            <span class="ab-accordion-course-video-content">Digital
+                                                                                Marketing Demystified</span>
+                                                                            <!-- <span class="ab-accordion-course-video-tick ab-sprit-img"></span> -->
+                                                                            <span class="ab-accordion-course-video-time">10:00</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="ab-accordion-course-video ab-border-bottom TabButtonQzpdftips" data-tab="Tab3">
+                                                                            <span class="ab-accordion-course-Quiz-icon  ab-sprit-img"></span>
+                                                                            <span class="ab-accordion-course-video-content">Quiz</span>
+                                                                            <!-- <span class="ab-accordion-course-video-tick ab-sprit-img"></span> -->
+                                                                            <span class="ab-accordion-course-video-time">10:00</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <!--03 Section Title -->
-                                                <div class="accordion-item">
-                                                    <div class="accordion-header" id="headingThree">
-                                                        <button class="accordion-button" type="button"
-                                                            data-bs-toggle="collapse" data-bs-target="#Sectiontwo"
-                                                            aria-expanded="true" aria-controls="Sectiontwo">
-                                                            <span class="ab-sighn-Section-content"> 03 Section
-                                                                Title</span> <span class="ab-sighn-icon"></span> <span
-                                                                class="ab-accordion-time"> 60 mins</span>
-                                                        </button>
+                                                    <!--02 Section Title -->
+                                                    <div class="accordion-item">
+                                                        <div class="accordion-header" id="headingTwo">
+                                                            <button class="accordion-button ab-border-bottom" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#Section"
+                                                                aria-expanded="true" aria-controls="Section">
+                                                                <span class="ab-sighn-Section-content"> 02 Section
+                                                                    Title</span> <span class="ab-sighn-icon"></span> <span
+                                                                    class="ab-accordion-time"> 60 mins</span>
+                                                            </button>
+                                                        </div>
+                                                        <div id="Section" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <ul class="ab-accordion-course-list">
+                                                                    <li>
+                                                                        <a class="ab-accordion-course-video ab-border-bottom TabButtonQzpdftips" data-tab="Tab1">
+                                                                            <span class="ab-accordion-course-video-icon  ab-sprit-img"></span>
+                                                                            <span  class="ab-accordion-course-video-content">Tips & Tricks</span>
+                                                                            <span class="ab-accordion-course-video-tick ab-sprit-img"></span>
+                                                                            <span  class="ab-accordion-course-video-time">10:00</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="ab-accordion-course-video ab-border-bottom TabButtonQzpdftips" data-tab="Tab2">
+                                                                            <span class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
+                                                                            <span class="ab-accordion-course-video-content">PDF Download</span>
+                                                                            <span class="ab-accordion-course-video-tick ab-sprit-img"></span>
+                                                                            <span  class="ab-accordion-course-video-time">10:00</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="ab-accordion-course-video ab-border-bottom  TabButtonQzpdftips" data-tab="Tab2">
+                                                                            <span class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
+                                                                            <span class="ab-accordion-course-video-content">Tips & Tricks</span>
+                                                                            <span class="ab-accordion-course-video-tick ab-sprit-img"></span>
+                                                                            <span  class="ab-accordion-course-video-time">10:00</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="ab-accordion-course-video ab-border-bottom TabButtonQzpdftips" data-tab="Tab2">
+                                                                            <span class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
+                                                                            <span class="ab-accordion-course-video-content">Digital
+                                                                                Marketing Demystified</span>
+                                                                            <!-- <span class="ab-accordion-course-video-tick ab-sprit-img"></span> -->
+                                                                            <span class="ab-accordion-course-video-time">10:00</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="ab-accordion-course-video ab-border-bottom TabButtonQzpdftips" data-tab="Tab3">
+                                                                            <span class="ab-accordion-course-Quiz-icon  ab-sprit-img"></span>
+                                                                            <span class="ab-accordion-course-video-content">Quiz</span>
+                                                                            <!-- <span class="ab-accordion-course-video-tick ab-sprit-img"></span> -->
+                                                                            <span class="ab-accordion-course-video-time">10:00</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div id="Sectiontwo" class="accordion-collapse collapse"
-                                                        aria-labelledby="headingThree"
-                                                        data-bs-parent="#accordionExample">
-                                                        <div class="accordion-body">
-                                                            <ul class="ab-accordion-course-list">
-                                                                <li>
-                                                                    <a
-                                                                        class="ab-accordion-course-video ab-border-bottom">
-                                                                        <span
-                                                                            class="ab-accordion-course-video-icon  ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-content">Tips
-                                                                            & Tricks</span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-tick ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-time">10:00</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        class="ab-accordion-course-video ab-border-bottom">
-                                                                        <span
-                                                                            class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-content">PDF
-                                                                            Download</span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-tick ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-time">10:00</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        class="ab-accordion-course-video ab-border-bottom">
-                                                                        <span
-                                                                            class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-content">Tips
-                                                                            & Tricks</span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-tick ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-time">10:00</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        class="ab-accordion-course-video ab-border-bottom">
-                                                                        <span
-                                                                            class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-content">Digital
-                                                                            Marketing Demystified</span>
-                                                                        <!-- <span class="ab-accordion-course-video-tick ab-sprit-img"></span> -->
-                                                                        <span
-                                                                            class="ab-accordion-course-video-time">10:00</span>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a
-                                                                        class="ab-accordion-course-video ab-border-bottom">
-                                                                        <span
-                                                                            class="ab-accordion-course-Quiz-icon  ab-sprit-img"></span>
-                                                                        <span
-                                                                            class="ab-accordion-course-video-content">Quiz</span>
-                                                                        <!-- <span class="ab-accordion-course-video-tick ab-sprit-img"></span> -->
-                                                                        <span
-                                                                            class="ab-accordion-course-video-time">10:00</span>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
+                                                    <!--03 Section Title -->
+                                                    <div class="accordion-item">
+                                                        <div class="accordion-header" id="headingThree">
+                                                            <button class="accordion-button" type="button"
+                                                                data-bs-toggle="collapse" data-bs-target="#Sectiontwo"
+                                                                aria-expanded="true" aria-controls="Sectiontwo">
+                                                                <span class="ab-sighn-Section-content"> 03 Section
+                                                                    Title</span> <span class="ab-sighn-icon"></span> <span
+                                                                    class="ab-accordion-time"> 60 mins</span>
+                                                            </button>
+                                                        </div>
+                                                        <div id="Sectiontwo" class="accordion-collapse collapse"
+                                                            aria-labelledby="headingThree"
+                                                            data-bs-parent="#accordionExample">
+                                                            <div class="accordion-body">
+                                                                <ul class="ab-accordion-course-list">
+                                                                    <li>
+                                                                        <a class="ab-accordion-course-video ab-border-bottom TabButtonQzpdftips" data-tab="Tab1">
+                                                                            <span class="ab-accordion-course-video-icon  ab-sprit-img"></span>
+                                                                            <span  class="ab-accordion-course-video-content">Tips & Tricks</span>
+                                                                            <span class="ab-accordion-course-video-tick ab-sprit-img"></span>
+                                                                            <span  class="ab-accordion-course-video-time">10:00</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="ab-accordion-course-video ab-border-bottom TabButtonQzpdftips" data-tab="Tab2">
+                                                                            <span class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
+                                                                            <span class="ab-accordion-course-video-content">PDF Download</span>
+                                                                            <span class="ab-accordion-course-video-tick ab-sprit-img"></span>
+                                                                            <span  class="ab-accordion-course-video-time">10:00</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="ab-accordion-course-video ab-border-bottom  TabButtonQzpdftips" data-tab="Tab2">
+                                                                            <span class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
+                                                                            <span class="ab-accordion-course-video-content">Tips & Tricks</span>
+                                                                            <span class="ab-accordion-course-video-tick ab-sprit-img"></span>
+                                                                            <span  class="ab-accordion-course-video-time">10:00</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="ab-accordion-course-video ab-border-bottom TabButtonQzpdftips" data-tab="Tab2">
+                                                                            <span class="ab-accordion-course-pdf-icon  ab-sprit-img"></span>
+                                                                            <span class="ab-accordion-course-video-content">Digital
+                                                                                Marketing Demystified</span>
+                                                                            <!-- <span class="ab-accordion-course-video-tick ab-sprit-img"></span> -->
+                                                                            <span class="ab-accordion-course-video-time">10:00</span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a class="ab-accordion-course-video ab-border-bottom TabButtonQzpdftips" data-tab="Tab3">
+                                                                            <span class="ab-accordion-course-Quiz-icon  ab-sprit-img"></span>
+                                                                            <span class="ab-accordion-course-video-content">Quiz</span>
+                                                                            <!-- <span class="ab-accordion-course-video-tick ab-sprit-img"></span> -->
+                                                                            <span class="ab-accordion-course-video-time">10:00</span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!--Summary-->
-                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel"
-                                            aria-labelledby="nav-profile-tab">
-                                            <div class="ab-accordion">
-                                                <div class="ab-summary m-4">
-                                                    <h4 class="ab-content ab-color-dark fs-6 my-3 ab-summary-title ">
-                                                        Title Goes Here</h4>
-                                                    <a class="ab-full-screen-icon ab-sprit-img"
-                                                        onclick="absummaryFullscreen()"></a>
-                                                    <div class="ab-content ab-summary-content">
-                                                        Digital marketing is the component of marketing that utilizes
-                                                        internet and online based digital technologies such as desktop
-                                                        computers, mobile phones and other digital media and platforms
-                                                        to promote products and services.
+                                            <!--Summary-->
+                                            <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                                aria-labelledby="nav-profile-tab">
+                                                <div class="ab-accordion">
+                                                    <div class="ab-summary m-4">
+                                                        <h4 class="ab-content ab-color-dark fs-6 my-3 ab-summary-title ">
+                                                            Title Goes Here</h4>
+                                                        <a class="ab-full-screen-icon ab-sprit-img"
+                                                            onclick="absummaryFullscreen()"></a>
+                                                        <div class="ab-content ab-summary-content">
+                                                            Digital marketing is the component of marketing that utilizes
+                                                            internet and online based digital technologies such as desktop
+                                                            computers, mobile phones and other digital media and platforms
+                                                            to promote products and services.
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <!--My Notes-->
-                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel"
-                                            aria-labelledby="nav-contact-tab">
-                                            <div class="ab-accordion">
-                                                <div class="ab-summary m-4">
-                                                    <h4
-                                                        class="ab-content ab-color-dark fs-6 my-3 ab-summary-title mb-5">
-                                                        Course Overview</h4>
-                                                    <div class="ab-content my-3">
-                                                        <span class="ab-summary-content">
-                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                            sed do eiusmod tempor incididunt ut labore et dolore.
-                                                        </span>
-                                                        <span class="ab-user-time-name">
-                                                            Abhyan takeaway - 01:46
-                                                            <span class="ab-sprit-img ab-arrow-time"></span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="ab-content my-3">
-                                                        <span class="ab-summary-content">
-                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                                            sed do eiusmod tempor incididunt ut labore et dolore.
-                                                        </span>
-                                                        <span class="ab-user-time-name">
-                                                            Abhyan takeaway - 01:46
-                                                            <span class="ab-sprit-img ab-arrow-time"></span>
-                                                        </span>
+                                            <!--My Notes-->
+                                            <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                                aria-labelledby="nav-contact-tab">
+                                                <div class="ab-accordion">
+                                                    <div class="ab-summary m-4">
+                                                        <h4
+                                                            class="ab-content ab-color-dark fs-6 my-3 ab-summary-title mb-5">
+                                                            Course Overview</h4>
+                                                        <div class="ab-content my-3">
+                                                            <span class="ab-summary-content">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                                sed do eiusmod tempor incididunt ut labore et dolore.
+                                                            </span>
+                                                            <span class="ab-user-time-name">
+                                                                Abhyan takeaway - 01:46
+                                                                <span class="ab-sprit-img ab-arrow-time"></span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="ab-content my-3">
+                                                            <span class="ab-summary-content">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                                                sed do eiusmod tempor incididunt ut labore et dolore.
+                                                            </span>
+                                                            <span class="ab-user-time-name">
+                                                                Abhyan takeaway - 01:46
+                                                                <span class="ab-sprit-img ab-arrow-time"></span>
+                                                            </span>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -712,8 +799,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row ">
-                <div class="col-md-6  col-sm-12">
+            <div class="row">
+                <div class="col-md-6  col-sm-12 ">
                     <h2 class="ab-title ab-color-dark my-3">Digital Marketing Bundle</h2>
                     <div class="ab-lag my-4">
                         <span class="ab-lag-icon ab-sprit-img "></span>English, Telugu, Hindi
@@ -2353,37 +2440,65 @@
         }
 
 
-        const dContainer = document.querySelector('#TabsSystem')
-
-        dContainer
+            const dContainer = document.querySelector('#TabsSystem')
+            dContainer
             .querySelectorAll('.TabButton')
             .forEach(tab =>
                 tab.onclick = _ => {
                     dContainer.dataset.tab = tab.dataset.tab
                 }
-            )
+             );
 
-
-        $(document).ready(function () {
-            var owl = $('.owl-carousel');
-            owl.owlCarousel({
-                margin: 10,
-                nav: true,
-                loop: true,
-                dots: false,
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 3
-                    },
-                    1000: {
-                        items: 4
-                    }
+            const dContainerQz = document.querySelector('#TabsSystemQz')
+            dContainerQz
+            .querySelectorAll('.TabButtonQz')
+            .forEach(tab =>
+                tab.onclick = _ => {
+                    dContainerQz.dataset.tab = tab.dataset.tab
                 }
+             );
+
+
+            const dContainerpdftips = document.querySelector('#TabsSyspdftips')
+            dContainerpdftips
+            .querySelectorAll('.TabButtonQzpdftips')
+            .forEach(tab =>
+                tab.onclick = _ => {
+                    dContainerpdftips.dataset.tab = tab.dataset.tab
+                }
+             );
+
+            $(document).ready(function () {
+                var owl = $('.owl-carousel');
+                owl.owlCarousel({
+                    margin: 10,
+                    nav: true,
+                    loop: true,
+                    dots: false,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 3
+                        },
+                        1000: {
+                            items: 4
+                        }
+                    }
+                })
             })
-        })
+
+
+            // slider TESTIMONIALS
+            function nextBtnQu(e){
+                e.target.nextElementSibling.scrollLeft += e.target.parentElement.clientWidth -62;
+            };
+
+            function prevBtnQu(e){   
+                e.target.previousElementSibling.scrollLeft -= e.target.parentElement.clientWidth -62;
+            };
+
     </script>
 </body>
 
