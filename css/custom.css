@@ -1971,7 +1971,6 @@ Course Details and profile  page
 .ab-justify-content-between {
     justify-content: space-between;
 }
-
 .ab-footercourseTraind {
     text-align: center;
 }
@@ -2301,6 +2300,9 @@ dashbord
 
 .ab-justify-center {
     justify-content: center;
+}
+.ab-item-aligh-center{
+    align-items: center;
 }
 
 .ab-Enrolled-Courses-icon {
@@ -3633,7 +3635,16 @@ button:focus:not(:focus-visible) {
 .ab-digitla-marketing-title{
     margin: 15px 0;
 }
-
+.ab-star{
+    background-position: -48px -2556px;
+    display: inline-block;
+    height: 40px;
+    width: 44px;
+    margin-right: 5px;
+}
+.ab-Your-Overall-Overall{
+    text-align: center;
+}
 /*********************************
 Mobile section
 *********************************/
