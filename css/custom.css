@@ -3202,6 +3202,8 @@ button:focus:not(:focus-visible) {
     right: 180px;
     bottom: 40px;
     background-position: -10px -2733px;
+    cursor: pointer;
+    z-index: 99;
 }
 
 .ab-mbun .container {
@@ -3551,7 +3553,7 @@ button:focus:not(:focus-visible) {
     text-align: center;
     opacity: 0.2;
     position: relative;
-    margin-top: 37px;
+    margin-top: 25px;
     position: relative;
 }
 .ab-controle::after{
@@ -3644,6 +3646,81 @@ button:focus:not(:focus-visible) {
 }
 .ab-Your-Overall-Overall{
     text-align: center;
+}
+.ab-talk-to-us{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #04121c;
+    z-index: 999;
+}
+.ab-close-talktous{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    width: 50px;
+    height: 50px;
+    background-position: -25px -2970px;
+    cursor: pointer;
+}
+.ab-talk-to-us-wrapper{
+    position: relative;
+}
+.ab-talk-to-us-chat-logo{
+    display: block;
+    width: 70px;
+    height: 72px;
+    background-position: -9px -2802px;
+}
+.ab-talk-to-us-chat-user{
+    display: block;
+    width: 70px;
+    height: 72px;
+    background-position: -15px -2885px;
+}
+.ab-talk-to-us-chat-content{
+    background-color: #99cddf;
+    padding: 15px 30px;
+    display: inline-block;
+    color: #04141e;
+    border-radius: 0px 20px 20px 20px;
+}
+.ab-talk-to-us-chat-item-left{
+    align-items: center;
+}
+.ab-talk-to-us-chat-item-right{
+    text-align: right;
+    align-items: center;
+}
+.ab-talk-to-us-chat-item-right .ab-talk-to-us-chat-content{
+    background-color: #fff;
+    border-radius: 20px 20px 0px 20px;
+}
+.ab-button-talk{
+    background-color: #fff;
+    color: #04141e;
+    padding: 10px;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+.ab-footer-talk{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    left: 0;
+    background-color: #04121c;
+    padding: 60px;
+}
+.ab-talk-to-us-chat{
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    max-height: 650px;  
 }
 /*********************************
 Mobile section
@@ -4341,6 +4418,26 @@ Mobile section
     .ab-sprit-img-st.slide-arrow-next {
         bottom: 5px;
         right: -221px;
+    }
+    .ab-talk-to-us-wrapper {
+        position: relative;
+        padding: 30px;
+    }
+    .ab-talkuers{
+        width: 90px;
+    }
+    .ab-talkuers-content{
+        width: 70%;
+    }
+    .ab-close-talktous {
+        right: 40px;
+        top: 60px;
+    }
+    .ab-button-talk {
+        padding: 10px 40px;
+    }
+    .ab-talk-to-us-chat {
+        max-height: 400px;
     }
 }
 
