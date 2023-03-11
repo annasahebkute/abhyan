@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <title>Abhyan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;600;800;900&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="stylesheet" href="../css/custom.css"> -->
+  <link rel="stylesheet" href="about.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+
+</head>
+
+<body>
+  <header class="ab-header p-3" id="_hederBar">
+    <div class="container">
+      <div class="row ab-justify-content">
+        <div class="col-3 ">
+          <div class="ab-logo-wrapper">
+            <div class="ab-logo">
+              <button class="ab-account-menu-mobile" type="button" onclick="accountMenuMobile()"><svg
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-wr8ge5" focusable="false" aria-hidden="true"
+                  viewBox="0 0 24 24" data-testid="MenuIcon">
+                  <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                </svg><span class="MuiTouchRipple-root css-w0pj6f"></span></button>
+              <a class="ab-logo-img" href="index.html">
+                <img src="../img/abhyan-logo.png" alt="abhyan">
+                <span class="ab-logo-content fs-5 ">Abhyan</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <ul class="ab-nav" id="_navMenu">
+            <li> <a class="active fs-6">Courses</a></li>
+            <li> <a class="">About</a></li>
+          </ul>
+          <div class="ab-balck-bg-mainmenu" onclick="accountMenuMobile()"></div>
+        </div>
+        <div class="col-3 ab-text-right ab-m-width">
+          <div class="ab-login-st">
+            <button class="ab-card-icon" tabindex="0" type="button" onclick="cardBt()">
+              <span class="MuiBadge-root MuiBadge-root css-1rzb3uu">
+                <svg width="30" height="30" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="m444.72 252.01 26.316-96.051a5.114 5.114 0 0 0-.758-4.3 5.11 5.11 0 0 0-3.797-2.153l-318-22.988a5.19 5.19 0 0 0-.922 0l-7.218-42.344a35.84 35.84 0 0 0-35.328-29.797H46.079a5.12 5.12 0 0 0 0 10.238h59.395a25.615 25.615 0 0 1 16.516 6.035 25.611 25.611 0 0 1 8.726 15.266l37.477 219.9c-.043.39-.043.79 0 1.18.035.992.356 1.949.922 2.765l10.238 59.086.004-.004a45.105 45.105 0 0 0 2.601 87.617 45.093 45.093 0 0 0 37.688-9.023 45.106 45.106 0 0 0 .257-69.993h174.08a45.113 45.113 0 0 0-16.438 37.09 45.125 45.125 0 0 0 20.008 35.293 45.104 45.104 0 0 0 68.22-24.453 45.099 45.099 0 0 0-43.22-58.168h-233.73l-9.625-54.887h186.52a81.91 81.91 0 0 0 49.691-16.809 81.912 81.912 0 0 0 29.31-43.504zm12.082 160.41v-.004a34.863 34.863 0 0 1-59.519 24.656 34.867 34.867 0 0 1-10.215-24.656 34.864 34.864 0 0 1 10.215-24.652 34.865 34.865 0 0 1 24.652-10.215 34.916 34.916 0 0 1 24.641 10.23 34.909 34.909 0 0 1 10.227 24.637zm-231.27 0v-.004a34.863 34.863 0 0 1-59.519 24.656 34.867 34.867 0 0 1-10.215-24.656 34.864 34.864 0 0 1 10.215-24.652 34.865 34.865 0 0 1 24.652-10.215 34.923 34.923 0 0 1 34.868 34.867zm-76.031-275.56 310.07 22.371-24.73 90.062a71.667 71.667 0 0 1-69.117 52.785h-188.06z"
+                    fill="#fff"></path>
+                </svg>
+            </button>
+            <a type="button" class="btn btn-link" onclick="closeBt()">Login</a>
+            <button type="button" class="btn btn-primary ab-button m-hd">Start for free</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- banner -->
+  <section class="ab-banner" id="_bannerwith">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="ab-banner-wrapper">
+            <h2 class="ab-title-banner ab-title mb-3 fs-1">Abhyan
+              Online Learning Platform
+            </h2>
+            <span class="ab-sub-title mb-5">At Abhyan, we bridge the gap between technology and pedagogy to provide an
+              effective learning solution to all who intend to learn & upskill. We offer skill development courses in
+              Indian regional languages to students, graduates and working professionals to be future ready.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container ab-banner-footer">
+      <div class="row">
+        <div class="col">
+          <ul class="ab-sns">
+            <li>
+              <a>
+                <span class="ab-linkedin"></span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="ab-facebook"></span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="ab-twitter"></span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="ab-youtube"></span>
+              </a>
+            </li>
+            <li>
+              <a>
+                <span class="ab-pinterest"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col ab-text-right">
+          <span class="ab-sound ab-sprit-img"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Our Vision-->
+  <section class="ab-ourVision">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="ab-ourVision-wrapper">
+            <h2 class="ab-title py-4">Our Vision</h2>
+            <p class="py-4">To deliver an immersive and interactive online learning experience to our learners in their
+              native language.</p>
+            <p class="py-4">To provide a platform for learners and instructors alike to collaborate on on-demand job
+              skills needed today and in future to grow and succeed!</p>
+            <p class="py-4">Our Goal is to empower the rural youth of India to be competitive in this Digital era.</p>
+            <ul class="ab-list">
+              <li> Leverage the internet to make high-quality technical skills.</li>
+              <li>Bring lessons to life with immersive animations & expert instructors.</li>
+              <li>Cater to a rising regional language user base.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Our LOGO Concept-->
+  <section class="ab-OurLOGOConcept">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="ab-OurLOGOConcept-wrapper">
+            <h2 class="ab-title py-4">Our LOGO Concept</h2>
+            <p class="py-4">The logo mimics a three-dimensional object, an inverted book standing on its hardcovers.
+              Lets delve into the reasoning and imagery of the Inverted Book.</p>
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+                <img src="img/abhyan-line.png" />
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <img src="img/abhyan-highlight.png" />
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <img src="img/abhyan-highlight.png" />
+              </div>
+            </div>
+            <p class="py-4">The symbol primarily represents the letter 'A' as it is the first word in the company name.
+              It harmonises with the concept of the inverted book as that also follows the outline of the letter. The
+              balance of the image is maintained in the perspective, straight lines blending into curves and the sharp
+              points that give multiple directions a person can set off on to achieve his goals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Why-Abhyan-->
+  <section class="ab-Why-Abhyan">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="ab-ab-Why-Abhyan">
+            <h2 class="ab-title py-4">Our LOGO Concept</h2>
+            <p class="py-2 ab-Why-Abhyan-sub mb-5">ABHYAN WAS BORN WITH A SIMPLE IDEA:</p>
+            <div class="row">
+              <div class="col-md-3 col-sm-12">
+                <div class="ab-our-logo">
+                  <div class="MuiBox-root css-0"><svg width="70" height="60" viewBox="0 0 844 696" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M421.2.001c-114 0-206.4 92.398-206.4 206.4 0 58.801 51.602 150 94.801 216 27.602 43.199 52.801 75.602 66 92.398 34.801 44.398 38.398 44.398 45.602 44.398 7.199 0 10.801 0 45.602-43.199 13.199-16.801 38.398-50.398 66-92.398 43.199-66 94.801-157.2 94.801-217.2C627.602 92.4 535.2 0 421.196 0l.004.001Zm0 519.6c-39.602-45.602-174-230.4-174-314.4 0-96 78-174 174-174s174 78 174 174c0 84-134.4 268.8-174 314.4Z"
+                        fill="#000"></path>
+                      <path
+                        d="M421.2 98.401c-51.602 0-91.199 40.801-91.199 91.199 0 51.602 40.801 91.199 91.199 91.199 51.602 0 91.199-39.602 91.199-91.199 0-51.602-39.598-91.199-91.199-91.199Zm0 150c-32.398 0-58.801-26.398-58.801-58.801 0-32.398 26.398-58.801 58.801-58.801 33.602 0 58.801 26.398 58.801 58.801 0 32.398-26.398 58.801-58.801 58.801ZM421.2 618.001c-46.801 0-283.2-3.602-283.2-63.602 0-10.801 0-39.602 138-55.199 8.398-1.199 16.801 4.801 18 14.398 1.199 8.398-4.801 16.801-14.398 18-64.801 7.199-94.801 18-105.6 24 21.602 12 105.6 31.199 247.2 31.199 141.6.004 225.6-19.195 247.2-31.195-9.602-4.801-37.199-15.602-110.4-24-8.398-1.199-15.602-8.398-14.398-18 1.199-8.398 8.398-15.602 18-14.398 126 14.398 142.8 36 142.8 55.199-.004 60-235.2 63.598-283.2 63.598h-.004Z"
+                        fill="#000"></path>
+                      <path
+                        d="M422.4 696.001c-205.2 0-422.4-45.598-422.4-130.8 0-80.398 189.6-111.6 248.4-120 8.398-1.199 16.801 4.801 18 14.398 1.199 8.398-4.801 16.801-14.398 18-144 19.199-220.8 58.801-220.8 87.602 0 40.801 148.8 98.398 390 98.398s390-57.602 390-98.398c0-28.801-74.398-67.199-216-86.398-8.398-1.199-14.398-9.602-13.199-18 1.199-8.398 9.602-15.602 18-13.199 57.602 7.199 243.6 38.398 243.6 118.8 1.199 83.996-216 129.59-421.2 129.59l-.003.007Z"
+                        fill="#000"></path>
+                    </svg></div>
+                  <h6 class="MuiTypography-root MuiTypography-h6 jss422 jss90 css-12mmtyf py-3">GO REGIONAL</h6>
+                  <h6 class="MuiTypography-root MuiTypography-subtitle2 jss73 css-1x72ehj">Ensure every Indian has
+                    access to skills in their language.</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <div class="ab-our-logo">
+                  <div class="MuiBox-root css-0"><svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 100 100" xml:space="preserve">
+                      <path
+                        d="M93.3 31.6c2.5 5.9 3.7 12.1 3.7 18.5 0 26.5-21.5 48-48 48S1 76.6 1 50.1s21.5-48 48-48h.1c5.4 0 10.7.9 15.7 2.7 1.5.5 2.3 2.2 1.8 3.7-.3.7-.8 1.3-1.5 1.7-.7.3-1.5.4-2.2.1-4.5-1.6-9.1-2.4-13.9-2.4h-.1c-23.2 0-42.1 19-42.1 42.2 0 23.3 18.9 42.2 42.2 42.2 23.3 0 42.2-18.9 42.2-42.2 0-5.6-1.1-11.1-3.2-16.3-.6-1.5.1-3.2 1.6-3.8 1.4-.5 3.1.2 3.7 1.6zM65 30c0-1.6-1.3-2.9-2.9-2.9H35.9c-1.6 0-2.9 1.3-2.9 2.9 0 1.6 1.3 2.9 2.9 2.9h7.5c3.5 0 6.7 2.2 7.9 5.5H35.9c-1.6 0-2.9 1.3-2.9 2.9 0 1.6 1.3 2.9 2.9 2.9h15.4c-1.2 3.2-4.3 5.5-7.9 5.5h-7.5c-1.2 0-2.2.7-2.7 1.8-.4 1.1-.2 2.4.7 3.2l18.8 17.7c.5.5 1.3.8 2 .8.3 0 .6 0 .8-.1 1-.3 1.8-1.1 2-2.1.2-1-.1-2.1-.8-2.8L43.1 55.4h.2c6.7 0 12.5-4.8 13.9-11.3h4.9c1.6 0 2.9-1.3 2.9-2.9 0-1.6-1.3-2.9-2.9-2.9h-4.9c-.4-2-1.3-3.9-2.4-5.5h7.3c1.6.1 2.9-1.2 2.9-2.8zm31.2-18.3H72.3c-1.6 0-2.9 1.3-2.9 2.9 0 1.6 1.3 2.9 2.9 2.9h23.9c1.6 0 2.9-1.3 2.9-2.9 0-1.6-1.3-2.9-2.9-2.9z">
+                      </path>
+                    </svg></div>
+                  <h6 class="MuiTypography-root MuiTypography-h6 jss422 jss90 css-1uzud43 py-3">AFFORDABLE PRICE</h6>
+                  <h6 class="MuiTypography-root MuiTypography-subtitle2 jss73 css-1x72ehj">Price to be affordable to
+                    all income groups.</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <div class="ab-our-logo">
+                  <div class="MuiBox-root css-0"><svg width="60" height="60" viewBox="0 0 855 858" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M307.03 613.86C137.73 613.86 0 476.13 0 306.84 0 137.65 137.73 0 307.03 0c169.18 0 306.83 137.64 306.83 306.84 0 169.29-137.64 307.02-306.83 307.02Zm0-579.57c-150.39 0-272.75 122.27-272.75 272.55 0 150.39 122.36 272.74 272.75 272.74 150.29 0 272.54-122.35 272.54-272.74.004-150.29-122.26-272.55-272.54-272.55Z"
+                        fill="#000"></path>
+                      <path
+                        d="M307.03 613.86c-73.895 0-129.62-132-129.62-307.02C177.41 131.91 233.109 0 306.97 0c73.828 0 129.49 131.91 129.49 306.84 0 175.03-55.645 307.02-129.43 307.02Zm-.066-579.57c-45.066 0-95.273 111.93-95.273 272.55 0 160.73 50.238 272.74 95.34 272.74 45 0 95.141-112.01 95.141-272.74 0-160.62-50.172-272.55-95.207-272.55h-.001Z"
+                        fill="#000"></path>
+                      <path
+                        d="M558.75 180.64H55.11c-9.477 0-17.145-7.676-17.145-17.145s7.668-17.145 17.145-17.145h503.64c9.477 0 17.145 7.676 17.145 17.145s-7.668 17.145-17.145 17.145ZM596.72 323.98H17.15c-9.477 0-17.145-7.676-17.145-17.145S7.673 289.69 17.15 289.69h579.57c9.477 0 17.145 7.676 17.145 17.145s-7.668 17.145-17.145 17.145ZM558.59 467.5H55.3c-9.477 0-17.145-7.676-17.145-17.145S45.823 433.21 55.3 433.21h503.29c9.477 0 17.145 7.676 17.145 17.145s-7.668 17.145-17.141 17.145h-.004ZM400.89 716.68c-17.344 0-34.32-3.941-49.988-11.938-38.203-19.504-61.004-59.883-61.004-108.02 0-9.469 7.668-17.145 17.145-17.145s17.145 7.676 17.145 17.145c0 35.516 15.418 63.758 42.305 77.477 27.707 14.156 62.094 9.633 91.977-12.012 65.793-47.652 134.08-101.73 182.33-192.11 10.145-19 28.91-31.715 50.223-34.02 19.488-2.094 38.121 5.098 50.66 19.84 9.859 11.559 15.066 25.848 15.066 41.309l-.008 53.512c0 9.469-7.668 17.145-17.145 17.145s-17.145-7.676-17.145-17.145v-53.504c0-7.199-2.379-13.793-6.863-19.078-6.949-8.145-16.004-8.504-20.91-7.984-9.86 1.07-18.918 7.23-23.656 16.09-51.68 96.805-123.41 153.71-192.44 203.72-24.422 17.676-51.457 26.715-77.691 26.715l-.001.003Z"
+                        fill="#000"></path>
+                      <path
+                        d="M307.03 613.86c-9.477 0-17.145-7.676-17.145-17.145l.004-579.57C289.889 7.676 297.557 0 307.034 0s17.145 7.676 17.145 17.145v579.57c-.004 9.469-7.672 17.145-17.148 17.145h-.001ZM739.59 857.17c-63.617 0-115.38-51.754-115.38-115.38v-92.812c0-9.469 7.668-17.145 17.145-17.145h196.46c9.477 0 17.145 7.676 17.145 17.145v92.812c-.004 63.625-51.754 115.38-115.37 115.38Zm-81.094-191.05v75.668c0 44.715 36.379 81.094 81.094 81.094 44.699 0 81.078-36.379 81.078-81.094V666.12H658.496Z"
+                        fill="#000"></path>
+                      <path
+                        d="M739.59 666.09h-98.238c-9.477 0-17.145-7.676-17.145-17.145 0-63.625 51.762-115.38 115.38-115.38 9.477 0 17.145 7.676 17.145 17.145v98.238c0 9.465-7.668 17.141-17.141 17.141l-.001.001Zm-79.27-34.285h62.125V569.68c-30.988 6.684-55.43 31.137-62.125 62.125Z"
+                        fill="#000"></path>
+                      <path
+                        d="M837.78 666.09h-98.219c-9.477 0-17.145-7.676-17.145-17.145v-98.234c0-9.469 7.668-17.145 17.145-17.145 63.617 0 115.36 51.754 115.36 115.38 0 9.469-7.668 17.145-17.145 17.145l.004-.001Zm-81.078-34.285h62.109c-6.695-30.98-31.137-55.43-62.109-62.125v62.125Z"
+                        fill="#000"></path>
+                    </svg></div>
+                  <h6 class="MuiTypography-root MuiTypography-h6 jss422 jss90 css-1uzud43 py-3">ONLINE EDUCATION</h6>
+                  <h6 class="MuiTypography-root MuiTypography-subtitle2 jss73 css-1x72ehj">Interactive and Quality
+                    digital education for ALL.</h6>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-12">
+                <div class="ab-our-logo">
+                  <div class="MuiBox-root css-0"><svg width="60" height="60" viewBox="0 0 1200 1200"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M412.5 900a56.234 56.234 0 0 1 16.477-39.773 56.236 56.236 0 0 1 39.773-16.477H574.8l-49.012 163.37a18.745 18.745 0 0 0 1.875 15l56.25 93.75a18.746 18.746 0 0 0 32.136 0l56.25-93.75a18.745 18.745 0 0 0 1.875-15l-48.977-163.37h106.05a56.234 56.234 0 0 1 39.773 16.477A56.236 56.236 0 0 1 787.497 900v262.5h37.5V900a93.868 93.868 0 0 0-93.75-93.75h-66.602a121.872 121.872 0 0 0 27.731-182.742 121.868 121.868 0 0 0-184.832 0 121.845 121.845 0 0 0-28.078 97.734 121.883 121.883 0 0 0 55.805 85.008h-66.523a93.868 93.868 0 0 0-93.75 93.75v262.5h37.5zm223.41 109.95-35.906 59.852-35.906-59.852 35.906-119.7zM515.63 703.13c0-22.379 8.89-43.84 24.711-59.664 15.824-15.82 37.285-24.711 59.664-24.711s43.84 8.89 59.664 24.711c15.82 15.824 24.711 37.285 24.711 59.664s-8.89 43.84-24.711 59.664a84.39 84.39 0 0 1-59.664 24.711 84.448 84.448 0 0 1-59.633-24.742 84.445 84.445 0 0 1-24.742-59.633zM476.74 314.06l-22.688 132.79a18.76 18.76 0 0 0 2.73 13.305 18.764 18.764 0 0 0 11 7.969 18.752 18.752 0 0 0 13.493-1.551l118.73-62.645 118.73 62.645a18.752 18.752 0 0 0 13.492 1.55 18.763 18.763 0 0 0 11-7.968 18.76 18.76 0 0 0 2.73-13.305l-22.688-132.79 96.113-94.012a18.744 18.744 0 0 0 1.352-25.18 18.74 18.74 0 0 0-11.738-6.695l-132.79-19.426-59.324-120.77a19.519 19.519 0 0 0-33.636 0l-59.438 120.77-132.77 19.367a18.747 18.747 0 0 0-11.742 6.699 18.745 18.745 0 0 0 1.355 25.176zm62.23-109.69a18.752 18.752 0 0 0 14.117-10.273l46.914-95.363 46.875 95.398a18.747 18.747 0 0 0 14.117 10.277l105 15.32-75.992 74.414a18.76 18.76 0 0 0-5.383 16.559l17.945 105-93.75-49.52a18.856 18.856 0 0 0-17.512 0l-93.75 49.52 17.945-105h-.004a18.746 18.746 0 0 0-5.379-16.559l-76.05-74.418zM1153.3 456.32l-82.5-42.824-11.438-92.609a18.762 18.762 0 0 0-6.453-12.035 18.756 18.756 0 0 0-25.422 1.012l-66.336 65.625-91.332-17.477a18.746 18.746 0 0 0-13.352 2.449 18.755 18.755 0 0 0-6.957 24.328l41.586 83.438-45 81.824h.004c-2.266 4.11-2.906 8.918-1.797 13.477a18.752 18.752 0 0 0 21.051 14.106l91.988-14.062 63.523 68.008.004-.004a18.743 18.743 0 0 0 25.258 1.957 18.753 18.753 0 0 0 6.934-11.688l15.32-92.137 84.375-39.77a18.747 18.747 0 0 0 9.605-23.41 18.768 18.768 0 0 0-8.969-10.19zm-109.84 43.648a18.742 18.742 0 0 0-10.5 13.875l-10.688 64.312-44.305-47.438h-.004a18.767 18.767 0 0 0-13.707-5.945c-.945 0-1.894.078-2.828.226l-64.18 9.79 31.445-57.114h-.004a18.748 18.748 0 0 0 .356-17.418l-29.062-58.312 63.75 12.227v-.004a18.753 18.753 0 0 0 16.707-5.097l46.258-45.73 7.988 64.555h-.004a18.753 18.753 0 0 0 9.977 14.324l57.676 30zM48.262 489.92l84.375 39.77 15.301 92.137a18.746 18.746 0 0 0 19.946 15.622 18.76 18.76 0 0 0 12.25-5.891l63.523-68.008 91.988 14.062v.004a18.772 18.772 0 0 0 13.27-2.957 18.756 18.756 0 0 0 5.984-24.625l-45-81.824 41.605-83.438h.004a18.753 18.753 0 0 0-20.31-26.777l-91.351 17.477-66.336-65.625c-3.332-3.332-7.801-5.29-12.512-5.477s-9.32 1.406-12.906 4.465a18.75 18.75 0 0 0-6.457 12.035l-11.457 92.605-82.5 42.824v.004a18.726 18.726 0 0 0-8.965 10.188 18.742 18.742 0 0 0 .258 13.57 18.732 18.732 0 0 0 9.348 9.84zm107.93-47.699c5.48-2.84 9.21-8.2 9.977-14.324l7.988-64.555 46.238 45.73h-.004a18.899 18.899 0 0 0 16.727 5.098l63.75-12.227-29.062 58.312v.004a18.749 18.749 0 0 0 .355 17.418l31.594 57.113-64.273-9.79a18.751 18.751 0 0 0-16.52 5.626l-44.324 47.438-10.668-64.312h-.003a18.747 18.747 0 0 0-10.516-13.875l-58.934-27.711z">
+                      </path>
+                    </svg></div>
+                  <h6 class="MuiTypography-root MuiTypography-h6 jss422 jss90 css-1uzud43 py-3">EXPERT INSTRUCTORS</h6>
+                  <h6 class="MuiTypography-root MuiTypography-subtitle2 jss73 css-1x72ehj">Instructors who are doers
+                    themselves and educating students to achieve their goals.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Countact Us-->
+  <section class="ab-countact-us">
+    <div class="ab-countact-us-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="ab-title-content fs-1 ab-text-center mb-3">Contact Us Today</h2>
+            <div class="ab-color-dartk py-2 mb-5">
+              Tell us a little bit about yourself. One of our course specialists will get back to you shortly and help
+              you
+              to pick a course.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-9 col-sm-12" style="margin: auto;">
+            <form>
+              <div class="row">
+                <div class="col-md-9 col-sm-12">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                      <input type="password" id="inputPassword6" class="form-control ab-form-control"
+                        aria-describedby="passwordHelpInline" placeholder="Name">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <input type="password" id="inputPassword6" class="form-control ab-form-control"
+                        aria-describedby="passwordHelpInline" placeholder="Email">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                  <button type="button" class="btn btn-primary ab-button ab-contact-btn">Contact Me</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col ab-text-center mt-4">
+                  <i class="ab-fileds-mandatory">* All fileds are mandatory </i>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!--footer -->
+  <footer class="ab-footer">
+    <div class="container">
+      <div class="row my-5">
+        <div class=" col-lg-6 col-md-6 col-sm-12">
+          <div class="ab-footer-about">
+            <div class="ab-logo mb-4">
+              <img src="../img/abhyan-logo.png" alt="abhyan">
+              <span class="ab-logo-content">Abhyan</span>
+            </div>
+          </div>
+          <div class="ab-footer-about-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.labore.
+            <a class="ab-line-link  my-4">
+              Read
+              <span class="ab-arrow-icon ab-sprit-img"></span>
+            </a>
+          </div>
+          <span class="ab-footer-add">
+            1000 Circle 75 Parkway, Suite 705, Hyderabad - 560102
+          </span>
+          <div class="ab-footer-mail">
+            <a href="mailto:support@abhyan.com">support@abhyan.com</a>
+          </div>
+        </div>
+        <div class="col col-lg-2 col-md-2 col-sm-6">
+          <h4 class="ab-footer-title">Courses</h4>
+          <ul class="ab-footer-link-ul">
+            <li><a class="ab-footer-link"> Digital Marketing</a></li>
+            <li><a class="ab-footer-link"> Finance</a></li>
+            <li><a class="ab-footer-link"> Microsoft Tools</a></li>
+            <li><a class="ab-footer-link"> Design</a></li>
+            <li><a class="ab-footer-link"> Google Tools</a></li>
+          </ul>
+        </div>
+        <div class="col col-lg-2 col-md-2 col-sm-6">
+          <h4 class="ab-footer-title">Resources</h4>
+          <ul class="ab-footer-link-ul">
+            <li><a class="ab-footer-link"> Tips & Tricks</a></li>
+            <li><a class="ab-footer-link"> Videos</a></li>
+            <li><a class="ab-footer-link"> Articles</a></li>
+          </ul>
+        </div>
+        <div class="col col-lg-2 col-md-2 col-sm-12">
+          <h4 class="ab-footer-title">Abhyan</h4>
+          <ul class="ab-footer-link-ul">
+            <li><a class="ab-footer-link"> About </a></li>
+            <li><a class="ab-footer-link"> Philisophy</a></li>
+            <li><a class="ab-footer-link"> Press Releases</a></li>
+            <li><a class="ab-footer-link"> Team</a></li>
+            <li><a class="ab-footer-link"> Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="ab-footer-social-media-icon my-2">
+            <ul class="ab-sns">
+              <li>
+                <a>
+                  <span class="ab-linkedin"></span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="ab-facebook"></span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="ab-twitter"></span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="ab-youtube"></span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="ab-pinterest"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col ab-align-items-center my-5">
+          <span class="ab-copyright">
+            <a class="ab-copyright-link">Privacy Policy</a> | <a class="ab-copyright-link mr-3">Terms Of Services </a>
+            <span class="ab-copyright-contet">Copyright © Abhyan, INC. 2021. All Rights Reserved</span>
+          </span>
+        </div>
+      </div>
+  </footer>
+
+  <script src="../js/custom.js"></script>
+
+
+</body>
+
+</html>

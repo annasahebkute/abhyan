@@ -1,0 +1,1344 @@
+/**************************
+color
+bg #04141e;
+content #b3bcc3;
+button  #99cddf;
+button hover  rgb(49, 76, 88);
+**************************/
+
+/**************************
+*comon css 
+**ab-content font-family: 'Work Sans', sans-serif;
+**ab-title font-family: 'Libre Baskerville', serif;
+**ab-button
+**ab-button-line
+**ab-button-link
+**ab-sprit-img
+****************************/
+body {
+    font-family: 'Work Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #04141e;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ab-title {
+    font-family: 'Libre Baskerville', serif;
+
+}
+
+.ab-content {
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    opacity: 0.6;
+}
+
+.ab-button,
+.ab-button:focus,
+.ab-button:visited {
+    background-color: #99cddf;
+    color: #04141e;
+    border: none;
+    outline: none !important;
+    box-shadow: none;
+    border-radius: 30px;
+    padding: 13px 25px;
+    height: 50px;
+    font-weight: 600;
+}
+
+.ab-outline-primary {
+    border: 1px solid #fff;
+    color: #99cddf;
+    border-radius: 30px;
+    padding: 13px 30px;
+    height: 50px;
+}
+
+.ab-outline-primary:hover {
+    text-decoration: none;
+    background-color: rgb(49, 76, 88);
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+    border: 1px solid #fff;
+}
+
+.ab-button:hover {
+    color: white;
+    background-color: rgb(49, 76, 88);
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+}
+
+.ab-button-line {
+    color: #99cddf;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.ab-sprit-img {
+    background-image: url(../img/sprit-img.png);
+    background-repeat: no-repeat;
+}
+
+.ab-feedback-sprit-img {
+    background-image: url(../img/student-feedbackicon.png);
+    background-repeat: no-repeat;
+}
+
+.ab-text-left {
+    text-align: left;
+}
+
+.ab-text-right {
+    text-align: right;
+}
+
+.ab-text-center {
+    text-align: center;
+}
+
+.ab-title-line {
+    position: relative;
+}
+
+.ab-title-line::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #1e2c35;
+    left: 0;
+    position: absolute;
+    display: block;
+    top: 50px;
+    z-index: -1;
+}
+
+.ab-align-items-center {
+    align-items: center;
+}
+
+.ab-text-alighn-center {
+    text-align: center;
+}
+
+/* logo*/
+.ab-mail-box {
+    display: inline-block;
+    width: 34px;
+    height: 24px;
+    background-position: -44px -1733px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.ab-facebook-dot {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-position: -8px -1733px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.ab-insta-dot {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-position: -8px -1775px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.ab-tetter-dot {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-position: -43px -1773px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+.ab-exp-box-icon-ft {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+/**************************
+ Header
+ **nav
+ **logo
+ **lng
+ **login
+ ****************************/
+ .ab-header {
+    position: fixed;
+    width: 100%;
+    /* background-color: #04141e; */
+    z-index: 9;
+}
+
+.ab-logo-content {
+    color: #fff;
+}
+
+.ab-header.scrolled {
+    background-color: #04141e;
+}
+
+.ab-logo {
+    display: flex;
+    align-items: center;
+}
+
+.ab-logo img {
+    width: 38px;
+}
+
+.ab-dropdown {
+    background-color: transparent;
+    border: none;
+}
+
+.ab-dropdown:hover {
+    color: white;
+    background-color: rgb(49, 76, 88);
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
+}
+
+.ab-dropdown.dropdown-toggle::after {
+    display: inline-block;
+    content: "";
+    background-image: url(../img/sprit-img.png);
+    height: 8px;
+    width: 13px;
+    background-position: -5px -700px;
+    border: none !important;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+
+.ab-logo-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.ab-nav {
+    margin: auto;
+    text-align: center;
+}
+
+.ab-nav li {
+    display: inline-block;
+}
+
+.ab-nav li a {
+    display: block;
+    padding: 15px;
+    color: #b3bcc3;
+    font-size: 1rem;
+}
+
+.ab-nav li a:hover {
+    color: #fff;
+}
+
+.ab-nav li a.active {
+    color: #99cddf;
+}
+
+.ab-login-st .btn-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ab-justify-content {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ab-card-icon {
+    background-color: transparent;
+    border: none;
+}
+
+.ab-account-menu-mobile {
+    width: 40px;
+    height: 40px;
+    display: none;
+    z-index: 9;
+    position: relative;
+}
+
+.ab-account-menu-mobile svg {
+    fill: #fff;
+}
+.ab-account-menu-mobile{
+    background-color: transparent;
+    border: none;
+}
+
+/**********************************
+banner
+**********************************/
+.b-tab {
+    display: none;
+}
+
+.b-tab.active {
+    display: block;
+}
+
+.ab-banner {
+    background-image: url('../img/banner-bg.png');
+    position: relative;
+    background-position: bottom;
+}
+
+.ab-banner-wrapper {
+    width: 1010px;
+    height: 340px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ab-sub-title {
+    display: block;
+    color: #99cddf;
+}
+
+.ab-banner-footer {
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.ab-banner-footer .row {
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.ab-sns li {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.ab-sns li a {
+    display: block;
+    cursor: pointer;
+}
+
+.ab-sns li a span {
+    display: block;
+    height: 24px;
+    width: 24px;
+    /* background-position: 5px 0px; */
+    background-image: url(../../img/sns.png);
+    background-repeat: no-repeat;
+}
+
+.ab-facebook {
+    background-position: 5px 0px;
+}
+
+.ab-facebook {
+    background-position: -48px 0px;
+}
+
+.ab-twitter {
+    background-position: -98px 0px;
+}
+
+.ab-pinterest {
+    background-position: -206px 0px;
+}
+
+.ab-sns li a .ab-youtube {
+    background-position: -150px 0px;
+    width: 30px;
+}
+
+.ab-scroll-icon {
+    background-position: -3px -54px;
+    display: block;
+    width: 32px;
+    height: 46px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.ab-scroll2-icon {
+    background-position: -15px -2698px;
+    display: block;
+    width: 22px;
+    height: 20px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.ab-sound {
+    background-position: -7px -8px;
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+}
+/*************************************
+Countact Us
+***********************************/
+.ab-countact-us {
+    padding: 200px 10px;
+    background-image: url(../img/glob-map.png);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+
+.ab-title-content {
+    text-align: center;
+}
+
+.ab-contact-content {
+    width: 60%;
+    margin: auto;
+    opacity: 0.2;
+}
+
+.ab-form-control {
+    border-radius: 30px;
+    background-color: #99cddf;
+    color: #04141e;
+    padding: 10px 30px;
+    border: 1px solid #04141e;
+}
+
+.ab-contact-btn {
+    background-color: #314c58;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.ab-fileds-mandatory {
+    opacity: 0.3;
+}
+
+/*************************************
+footer
+***********************************/
+.ab-footer-about-content {
+    width: 70%;
+}
+
+.ab-line-link {
+    color: #99cddf;
+    display: block;
+}
+
+.ab-arrow-icon {
+    display: inline-block;
+    background-position: -8px -672px;
+    width: 10px;
+    height: 23px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.ab-footer-add {
+    opacity: 0.4;
+}
+
+.ab-footer-mail {
+    color: #99cddf;
+    opacity: 0.2;
+}
+
+.ab-footer-title {
+    color: #99cddf;
+    text-transform: capitalize;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.ab-footer-link-ul a {
+    opacity: 0.5;
+    color: #fff;
+    padding: 5px 0;
+    display: inline-block;
+}
+
+.ab-footer-social-media-icon {
+    text-align: center;
+}
+
+.ab-footer-social-media-icon .ab-sns {
+    width: 290px;
+    margin: auto;
+    background-color: #04141e;
+}
+
+.ab-footer-social-media-icon {
+    position: relative;
+}
+
+.ab-footer-social-media-icon::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #fff;
+    opacity: 0.2;
+    top: 15px;
+    z-index: -1;
+}
+
+.ab-copyright {
+    display: block;
+    text-align: center;
+    opacity: 0.2;
+}
+
+.ab-copyright-link {
+    color: #99cddf;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.ab-list{
+    list-style: disc;
+    margin: 0px 30px;
+}
+.ab-list li{
+    list-style: disc;
+}
+.ab-ourVision-wrapper{
+    width: 50%;
+    margin: auto;
+}
+.ab-ourVision{
+    color: black;
+    height: auto;
+    padding: 8rem 0;
+    position: relative;
+    align-items: center;
+    background-color: #99cddf;
+    font-weight: 600;
+    background-image: url(img/image.png);
+    background-repeat: no-repeat;
+    background-position: 120% 0%;
+    background-size: 26% auto;
+}
+.ab-OurLOGOConcept-wrapper{
+    margin: auto;
+    text-align: center;
+    width: 60%;
+}
+.ab-OurLOGOConcept{
+    padding: 8rem 0;
+}
+.ab-Why-Abhyan{
+    color: black;
+    height: auto;
+    padding: 8rem 0;
+    position: relative;
+    align-items: center;
+    background-color: #99cddf;
+}
+.ab-ab-Why-Abhyan{
+    text-align: center;
+}
+.ab-ab-Why-Abhyan{
+    width: 60%;
+    margin: auto;
+}
+.MuiTypography-h6{
+    font-weight: 600; 
+}
+.ab-our-logo{
+    text-align: left;
+}
+.ab-Why-Abhyan-sub{
+    font-size: 20px;
+}
+.ab-color-dartk{
+    font-size: 16;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1.57;
+    text-align: center;
+    white-space: normal;
+    color: rgb(139, 206, 225);
+    width: 370px;
+    margin: auto;
+}
+.ab-countact-us-wrapper{
+    width: 55%;
+    margin: auto;
+}
+/*********************************
+Mobile section
+*********************************/
+@media (max-width: 800px) {
+    .m-hd {
+        display: none;
+    }
+
+    .ab-nav {
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 80%;
+        padding-top: 60px;
+        z-index: 9;
+        background-color: #04141e;
+        height: 100%;
+        box-shadow: 1px 1px 161px #000;
+        display: none;
+    }
+
+    .ab-balck-bg-mainmenu {
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding-top: 60px;
+        z-index: 8;
+        background-color: #000;
+        opacity: 0.8;
+        height: 100%;
+    }
+
+    .ab-balck-bg-mainmenu {
+        display: none;
+    }
+
+    .ab-nav[style*="display: none;"]~.ab-balck-bg-mainmenu {
+        display: none !important;
+    }
+
+    .ab-nav[style*="display: block;"]~.ab-balck-bg-mainmenu {
+        display: block !important;
+    }
+
+    .ab-nav li a {
+        padding: 15px 34px;
+    }
+
+    .ab-nav li {
+        display: block;
+        text-align: left;
+    }
+
+    .ab-banner-wrapper {
+        width: 100%;
+    }
+
+    .ab-account-menu-mobile {
+        display: block;
+    }
+
+    .ab-exp-title {
+        width: 100%;
+    }
+
+    .ab-footer-about-content {
+        width: 100%;
+    }
+
+    .ab-in-the-news a {
+        display: inline-block;
+        padding: 20px;
+    }
+
+    .ab-in-the-news a img {
+        width: 100%;
+    }
+
+    /* .ab-exp-90{
+        margin-left: 0;
+        margin-right: 0;
+    } */
+    .ab-logo-wrapper {
+        gap: 10px;
+    }
+
+    .ab-header {
+        padding: 20px 10px !important;
+    }
+
+    .ab-login-st {
+        white-space: nowrap;
+    }
+
+    .ab-lg {
+        display: none;
+    }
+
+    .ab-banner-wrapper {
+        height: auto;
+        padding: 30px;
+    }
+
+    .ab-m-width {
+        width: 44%;
+    }
+
+    .ab-sns {
+        white-space: nowrap;
+    }
+
+    .ab-sns li {
+        margin-right: 0px;
+    }
+
+    .ab-banner-footer {
+        bottom: 20px;
+        padding: 0 30px;
+    }
+
+    .slide {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .ab-two-box {
+        margin-top: 50px;
+        margin-bottom: 0;
+        padding: 20px;
+        padding-bottom: 0;
+    }
+
+    .order-ab-last {
+        order: 6 !important;
+    }
+
+    .order-ab-first {
+        order: -1 !important;
+    }
+
+    .ab-two-box .slider {
+        height: 53.625rem;
+        padding: 0;
+    }
+
+    .slide-arrow-prev.prev {
+        left: 64px;
+        top: 608px;
+    }
+
+    .slide-arrow-next.next {
+        top: 600px;
+    }
+
+    .ab-two-box .slideFull {
+        height: 46.625rem;
+    }
+
+    .ab-testimonials {
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .ab-Unable {
+        margin: 0;
+        padding: 30px 20px;
+    }
+
+    .slides-container {
+        padding: 0 !important;
+    }
+
+    .ab-in-the-news {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .ab-news-logo {
+        padding: 20px !important;
+        margin: 0 !important;
+    }
+
+    .ab-articales-box {
+        width: 100%;
+        padding: 40px 0px;
+    }
+
+    .ab-Our-Insta-Feed {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .ab-Insta-Feed {
+        margin: 20px 0;
+    }
+
+    .ab-countact-us {
+        padding: 60px 20px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .ab-form-control {
+        margin-bottom: 30px;
+    }
+
+    .ab-contact-content {
+        width: 100%;
+    }
+
+    .ab-letusHelp {
+        width: 50%;
+        margin: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .ab-footer {
+        padding: 30px;
+    }
+
+    .slider-wrapper {
+        margin: 0;
+    }
+
+    .ab-login-page {
+        width: 90%;
+    }
+
+    .ab-free-content {
+        width: 100%;
+    }
+
+    .ab-line-right::after {
+        display: none;
+    }
+
+    .b-loginwrapper {
+        margin: 30px 0px !important;
+    }
+
+    .ab-social-net-icon {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #000;
+        padding-bottom: 20px;
+    }
+
+    .ab-courses-list {
+        white-space: nowrap;
+        width: 90%;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    .ab-courses {
+        position: relative;
+    }
+
+    .slide-arrow-prev-mon {
+        top: 1px;
+        bottom: 0px;
+        height: 24px;
+        width: 24px;
+        background-position: -12px -134px;
+        left: -7px;
+        display: block;
+    }
+
+    .slide-arrow-next-mon {
+        top: 0;
+        bottom: 0;
+        height: 21px;
+        width: 16px;
+        background-position: -67px -137px;
+        right: -5px;
+        display: block;
+    }
+
+    .slide-arrow-next {
+        bottom: -160px;
+        left: 40px;
+        right: 0;
+        top: unset;
+    }
+
+    .slide-arrow-prev {
+        bottom: -160px;
+        left: 0;
+        right: 90px;
+        top: unset;
+    }
+
+    .ab-testimonials .slide-arrow-next {
+        bottom: 3px;
+        left: -90px;
+    }
+
+    .ab-testimonials .slide-arrow-prev {
+        bottom: 6px;
+        left: unset;
+        right: 110px;
+        top: unset;
+    }
+
+    .ab-scroll-icon {
+        display: none;
+    }
+
+    .ab-exp-off {
+        margin-top: 100px;
+    }
+
+    .ab-exp-off span.ab-content {
+        width: 60%;
+        display: block;
+        margin: auto;
+    }
+
+    .ab-exp-title {
+        font-size: 48px;
+    }
+
+    .mobileControle #_abfilterfixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        background-color: #04141e;
+        z-index: 99;
+        box-shadow: 1px 1px 131px #000;
+        padding: 20px;
+        z-index: 999;
+    }
+
+    .ab-Courses-section {
+        padding: 20px;
+    }
+
+    .ab-Courses-title {
+        margin-bottom: 20px;
+    }
+
+    .ab-filter {
+        display: none;
+    }
+
+    .ab-filter-mobilemenu,
+    .ab-filter-mobilemenu svg {
+        height: 28px;
+        width: 28px;
+    }
+
+    .ab-filter-mobilemenu {
+        margin-right: 20px;
+    }
+
+    #_bannerwithinner {
+        overflow: hidden;
+    }
+
+    #_bannerwithinner .slider {
+        padding-bottom: 0;
+        padding-left: 0;
+    }
+
+    .ab-mobile-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.8;
+        z-index: 99;
+        display: none;
+    }
+
+    .ab-filter[style*="display: none;"]~.ab-mobile-bg {
+        display: none !important;
+    }
+
+    .ab-filter[style*="display: block;"]~.ab-mobile-bg {
+        display: block !important;
+    }
+
+    .MuiBox-root {
+        display: block;
+        padding-left: 15px;
+    }
+
+    #_bannerwithinner .slide-arrow-next.next {
+        top: 140px;
+    }
+
+    #_bannerwithinner .slide-arrow-prev.prev {
+        left: 64px;
+        top: 145px;
+    }
+
+    .ab-Other-Courses-Digital .ab-exp-title {
+        width: 100%;
+    }
+
+    .ab-wathc-coures span {
+        display: block;
+        text-align: center;
+        background-color: #99cddf;
+        border: 1px solid #99cddf;
+        border-radius: 50px;
+        padding: 10px;
+        color: #000;
+    }
+
+    .ab-wathc-coures img,
+    .ab-Intermediate-m {
+        display: none;
+    }
+
+    .ab-courseDetails-footer {
+        display: block;
+        text-align: center;
+        margin-bottom: 0px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #1e2c35;
+    }
+
+    .ab-courseDetails-prise {
+        display: inline-block;
+        margin-bottom: 27px;
+    }
+
+    .ab-courseDetails-offer-wrapper {
+        display: inline-block;
+        margin-left: 23px;
+    }
+
+    .ab-courseDetails-footer-sou .ab-Gift-st {
+        display: none;
+    }
+
+    .ab-courseDetails-footer-sou {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .ab-courseDetailsProfile {
+        padding-top: 150px !important;
+        padding: 15px;
+    }
+
+    .ab-skill-will-gain {
+        display: block;
+        align-items: center;
+    }
+
+    .ab-bundle-Includes-following li {
+        width: 100%;
+        display: block;
+    }
+
+    .ab-outline-primary {
+        padding: 12px 11px;
+        height: 46px;
+    }
+
+    .ab-all-tab-section {
+        padding: 15px;
+    }
+
+    .ab-Other-Courses-Digital .slide-arrow-next {
+        bottom: -70px;
+    }
+
+    .ab-Other-Courses-Digital .slide-arrow-prev {
+        bottom: -70px;
+    }
+
+    .ab-content-course-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .ab-Course-Content-slider {
+        position: relative;
+    }
+
+    .ab-Course-Content-slider ul {
+        white-space: nowrap;
+        width: 90%;
+        overflow: hidden;
+        margin: auto !important;
+        display: block;
+    }
+
+    .ab-Course-Content-slider ul li {
+        display: inline-block;
+    }
+
+    .ab-Course-Overview-Preview {
+        margin-right: 0px;
+    }
+
+    .panel {
+        padding: 0 0;
+    }
+
+    .loginm {
+        display: none;
+    }
+
+    .ab-shopping-card {
+        width: 100%;
+    }
+
+    .ab-apply-coupon-title::before {
+        width: 20%;
+    }
+
+    .ab-apply-coupon-title::after {
+        width: 20%;
+    }
+
+    .ab-video-page {
+        width: 90%;
+        min-height: 120px;
+    }
+
+    .ab-courseTrainerCreators-user-icon span {
+        display: block;
+        text-align: center;
+        background-color: #99cddf;
+        border: 1px solid #99cddf;
+        border-radius: 50px;
+        padding: 10px;
+        color: #000;
+    }
+
+    .ab-About-Anand-m {
+        padding: 20px;
+    }
+
+    .ab-Course-Traine-Creators,
+    .ab-course-by-Anand {
+        padding: 20px;
+    }
+
+    .ab-completion-Certificate-img {
+        border-right: none;
+    }
+
+    .ab-dashboardbanner-col-count {
+        font-size: 40px !important;
+    }
+
+    .ab-completion-Certificate-img {
+        margin-right: 0;
+    }
+
+    .ab-dashboaed-banner {
+        min-height: 580px;
+        padding-top: 160px;
+    }
+
+    .ab-Completed-Courses .ab-exp-box {
+        height: 841px;
+    }
+
+    .ab-Completed-Courses .ab-exp-box-footer {
+        bottom: 210px;
+    }
+
+    .ab-hours-you-spent {
+        margin: auto;
+    }
+
+    .ab-hours-graph-item {
+        width: 60px;
+        height: 170px;
+        padding-top: 134px;
+    }
+
+    .ab-hours-prossesbar {
+        top: 50px;
+        left: -36px;
+        margin: auto;
+    }
+
+    /* .owl-prev{
+        border: 1px solid #fff !important;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px !important;
+        opacity: 0.2;
+        position: static;
+        left: -80px;
+        top: 150px;
+    }
+    .owl-next{
+        border: 1px solid #fff !important;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px !important;
+        opacity: 0.2;
+        right: -70px !important;
+        position: static;
+        top: 150px;
+    } */
+    .slider-box .box-label {
+        padding: 12px 12px;
+    }
+
+    .slider-box .head-label h3 {
+        font-size: 16px;
+    }
+
+    .slider-box .head-label .rating-label {
+        padding: 1px 6px;
+    }
+
+    .slider-box .head-label .rating-label img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .slider-box .head-label .rating-label span {
+        font-size: 14px;
+    }
+
+    .slider-box .banner-img {
+        height: 160px;
+    }
+
+    .ab-list-ofmenu {
+        position: fixed;
+        left: 0;
+        width: 70%;
+        background-color: #04141e;
+        box-shadow: 1px 1px 41px #000;
+        top: 0;
+        height: 100%;
+        z-index: 99;
+        padding: 30px;
+        display: none;
+    }
+
+    .ab-logo-img {
+        display: block;
+        white-space: nowrap;
+    }
+
+    .ab-lose-icon {
+        display: block;
+    }
+
+    .ab-dashboardUserProfile-box {
+        padding: 15px;
+    }
+    .ab-ims-bundl-digital {
+        height: AUTO;
+        padding: 30px;
+    }
+    .ab-Skills-Acquired-item {
+        display: block;
+        width: 100%;
+    }
+    .ab-chapters {
+        color: #04141e;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .ab-chapters-percentage {
+        margin: auto;
+    }
+    .ab-chapters-content-wrapper{
+        margin-top: 30px;
+    }
+    .ab-talkto-us {
+        right: 30px;
+    }
+    .ab-Quiz-Title-section {
+        height: auto;
+    }
+    .ab-controle {
+        margin-top: 28px;
+    }
+    .ab-sprit-img-st.slide-arrow-prev {
+        bottom: 5px;
+        left: -160px;
+    }
+    .ab-sprit-img-st.slide-arrow-next {
+        bottom: 5px;
+        right: -221px;
+    }
+    .ab-talk-to-us-wrapper {
+        position: relative;
+        padding: 30px;
+    }
+    .ab-talkuers{
+        width: 90px;
+    }
+    .ab-talkuers-content{
+        width: 70%;
+    }
+    .ab-close-talktous {
+        right: 40px;
+        top: 60px;
+    }
+    .ab-button-talk {
+        padding: 10px 40px;
+    }
+    .ab-talk-to-us-chat {
+        max-height: 400px;
+    }
+    .ab-color-dartk {
+        width: 100%;
+    }
+    .ab-ourVision-wrapper, .ab-OurLOGOConcept-wrapper, .ab-ab-Why-Abhyan, .ab-countact-us-wrapper {
+        width: 80%;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) {}
